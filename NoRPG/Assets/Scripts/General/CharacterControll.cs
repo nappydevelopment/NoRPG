@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class CharacterControll : MonoBehaviour {
 
+    public float moveForce = 5;
     private CharacterController character;
-    public int x = 0;
-    public int z = 0;
 
     // Use this for initialization
     void Start () {
@@ -13,8 +13,10 @@ public class CharacterControll : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        character.SimpleMove(new Vector3(x, 0, z));
-
+	void FixedUpdate () {
+        character.SimpleMove(new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0, CrossPlatformInputManager.GetAxis("Vertical")) * moveForce);
+        if(CrossPlatformInputManager.GetAxis("Horizontal") != 0 || CrossPlatformInputManager.GetAxis("Vertical") != 0) {
+            GetComponent<Animation>().CrossFade("Walk");
+        }
     }
 }
