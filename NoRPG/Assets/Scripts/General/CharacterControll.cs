@@ -24,6 +24,9 @@ public class CharacterControll : MonoBehaviour {
     private Animator chest_8_Ani;
     public GameObject dragon;
 
+    private GameObject kid;
+    private Animation kid_animation;
+
     // Use this for initialization
     void Start () {
         character = GetComponent<CharacterController>();
@@ -35,6 +38,7 @@ public class CharacterControll : MonoBehaviour {
         chest_6_Ani = chest_6.GetComponent<Animator>();
         chest_7_Ani = chest_7.GetComponent<Animator>();
         chest_8_Ani = chest_8.GetComponent<Animator>();
+        kid_animation = kid.GetComponent<Animation>();
     }
 	
 	// Update is called once per frame
