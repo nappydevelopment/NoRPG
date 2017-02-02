@@ -62,4 +62,9 @@ public class CharacterControll : MonoBehaviour {
             chest_8_Ani.SetTrigger("Open");
         }
     }
+
+    void OnLevelWasLoaded(int thisLevel)
+    {
+        transform.position = GameObject.FindWithTag("SpawnPoint").transform.position;
+    }
 }
