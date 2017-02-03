@@ -6,5 +6,7 @@ function OnTriggerEnter(Col : Collider)
     {
         Application.LoadLevel("Scenes/first_forrest");
         //SceneManager.LoadScene("Scenes/first_forrest");
+
+        DontDestroyOnLoad(transform.gameObject);
     }
 }
