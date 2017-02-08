@@ -43,13 +43,14 @@ public class CharacterControll : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        Vector3 moveDirection = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0, CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
-        character.SimpleMove(moveDirection);
-        character.transform.rotation = Quaternion.LookRotation(moveDirection);
+        
         if (CrossPlatformInputManager.GetAxis("Horizontal") != 0 || CrossPlatformInputManager.GetAxis("Vertical") != 0) {
             GetComponent<Animation>().CrossFade("Walk");
+            Vector3 moveDirection = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0, CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
+            character.SimpleMove(moveDirection);
+            character.transform.rotation = Quaternion.LookRotation(moveDirection);
         }
-        bool isPressed = CrossPlatformInputManager.GetButton("Jump");
+        bool isPressed = CrossPlatformInputManager.GetButton("B");
 
         if (isPressed) {
             chest_1_Ani.SetTrigger("Open");
