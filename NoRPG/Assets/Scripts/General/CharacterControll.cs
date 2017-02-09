@@ -64,8 +64,8 @@ public class CharacterControll : MonoBehaviour {
         }
     }
 
-    void OnLevelWasLoaded(int thisLevel)
+    /*void OnLevelWasLoaded(int thisLevel)
     {
         transform.position = GameObject.FindWithTag("SpawnPoint").transform.position;
-    }
+    }*/
 }
