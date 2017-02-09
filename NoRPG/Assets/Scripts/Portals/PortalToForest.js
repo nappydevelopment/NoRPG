@@ -4,9 +4,7 @@ function OnTriggerEnter(Col : Collider)
 {
     if (Col.tag == "Player")
     {
+        DontDestroyOnLoad(Col.gameObject);
         Application.LoadLevel("Scenes/first_forrest");
-        //SceneManager.LoadScene("Scenes/first_forrest");
-
-        DontDestroyOnLoad(transform.gameObject);
     }
 }

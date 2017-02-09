@@ -1,9 +1,10 @@
 ﻿#pragma strict
 
 function OnTriggerEnter(Col : Collider)
+{
+    if (Col.tag == "Player")
     {
-        if (Col.tag == "Player")
-        {
-            Application.LoadLevel("Scenes/Startwelt");
-        }
+        DontDestroyOnLoad(Col.gameObject);
+        Application.LoadLevel("Scenes/Startwelt");
     }
+}
