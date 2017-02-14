@@ -23,8 +23,7 @@ public class CharacterControll : MonoBehaviour {
     private Animator chest_7_Ani;
     private Animator chest_8_Ani;
     public GameObject dragon;
-
-    private GameObject kid;
+    
     private Animation kid_animation;
 
     // Use this for initialization
@@ -38,14 +37,13 @@ public class CharacterControll : MonoBehaviour {
         chest_6_Ani = chest_6.GetComponent<Animator>();
         chest_7_Ani = chest_7.GetComponent<Animator>();
         chest_8_Ani = chest_8.GetComponent<Animator>();
-        kid_animation = kid.GetComponent<Animation>();
     }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         
         if (CrossPlatformInputManager.GetAxis("Horizontal") != 0 || CrossPlatformInputManager.GetAxis("Vertical") != 0) {
-            GetComponent<Animation>().CrossFade("Walk");
+            GetComponent<Animation>().Play("Walk");
             Vector3 moveDirection = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0, CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
             character.SimpleMove(moveDirection);
             character.transform.rotation = Quaternion.LookRotation(moveDirection);
