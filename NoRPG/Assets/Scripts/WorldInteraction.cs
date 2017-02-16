@@ -3,10 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WorldInteraction : MonoBehaviour {
+    /*
+    MeshCollider playerMesh;
+
+    void Start()
+    {
+        playerMesh = GetComponent<MeshCollider>();
+    }
 
     void Update()
     {
-        if (Input.GetButtonDown("InteractButton")) && !UnityEngine.EventSystems.EventTrigger.Entry.)
+        if (Input.GetButtonDown("InteractButton") && !UnityEngine.EventSystems.EventSystem.current.IsActive())
                 GetInteraction();
     }
 
@@ -18,15 +25,16 @@ public class WorldInteraction : MonoBehaviour {
         if (Physics.Raycast(interactionRay, out interactionInfo, Mathf.Infinity))
         {
             GameObject interactedObject = interactionInfo.collider.gameObject;
+
             if (interactedObject.tag == "Interactable Object")
             {
                 Debug.Log("Interactable interacted")
             }
             else
             {
-
+                playerMesh.de
             }
         }
     }
-	
+	*/
 }
