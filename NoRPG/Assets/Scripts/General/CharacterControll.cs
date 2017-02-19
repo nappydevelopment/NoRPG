@@ -22,12 +22,12 @@ public class CharacterControll : MonoBehaviour {
     private Animator chest_6_Ani;
     private Animator chest_7_Ani;
     private Animator chest_8_Ani;
-    public GameObject dragon;
     
     private Animation kid_animation;
 
     // Use this for initialization
     void Start () {
+        kid_animation = GetComponent<Animation>();
         character = GetComponent<CharacterController>();
         chest_1_Ani = chest_1.GetComponent<Animator>();
         chest_2_Ani = chest_2.GetComponent<Animator>();
@@ -43,7 +43,7 @@ public class CharacterControll : MonoBehaviour {
 	void FixedUpdate () {
         
         if (CrossPlatformInputManager.GetAxis("Horizontal") != 0 || CrossPlatformInputManager.GetAxis("Vertical") != 0) {
-            GetComponent<Animation>().Play("Walk");
+            StartAnimation("Walk");
             Vector3 moveDirection = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0, CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
             character.SimpleMove(moveDirection);
             character.transform.rotation = Quaternion.LookRotation(moveDirection);
@@ -56,10 +56,16 @@ public class CharacterControll : MonoBehaviour {
             chest_3_Ani.SetTrigger("Open");
             chest_4_Ani.SetTrigger("Open");
             chest_5_Ani.SetTrigger("Open");
+
             chest_6_Ani.SetTrigger("Open");
             chest_7_Ani.SetTrigger("Open");
             chest_8_Ani.SetTrigger("Open");
+            StartAnimation("Cheer");        
         }
+    }
+
+    private bool StartAnimation (string animation) {
+        return kid_animation.Play(animation);
     }
 
     /*void OnLevelWasLoaded(int thisLevel)
