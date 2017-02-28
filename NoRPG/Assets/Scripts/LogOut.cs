@@ -2,8 +2,8 @@
 using UnityEngine.SceneManagement;
 
 public class LogOut : MonoBehaviour {
-	
-	void OnClick ()
+
+    protected virtual void OnClick ()
     {
         SceneManager.LoadScene("Scenes/Startscreen", LoadSceneMode.Single);
     }

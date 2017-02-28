@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class LogIn : MonoBehaviour {
 
-    void OnClick()
+    protected virtual void OnClick()
     {
         SceneManager.LoadScene("Scenes/Startwelt", LoadSceneMode.Single);
     }
