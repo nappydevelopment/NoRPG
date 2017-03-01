@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PortalToStart : MonoBehaviour
-{
+public class BackFromLava : MonoBehaviour {
+
     void OnTriggerEnter()
     {
         DontDestroyOnLoad(gameObject);
