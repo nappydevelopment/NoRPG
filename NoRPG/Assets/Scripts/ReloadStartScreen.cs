@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public class ReloadStartScreen : MonoBehaviour {
 
-public class EndGame : MonoBehaviour {
-
-    public void EndGameButton()
-    {
+	public void ReloadScene() {
         SceneManager.LoadScene("Scenes/LoggedOutUser", LoadSceneMode.Single);
     }
 }
