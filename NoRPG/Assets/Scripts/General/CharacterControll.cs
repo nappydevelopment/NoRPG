@@ -25,8 +25,8 @@ public class CharacterControll : MonoBehaviour {
     private Animator chest_7_Ani;
     private Animator chest_8_Ani;
 
-    private bool loadOnce = true;
-    
+    public string globalCameFrom; 
+        
     private Animation kid_animation;
 
     // Use this for initialization
@@ -47,25 +47,6 @@ public class CharacterControll : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
-        /*
-        if (loadOnce == true)
-        {
-            //objektorientiert abbilden in interfaces! todo
-            string currentScene = SceneManager.GetActiveScene().name;
-            Debug.Log(currentScene);
-
-            if (currentScene == "Startwelt")
-            {
-                //todo
-            }
-            else
-            {
-                transform.position = GameObject.FindWithTag("SpawnPoint").transform.position;
-            }
-
-            loadOnce = false;
-        }
-        */
         if (CrossPlatformInputManager.GetAxis("Horizontal") != 0 || CrossPlatformInputManager.GetAxis("Vertical") != 0)
         {
             StartAnimation("Walk");
@@ -95,6 +76,7 @@ public class CharacterControll : MonoBehaviour {
         return kid_animation.Play(animation);
     }
 
+    //new Method since Unity5.3 and since OnLevelWasLoaded is deprecated
     void OnEnable()
     {
         //Tell our 'OnLevelFinishedLoading' function to start listening for a scene change as soon as this script is enabled.
@@ -116,11 +98,40 @@ public class CharacterControll : MonoBehaviour {
 
         if (currentScene == "Startwelt")
         {
-            //todo
+            //string globalCameFrom will be overwritten in the portal c# scripts "BackFromXXX"
+            if (globalCameFrom == "Desert")
+            {
+                LoadSpawnPoint("DesertSpawnPoint");
+            }
+            else if (globalCameFrom == "Forest")
+            {
+                LoadSpawnPoint("ForestSpawnPoint");
+            }
+            else if (globalCameFrom == "Ice")
+            {
+                LoadSpawnPoint("IceSpawnPoint");
+            }
+            else if (globalCameFrom == "Lava")
+            {
+                LoadSpawnPoint("LavaSpawnPoint");
+            }
+            else if (globalCameFrom == "Tropic")
+            {
+                LoadSpawnPoint("TropicSpawnPoint");
+            }
+            else
+            {
+                LoadSpawnPoint("CitySpawnPoint");
+            }
         }
         else
         {
-            transform.position = GameObject.FindWithTag("SpawnPoint").transform.position;
+            LoadSpawnPoint("SpawnPoint");
         }
+    }
+
+    void LoadSpawnPoint(string tagName)
+    {
+        transform.position = GameObject.FindWithTag(tagName).transform.position;
     }
 }
