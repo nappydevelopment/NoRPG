@@ -94,28 +94,30 @@ public class CharacterControll : MonoBehaviour {
     {
         //objektorientiert abbilden in interfaces! todo
         string currentScene = SceneManager.GetActiveScene().name;
+
         Debug.Log(currentScene);
 
         if (currentScene == "Startwelt")
         {
-            //string globalCameFrom will be overwritten in the portal c# scripts "BackFromXXX"
+            //string globalCameFrom will be overwritten in the portal c# script BackToStartWorld.cs
+            Debug.Log(globalCameFrom);
             if (globalCameFrom == "Desert")
             {
                 LoadSpawnPoint("DesertSpawnPoint");
             }
-            else if (globalCameFrom == "Forest")
+            else if (globalCameFrom == "first_forrest")
             {
                 LoadSpawnPoint("ForestSpawnPoint");
             }
-            else if (globalCameFrom == "Ice")
+            else if (globalCameFrom == "Snow_World")
             {
                 LoadSpawnPoint("IceSpawnPoint");
             }
-            else if (globalCameFrom == "Lava")
+            else if (globalCameFrom == "Lavawelt")
             {
                 LoadSpawnPoint("LavaSpawnPoint");
             }
-            else if (globalCameFrom == "Tropic")
+            else if (globalCameFrom == "Tropic_World")
             {
                 LoadSpawnPoint("TropicSpawnPoint");
             }
