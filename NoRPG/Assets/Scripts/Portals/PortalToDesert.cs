@@ -5,7 +5,8 @@ public class PortalToDesert : MonoBehaviour
 {
     void OnTriggerEnter()
     {
-        DontDestroyOnLoad(gameObject);
+        PortalControl.control.currentScene = "Desert";
+
         SceneManager.LoadScene("Scenes/Desert", LoadSceneMode.Single);
     }
 }

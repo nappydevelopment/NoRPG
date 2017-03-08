@@ -24,8 +24,6 @@ public class CharacterControll : MonoBehaviour {
     private Animator chest_6_Ani;
     private Animator chest_7_Ani;
     private Animator chest_8_Ani;
-
-    public string globalCameFrom; 
         
     private Animation kid_animation;
 
@@ -92,37 +90,26 @@ public class CharacterControll : MonoBehaviour {
 
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
-        //objektorientiert abbilden in interfaces! todo
+        //get current scene and last used scene befor hitting Startwelt
         string currentScene = SceneManager.GetActiveScene().name;
+        string cameFrom = PortalControl.control.cameFrom;
 
-        Debug.Log(currentScene);
+        //overwrite current scene in PortalControl
+        PortalControl.control.currentScene = currentScene;
 
+        //if current scene is Startwelt then specify spawnpoint
         if (currentScene == "Startwelt")
         {
-            //string globalCameFrom will be overwritten in the portal c# script BackToStartWorld.cs
-            Debug.Log(globalCameFrom);
-            if (globalCameFrom == "Desert")
+            //cameFromTag can be --> "DesertSpawnPoint" || "first_forrestSpawnPoint || "Snow_WorldSpawnPoint" || "LavaweltSpawnPoint" || "Tropic_WorldSpawnPoint"
+            string cameFromTag = cameFrom + "SpawnPoint";
+
+            try
             {
-                LoadSpawnPoint("DesertSpawnPoint");
+                LoadSpawnPoint(cameFromTag);
             }
-            else if (globalCameFrom == "first_forrest")
+            catch
             {
-                LoadSpawnPoint("ForestSpawnPoint");
-            }
-            else if (globalCameFrom == "Snow_World")
-            {
-                LoadSpawnPoint("IceSpawnPoint");
-            }
-            else if (globalCameFrom == "Lavawelt")
-            {
-                LoadSpawnPoint("LavaSpawnPoint");
-            }
-            else if (globalCameFrom == "Tropic_World")
-            {
-                LoadSpawnPoint("TropicSpawnPoint");
-            }
-            else
-            {
+                // if the Spawnpoint doesnt exist spawn in the center of the town
                 LoadSpawnPoint("CitySpawnPoint");
             }
         }
