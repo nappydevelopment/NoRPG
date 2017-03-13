@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class ReloadStartScreen : MonoBehaviour {
 
 	public void ReloadScene() {
-        SceneManager.LoadScene("Scenes/LoggedOutUser", LoadSceneMode.Single);
+        SceneManager.UnloadScene("Scenes/Register");
     }
 }
