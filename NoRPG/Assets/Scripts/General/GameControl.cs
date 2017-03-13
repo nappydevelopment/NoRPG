@@ -7,11 +7,9 @@ using System.IO;
 public class GameControl : MonoBehaviour {
 
     public static GameControl control;
-
+     
     public string username;
-
-    public string currentScene;
-    public string cameFrom;
+    public bool loggedIn;
 
 	void Awake ()
     {
@@ -33,8 +31,8 @@ public class GameControl : MonoBehaviour {
         FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat");
 
         PlayerData data = new PlayerData();
-        data.cameFrom = cameFrom;
-        data.currentScene = currentScene;
+        data.username = username;
+        data.loggedIn = loggedIn;
 
         bf.Serialize(file, data);
         file.Close();
@@ -50,8 +48,8 @@ public class GameControl : MonoBehaviour {
             PlayerData data = (PlayerData)bf.Deserialize(file);
             file.Close();
 
-            cameFrom = data.cameFrom;
-            currentScene = data.currentScene;
+            username = data.username;
+            loggedIn = data.loggedIn;
         }
     }
 }
@@ -60,6 +58,6 @@ public class GameControl : MonoBehaviour {
 class PlayerData
 {
     //Private Container to save Player Data
-    public string currentScene;
-    public string cameFrom;
+    public string username;
+    public bool loggedIn;
 }

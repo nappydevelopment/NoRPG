@@ -1,23 +1,22 @@
-﻿using UnityEngine.SceneManagement;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 
-
-public class BackToStartWorld : MonoBehaviour {
-
+public class PortalToTargetScene : MonoBehaviour
+{
     AsyncOperation ao;
 
-    public Canvas hud;
     public Canvas loadingScreen;
     public Slider progBar;
+    public string targetSceneName; 
 
     void OnTriggerEnter()
     {
         string currentScene = SceneManager.GetActiveScene().name;
         PortalControl.control.cameFrom = currentScene;
+        PortalControl.control.currentScene = targetSceneName;
 
-        hud.gameObject.SetActive(false);
         loadingScreen.gameObject.SetActive(true);
 
         StartCoroutine(LoadLevelWithRealProgress());
@@ -27,7 +26,7 @@ public class BackToStartWorld : MonoBehaviour {
     {
         yield return new WaitForSeconds(1);
 
-        ao = SceneManager.LoadSceneAsync("Scenes/Startwelt", LoadSceneMode.Single);
+        ao = SceneManager.LoadSceneAsync("Scenes/" + targetSceneName, LoadSceneMode.Single);
         ao.allowSceneActivation = false;
 
         while (!ao.isDone)
@@ -43,6 +42,5 @@ public class BackToStartWorld : MonoBehaviour {
             Debug.Log(ao.progress);
             yield return null;
         }
-
     }
 }
