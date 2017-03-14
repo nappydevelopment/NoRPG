@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
@@ -7,11 +6,21 @@ using System.IO;
 public class GameControl : MonoBehaviour {
 
     public static GameControl control;
-     
-    public string username;
-    public bool loggedIn;
 
-	void Awake ()
+    //Player information
+    public string username;
+    public bool loggedInStatus;
+
+    //Character
+    public string characterGender;
+    public int characterShader;
+
+    //Settings
+    public bool audioSetting;
+    public bool qualitySetting;
+
+
+    void Awake ()
     {
         //check is there a GameControl Object!
         if (control == null)
@@ -29,10 +38,13 @@ public class GameControl : MonoBehaviour {
     {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat");
+        Debug.Log(Application.persistentDataPath);
 
         PlayerData data = new PlayerData();
         data.username = username;
-        data.loggedIn = loggedIn;
+        data.loggedInStatus = loggedInStatus;
+        data.audioSetting = audioSetting;
+        data.qualitySetting = qualitySetting;
 
         bf.Serialize(file, data);
         file.Close();
@@ -49,7 +61,9 @@ public class GameControl : MonoBehaviour {
             file.Close();
 
             username = data.username;
-            loggedIn = data.loggedIn;
+            loggedInStatus = data.loggedInStatus;
+            audioSetting = data.audioSetting;
+            qualitySetting = data.qualitySetting;
         }
     }
 }
@@ -57,7 +71,26 @@ public class GameControl : MonoBehaviour {
 [Serializable]
 class PlayerData
 {
-    //Private Container to save Player Data
+    //Player information
     public string username;
-    public bool loggedIn;
+    public bool loggedInStatus;    
+
+    //Settings
+    public bool audioSetting;
+    public bool qualitySetting;
+
+    //Fortschritt Games
+
+    //Frotschritt Truhen
+
+    //lastLocation
+    public string lastOpenScene;
+    //public Vector3 lastPositionInScene;
+
+    //Character
+    public string characterGender;
+    public int characterShader;
+
+
+
 }
