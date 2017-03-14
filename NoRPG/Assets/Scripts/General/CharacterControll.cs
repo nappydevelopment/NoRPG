@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using CnControls;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.SceneManagement;
@@ -45,10 +46,10 @@ public class CharacterControll : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (CrossPlatformInputManager.GetAxis("Horizontal") != 0 || CrossPlatformInputManager.GetAxis("Vertical") != 0)
+        if (CnInputManager.GetAxis("Horizontal") != 0 || CnInputManager.GetAxis("Vertical") != 0)
         {
             StartAnimation("Walk");
-            Vector3 moveDirection = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0, CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
+            Vector3 moveDirection = new Vector3(CnInputManager.GetAxis("Horizontal"), 0, CnInputManager.GetAxis("Vertical")) * moveForce;
             character.SimpleMove(moveDirection);
             character.transform.rotation = Quaternion.LookRotation(moveDirection);
         }
