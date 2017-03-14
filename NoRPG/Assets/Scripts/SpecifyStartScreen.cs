@@ -5,6 +5,20 @@ public class SpecifyStartScreen : MonoBehaviour {
 
 	void Awake()
     {
-        SceneManager.LoadScene("Scenes/LoggedOutUser", LoadSceneMode.Single);
+        GetUsername();
+
+        if (GameControl.control.username != "")
+        {
+            SceneManager.LoadScene("Scenes/LoggedInUser", LoadSceneMode.Single);
+        }
+        else
+        {
+            SceneManager.LoadScene("Scenes/LoggedOutUser", LoadSceneMode.Single);
+        }
+    }
+
+    void GetUsername()
+    {
+        GameControl.control.Load();
     }
 }

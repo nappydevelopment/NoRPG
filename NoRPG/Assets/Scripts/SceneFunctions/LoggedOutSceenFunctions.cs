@@ -42,6 +42,7 @@ public class LoggedOutSceenFunctions : MonoBehaviour {
     public void SetUsername()
     {
         GameControl.control.username = usernameInput.text;
+        GameControl.control.Save();
         Debug.Log("Username saved!");
     }
 
