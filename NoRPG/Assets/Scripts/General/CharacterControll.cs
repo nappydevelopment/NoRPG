@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using CnControls;
-using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.SceneManagement;
 

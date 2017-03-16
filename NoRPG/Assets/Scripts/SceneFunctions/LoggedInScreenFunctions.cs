@@ -8,6 +8,7 @@ public class LoggedInScreenFunctions : MonoBehaviour {
     public Button setAudioOn;
     public Button setAudioOff;
     public Button logOutBtn;
+    public AudioSource audioSource;
 
     public void SetQualityOn()
     {
@@ -28,6 +29,7 @@ public class LoggedInScreenFunctions : MonoBehaviour {
         GameControl.control.audioSetting = true;
         GameControl.control.Save();
         Debug.Log("AudioSetting changed to true, saving successful!");
+        audioSource.Play();
     }
 
     public void SetAudioOff()
@@ -35,6 +37,7 @@ public class LoggedInScreenFunctions : MonoBehaviour {
         GameControl.control.audioSetting = false;
         GameControl.control.Save();
         Debug.Log("AudioSetting changed to false, saving successful!");
+        audioSource.Stop();
     }
 
     public void SetTextOfBtn()
@@ -64,6 +67,19 @@ public class LoggedInScreenFunctions : MonoBehaviour {
         {
             setQualityOn.gameObject.SetActive(true);
             setQualityOff.gameObject.SetActive(false);
+        }
+
+        if (GameControl.control.audioSetting == true)
+        {
+            setAudioOn.gameObject.SetActive(false);
+            setAudioOff.gameObject.SetActive(true);
+            audioSource.Play();
+        }
+        else if (GameControl.control.audioSetting == false)
+        {
+            setAudioOn.gameObject.SetActive(true);
+            setAudioOff.gameObject.SetActive(false);
+            audioSource.Stop();
         }
 
         SetTextOfBtn();

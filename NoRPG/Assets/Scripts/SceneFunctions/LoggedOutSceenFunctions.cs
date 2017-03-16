@@ -7,6 +7,7 @@ public class LoggedOutSceenFunctions : MonoBehaviour {
     public Button setQualityOff;
     public Button setAudioOn;
     public Button setAudioOff;
+    public AudioSource audioSource;
 
     public Button logInButton;
     public InputField usernameInput;
@@ -30,6 +31,7 @@ public class LoggedOutSceenFunctions : MonoBehaviour {
         GameControl.control.audioSetting = true;
         GameControl.control.Save();
         Debug.Log("AudioSetting changed to true, saving successful!");
+        audioSource.Play();
     }
 
     public void SetAudioOff()
@@ -37,6 +39,7 @@ public class LoggedOutSceenFunctions : MonoBehaviour {
         GameControl.control.audioSetting = false;
         GameControl.control.Save();
         Debug.Log("AudioSetting changed to false, saving successful!");
+        audioSource.Stop();
     }
 
     public void SetUsername()
@@ -59,6 +62,19 @@ public class LoggedOutSceenFunctions : MonoBehaviour {
         {
             setQualityOn.gameObject.SetActive(true);
             setQualityOff.gameObject.SetActive(false);
+        }
+
+        if (GameControl.control.audioSetting == true)
+        {
+            setAudioOn.gameObject.SetActive(false);
+            setAudioOff.gameObject.SetActive(true);
+            audioSource.Play();
+        }
+        else if (GameControl.control.audioSetting == false)
+        {
+            setAudioOn.gameObject.SetActive(true);
+            setAudioOff.gameObject.SetActive(false);
+            audioSource.Stop();
         }
     }
     
