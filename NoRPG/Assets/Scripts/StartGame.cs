@@ -13,17 +13,13 @@ public class StartGame : MonoBehaviour {
 
     public Image progressCircle;
 
-
 	public void StartGameAtLastPosition() {
 
         progressCircle.gameObject.SetActive(true);
 
         StartCoroutine(LoadLevelWithRealProgress());
 
-        //AudioSource audioSource = SpecifyStartScreen.control.audioSource;
-        //Destroy(audioSource);
     }
-
 
     IEnumerator LoadLevelWithRealProgress()
     {
