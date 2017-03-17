@@ -10,7 +10,7 @@ public class StartGame : MonoBehaviour {
     //else StartScene
 
     private static string secretKey = "norpg";
-    public static string loginURL = "http://localhost:8080/unity_test/login.php?";
+    public static string loginURL = "http://norpg.it.dh-karlsruhe.de/login.php?";
 
     AsyncOperation ao;
 

@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class SendDataToServer : MonoBehaviour {
 
     private static string secretKey = "norpg";
-    public static string registerURL = "http://localhost:8080/unity_test/register.php?";
-    public static string loginURL = "http://localhost:8080/unity_test/login.php?";
+    public static string registerURL = "http://norpg.it.dh-karlsruhe.de/register.php?";
+    public static string loginURL = "http://norpg.it.dh-karlsruhe.de/login.php?";
 
     public Text firstname;
     public Text lastname;
