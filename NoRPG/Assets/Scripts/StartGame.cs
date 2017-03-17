@@ -9,31 +9,31 @@ public class StartGame : MonoBehaviour {
     //if lastSavedPosition != null --> Load Last Scene 
     //else StartScene
 
+    private static string secretKey = "norpg";
+    public static string loginURL = "http://localhost:8080/unity_test/login.php?";
+
     AsyncOperation ao;
 
     public Image progressCircle;
+    public Text username;
+    public Text password;
 
 	public void StartGameAtLastPosition() {
-
         progressCircle.gameObject.SetActive(true);
-
-        StartCoroutine(LoadLevelWithRealProgress());
-
+        Debug.Log(MD5Test.Md5Sum(password.text));
+        StartCoroutine(LoginUser(username.text, MD5Test.Md5Sum(password.text)));
     }
 
-    IEnumerator LoadLevelWithRealProgress()
-    {
+    public IEnumerator LoadLevelWithRealProgress() {
         yield return new WaitForSeconds(1);
 
         ao = SceneManager.LoadSceneAsync("Scenes/Startwelt", LoadSceneMode.Single);
         ao.allowSceneActivation = false;
 
-        while (!ao.isDone)
-        {
+        while (!ao.isDone) {
             progressCircle.fillAmount = ao.progress +0.1f;
 
-            if (ao.progress == 0.9f)
-            {
+            if (ao.progress == 0.9f) {
                // progressCircle.fillAmount = 1.0f;
                 ao.allowSceneActivation = true;
             }
@@ -42,4 +42,29 @@ public class StartGame : MonoBehaviour {
             yield return null;
         }
     }
+
+    public IEnumerator LoginUser(string user, string password) {
+    string hash = MD5Test.Md5Sum(user + password + secretKey);
+
+
+    string get_url = loginURL
+        + "user=" + WWW.EscapeURL(user)
+        + "&password=" + WWW.EscapeURL(password)
+        + "&hash=" + hash;
+
+    WWW hs_get = new WWW(get_url);
+    yield return hs_get;
+
+    if (hs_get.error != null) {
+        print("There was an error getting the information: " + hs_get.error);
+    }
+    else {
+        Debug.Log(hs_get.text);
+        if (hs_get.text.Contains("true")) {
+            StartCoroutine(LoadLevelWithRealProgress());
+        }else{
+            Debug.Log("no user / wrong password");
+        }
+    }
+}
 }

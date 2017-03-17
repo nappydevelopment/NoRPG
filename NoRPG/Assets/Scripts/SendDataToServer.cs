@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class SendDataToServer : MonoBehaviour {
 
-    //TODO: Eingaben überprüfen
+    private static string secretKey = "norpg";
+    public static string registerURL = "http://localhost:8080/unity_test/register.php?";
+    public static string loginURL = "http://localhost:8080/unity_test/login.php?";
 
     public Text firstname;
     public Text lastname;
@@ -21,6 +23,8 @@ public class SendDataToServer : MonoBehaviour {
     public Text password_repeat;
 
     public Text selected_character;
+
+    public Text status;
 
     public string firstnameText;
     public string lastnameText;
@@ -57,43 +61,42 @@ public class SendDataToServer : MonoBehaviour {
     public void GetThirdData()
     {
         selected_characterText = selected_character.text;
-        SendData();
+        SendRegister();
     }
 
-    private void SendData()
+    private void SendRegister()
     {
-        Debug.Log("Start sending");
-        string url = "http://norpg.it.dh-karlsruhe.de/register.php";
-
-        WWWForm form = new WWWForm();
-        form.AddField("firstname", firstnameText);
-        form.AddField("lastname", lastnameText);
-        form.AddField("birthday", birthdayText);
-        form.AddField("gender", genderText);
-        form.AddField("country", countryText);
-        form.AddField("native_language", native_languageText);
-        form.AddField("user", userText);
-        form.AddField("email", emailText);
-        form.AddField("password", passwordText);
-        form.AddField("selected_character", selected_characterText);
-
-        WWW www = new WWW(url, form);
-
-        StartCoroutine(WaitForRequest(www));
+        StartCoroutine(RegisterUser(userText, emailText, MD5Test.Md5Sum(passwordText), firstnameText, lastnameText, birthdayText, genderText, countryText, native_languageText, selected_characterText));
     }
 
-    IEnumerator WaitForRequest(WWW www)
+    IEnumerator RegisterUser(string user, string email, string password, string firstname, string lastname, string birthday, string gender, string country, string native_language, string selected_character)
     {
-        yield return www;
 
-        // check for errors
-        if (www.error == null)
+        string hash = MD5Test.Md5Sum(user + email + password + firstname + country + selected_character + secretKey);
+
+        string post_url = registerURL
+            + "user=" + WWW.EscapeURL(user)
+            + "&email=" + WWW.EscapeURL(email)
+            + "&password=" + WWW.EscapeURL(password)
+            + "&firstname=" + WWW.EscapeURL(firstname)
+            + "&lastname=" + WWW.EscapeURL(lastname)
+            + "&birthday=" + WWW.EscapeURL(birthday)
+            + "&gender=" + WWW.EscapeURL(gender)
+            + "&country=" + WWW.EscapeURL(country)
+            + "&native_language=" + WWW.EscapeURL(native_language)
+            + "&selected_character=" + WWW.EscapeURL(selected_character)
+            + "&hash=" + hash;
+        WWW hs_post = new WWW(post_url);
+        yield return hs_post;
+
+        if (hs_post.error != null)
         {
-            Debug.Log("WWW Ok!: " + www.text);
+            print("There was an error posting the high score: " + hs_post.error);
         }
         else
         {
-            Debug.Log("WWW Error: " + www.error);
+            status.text = hs_post.text;
         }
+
     }
 }
