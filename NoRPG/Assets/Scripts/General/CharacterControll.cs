@@ -8,22 +8,6 @@ public class CharacterControll : MonoBehaviour {
 
     public float moveForce = 5;
     private CharacterController character;
-    public GameObject chest_1;
-    public GameObject chest_2;
-    public GameObject chest_3;
-    public GameObject chest_4;
-    public GameObject chest_5;
-    public GameObject chest_6;
-    public GameObject chest_7;
-    public GameObject chest_8;
-    private Animator chest_1_Ani;
-    private Animator chest_2_Ani;
-    private Animator chest_3_Ani;
-    private Animator chest_4_Ani;
-    private Animator chest_5_Ani;
-    private Animator chest_6_Ani;
-    private Animator chest_7_Ani;
-    private Animator chest_8_Ani;
         
     private Animation kid_animation;
 
@@ -32,14 +16,6 @@ public class CharacterControll : MonoBehaviour {
     {
         kid_animation = GetComponent<Animation>();
         character = GetComponent<CharacterController>();
-        chest_1_Ani = chest_1.GetComponent<Animator>();
-        chest_2_Ani = chest_2.GetComponent<Animator>();
-        chest_3_Ani = chest_3.GetComponent<Animator>();
-        chest_4_Ani = chest_4.GetComponent<Animator>();
-        chest_5_Ani = chest_5.GetComponent<Animator>();
-        chest_6_Ani = chest_6.GetComponent<Animator>();
-        chest_7_Ani = chest_7.GetComponent<Animator>();
-        chest_8_Ani = chest_8.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -52,20 +28,15 @@ public class CharacterControll : MonoBehaviour {
             character.SimpleMove(moveDirection);
             character.transform.rotation = Quaternion.LookRotation(moveDirection);
         }
-        bool isPressed = CrossPlatformInputManager.GetButton("B");
-
-        if (isPressed)
+        
+        // If the player presses and holds the B button, the charakter will Move faster
+        if (CrossPlatformInputManager.GetButton("B"))
         {
-            chest_1_Ani.SetTrigger("Open");
-            chest_2_Ani.SetTrigger("Open");
-            chest_3_Ani.SetTrigger("Open");
-            chest_4_Ani.SetTrigger("Open");
-            chest_5_Ani.SetTrigger("Open");
-
-            chest_6_Ani.SetTrigger("Open");
-            chest_7_Ani.SetTrigger("Open");
-            chest_8_Ani.SetTrigger("Open");
-            StartAnimation("Cheer");
+            moveForce = 9;
+        }
+        else
+        {
+            moveForce = 5;
         }
     }
 
