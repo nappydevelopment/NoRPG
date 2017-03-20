@@ -6,37 +6,39 @@ using UnityEngine.SceneManagement;
 
 public class CharacterControll : MonoBehaviour {
 
-    public float moveForce = 5;
     private CharacterController character;
-        
     private Animation kid_animation;
+    [SerializeField]
+    private float directionDumpTime = .25f;
 
-    // Use this for initialization
+    private float speed = 0.0f;
+    private float h = 0.0f;
+    private float v = 0.0f;
+
     void Start()
     {
         kid_animation = GetComponent<Animation>();
         character = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (CnInputManager.GetAxis("Horizontal") != 0 || CnInputManager.GetAxis("Vertical") != 0)
+        h = CnInputManager.GetAxis("Horizontal");
+        v = CnInputManager.GetAxis("Vertical");
+        speed = new Vector2(h, v).sqrMagnitude;
+
+        if (speed != 0)
         {
             StartAnimation("Walk");
-            Vector3 moveDirection = new Vector3(CnInputManager.GetAxis("Horizontal"), 0, CnInputManager.GetAxis("Vertical")) * moveForce;
+            int multiplier = 4;
+            // If the player presses and holds the B button, the charakter will Move faster
+            if (CrossPlatformInputManager.GetButton("B"))
+            {
+                multiplier = 6;
+            } 
+            Vector3 moveDirection = new Vector3(h, 0, v) * speed * multiplier;
             character.SimpleMove(moveDirection);
             character.transform.rotation = Quaternion.LookRotation(moveDirection);
-        }
-        
-        // If the player presses and holds the B button, the charakter will Move faster
-        if (CrossPlatformInputManager.GetButton("B"))
-        {
-            moveForce = 9;
-        }
-        else
-        {
-            moveForce = 5;
         }
     }
 
