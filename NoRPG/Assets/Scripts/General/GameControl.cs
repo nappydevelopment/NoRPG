@@ -10,6 +10,7 @@ public class GameControl : MonoBehaviour {
     //Player information
     public string username;
     public bool loggedInStatus;
+    public string lastPosition;
 
     //Character
     public string characterGender;
@@ -32,7 +33,30 @@ public class GameControl : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-	}
+    }
+
+    //save last position
+    void OnApplicationQuit()
+    {
+        string currentScene = PortalControl.control.currentScene;
+
+        if (currentScene == "DesertSpawnPoint" || currentScene == "first_forrestSpawnPoint" || currentScene == "Snow_WorldSpawnPoint" || currentScene == "LavaweltSpawnPoint" || currentScene == "Tropic_WorldSpawnPoint"){
+            Debug.Log("Application will be quit!");
+            lastPosition = currentScene;
+        }
+            
+
+    }
+
+    void SaveLocalDataAtServer()
+    {
+
+    }
+
+    void LoadLocalDataFromServer()
+    {
+        
+    }
 
     public void Save()
     {
@@ -66,6 +90,8 @@ public class GameControl : MonoBehaviour {
             qualitySetting = data.qualitySetting;
         }
     }
+
+    //todo: Method Synchronize this with the player in the database
 }
 
 [Serializable]

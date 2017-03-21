@@ -10,17 +10,19 @@ public class SendDataToServer : MonoBehaviour {
     public static string registerURL = "http://norpg.it.dh-karlsruhe.de/register.php?";
     public static string loginURL = "http://norpg.it.dh-karlsruhe.de/login.php?";
 
-    public Text firstname;
-    public Text lastname;
-    public Text birthday;
+    public InputField firstname;
+    public InputField lastname;
+    public Text dayOfBirth;
+    public Text monthOfBirth;
+    public InputField yearOfBirth;
     public Text gender;
-    public Text country;
+    public InputField country;
     public Text native_language;
 
-    public Text user;
-    public Text email;
-    public Text password;
-    public Text password_repeat;
+    public InputField user;
+    public InputField email;
+    public InputField password;
+    public InputField password_repeat;
 
     public Text selected_character;
 
@@ -44,7 +46,8 @@ public class SendDataToServer : MonoBehaviour {
     {
         firstnameText = firstname.text;
         lastnameText = lastname.text;
-        birthdayText = birthday.text;
+        birthdayText = yearOfBirth.text + "-" + monthOfBirth.text + "-" + dayOfBirth.text;
+        //Debug.Log(birthdayText);
         genderText = gender.text;
         countryText = country.text;
         native_languageText = native_language.text;
@@ -55,6 +58,7 @@ public class SendDataToServer : MonoBehaviour {
         userText = user.text;
         emailText = email.text;
         passwordText = password.text;
+        //Debug.Log(passwordText);
         password_repeatText = password_repeat.text;
     }
 

@@ -15,8 +15,8 @@ public class StartGame : MonoBehaviour {
     AsyncOperation ao;
 
     public Image progressCircle;
-    public Text username;
-    public Text password;
+    public InputField username;
+    public InputField password;
 
 	public void StartGameAtLastPosition() {
         progressCircle.gameObject.SetActive(true);

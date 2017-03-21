@@ -7,20 +7,22 @@ using System.Text.RegularExpressions;
 public class RegisterFunctions : MonoBehaviour
 {
     //Part 1
-    public Text firstname;
-    public Text lastname;
-    public Text birthday;
+    public InputField firstname;
+    public InputField lastname;
+    public Text dayOfBirth;
+    public Text monthOfBirth;
+    public InputField yearOfBirth;
     public Text gender;
-    public Text country;
+    public InputField country;
     public Text native_language;
 
     public Button NextBtnPart1;
 
     //Part 2
-    public Text user;
-    public Text email;
-    public Text password;
-    public Text password_repeat;
+    public InputField user;
+    public InputField email;
+    public InputField password;
+    public InputField password_repeat;
 
     public Button NextBtnPart2;
     public Image WrongUsernameImage;
@@ -35,7 +37,7 @@ public class RegisterFunctions : MonoBehaviour
     {
         // Set Button "Next" in Part1 to interactable when everything is set
         // no check with database needed
-        if (firstname.text != "" && lastname.text != "" && birthday.text != "" && gender.text != "" && country.text != "" && native_language.text != "")
+        if (firstname.text != "" && lastname.text != "" && dayOfBirth.text != "" && monthOfBirth.text != "" && yearOfBirth.text != "" && gender.text != "" && country.text != "" && native_language.text != "")
         {
             NextBtnPart1.interactable = true;
         }
