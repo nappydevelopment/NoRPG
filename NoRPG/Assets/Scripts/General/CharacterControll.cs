@@ -6,48 +6,68 @@ using UnityEngine.SceneManagement;
 
 public class CharacterControll : MonoBehaviour {
 
-    private CharacterController character;
-    private Animation kid_animation;
+    //   private CharacterController character;
+    [SerializeField]
+    private Animator animator;
     [SerializeField]
     private float directionDumpTime = .25f;
+    [SerializeField]
+    private ThirdPersonCamera gamecam;
+    [SerializeField]
+    private float directionSpeed = 3.0f;
+    [SerializeField]
+    private float rotationDegreePerSecound = 120f;
 
     private float speed = 0.0f;
+    private float direction = 0f;
     private float h = 0.0f;
     private float v = 0.0f;
+    private AnimatorStateInfo stateInfo;
+
+    private int m_LocomotionID = 0;
 
     void Start()
     {
-        kid_animation = GetComponent<Animation>();
-        character = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
+
+        if(animator.layerCount >= 2)
+        {
+            animator.SetLayerWeight(1, 1);
+        }
+        m_LocomotionID = Animator.StringToHash("Base Layer.Locomotion");
+    }
+
+    void FixedUpdate()
+    {
+        if(IsInLocomotion() && ((direction>=0 && h>=0) || (direction <0 && h < 0)))
+        {
+            Vector3 rotationAmount = Vector3.Lerp(Vector3.zero, new Vector3(0f, rotationDegreePerSecound * (h < 0f ? -1f : 1f), 0f), Mathf.Abs(h));
+            Quaternion deltaRotation = Quaternion.Euler(rotationAmount * Time.deltaTime);
+            this.transform.rotation = (this.transform.rotation * deltaRotation);
+        }
+    }
+
+    public bool IsInLocomotion()
+    {
+        return stateInfo.nameHash == m_LocomotionID;
     }
 
     void Update()
     {
-        h = CnInputManager.GetAxis("Horizontal");
-        v = CnInputManager.GetAxis("Vertical");
-        speed = new Vector2(h, v).sqrMagnitude;
-
-        if (speed != 0)
+        if (animator)
         {
-            StartAnimation("Walk");
-            int multiplier = 4;
-            // If the player presses and holds the B button, the charakter will Move faster
-            if (CrossPlatformInputManager.GetButton("B"))
-            {
-                multiplier = 6;
-            } 
-            Vector3 moveDirection = new Vector3(h, 0, v) * speed * multiplier;
-            character.SimpleMove(moveDirection);
-            character.transform.rotation = Quaternion.LookRotation(moveDirection);
+            stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
+            h = CnInputManager.GetAxis("Horizontal");
+            v = CnInputManager.GetAxis("Vertical");
+
+            StickToWorldspace(this.transform, gamecam.transform, ref direction, ref speed);
+
+            animator.SetFloat("speed", speed);
+            animator.SetFloat("direction", direction, directionDumpTime, Time.deltaTime);
         }
     }
 
-    private bool StartAnimation(string animation)
-    {
-        return kid_animation.Play(animation);
-    }
-
-    //new Method since Unity5.3 and since OnLevelWasLoaded is deprecated
     void OnEnable()
     {
         //Tell our 'OnLevelFinishedLoading' function to start listening for a scene change as soon as this script is enabled.
@@ -67,10 +87,8 @@ public class CharacterControll : MonoBehaviour {
         string currentScene = SceneManager.GetActiveScene().name;
         string cameFrom = PortalControl.control.cameFrom;
 
-        //overwrite current scene in PortalControl
         PortalControl.control.currentScene = currentScene;
 
-        //if current scene is Startwelt then specify spawnpoint
         if (currentScene == "Startwelt")
         {
             //cameFromTag can be --> "DesertSpawnPoint" || "first_forrestSpawnPoint || "Snow_WorldSpawnPoint" || "LavaweltSpawnPoint" || "Tropic_WorldSpawnPoint"
@@ -95,5 +113,34 @@ public class CharacterControll : MonoBehaviour {
     void LoadSpawnPoint(string tagName)
     {
         transform.position = GameObject.FindWithTag(tagName).transform.position;
+    }
+
+    public void StickToWorldspace(Transform root, Transform camera, ref float directionOut, ref float speedOut)
+    {
+        Vector3 rootDirection = root.forward;
+
+        Vector3 stickDirection = new Vector3(h, 0, v);
+
+        speedOut = stickDirection.sqrMagnitude;
+
+        // Get camera rotation
+        Vector3 CameraDirection = camera.forward;
+        CameraDirection.y = 0.0f; // kill Y
+        Quaternion referentialShift = Quaternion.FromToRotation(Vector3.forward, Vector3.Normalize(CameraDirection));
+
+        // Convert joystick input in Worldspace coordinates
+        Vector3 moveDirection = referentialShift * stickDirection;
+        Vector3 axisSign = Vector3.Cross(moveDirection, rootDirection);
+
+        Debug.DrawRay(new Vector3(root.position.x, root.position.y + 2f, root.position.z), moveDirection, Color.green);
+        Debug.DrawRay(new Vector3(root.position.x, root.position.y + 2f, root.position.z), rootDirection, Color.magenta);
+        Debug.DrawRay(new Vector3(root.position.x, root.position.y + 2f, root.position.z), stickDirection, Color.blue);
+        Debug.DrawRay(new Vector3(root.position.x, root.position.y + 2.5f, root.position.z), axisSign, Color.red);
+
+        float angleRootToMove = Vector3.Angle(rootDirection, moveDirection) * (axisSign.y >= 0 ? -1f : 1f);
+        
+        angleRootToMove /= 180f;
+
+        directionOut = angleRootToMove * directionSpeed;
     }
 }
