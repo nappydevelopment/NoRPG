@@ -44,8 +44,6 @@ public class GameControl : MonoBehaviour {
             Debug.Log("Application will be quit!");
             lastPosition = currentScene;
         }
-            
-
     }
 
     void SaveLocalDataAtServer()
@@ -66,7 +64,6 @@ public class GameControl : MonoBehaviour {
 
         PlayerData data = new PlayerData();
         data.username = username;
-        data.loggedInStatus = loggedInStatus;
         data.audioSetting = audioSetting;
         data.qualitySetting = qualitySetting;
 
@@ -85,7 +82,6 @@ public class GameControl : MonoBehaviour {
             file.Close();
 
             username = data.username;
-            loggedInStatus = data.loggedInStatus;
             audioSetting = data.audioSetting;
             qualitySetting = data.qualitySetting;
         }
@@ -99,24 +95,18 @@ class PlayerData
 {
     //Player information
     public string username;
-    public bool loggedInStatus;    
 
     //Settings
     public bool audioSetting;
     public bool qualitySetting;
 
-    //Fortschritt Games
+    //Games
 
-    //Frotschritt Truhen
+    //Progress
+
+    //Truhen
 
     //lastLocation
     public string lastOpenScene;
-    //public Vector3 lastPositionInScene;
-
-    //Character
-    public string characterGender;
-    public int characterShader;
-
-
 
 }
