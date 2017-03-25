@@ -58,9 +58,12 @@ public class GameControl : MonoBehaviour {
 
     public void Save()
     {
-        BinaryFormatter bf = new BinaryFormatter();
+        /*BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat");
-        Debug.Log(Application.persistentDataPath);
+        Debug.Log(Application.persistentDataPath);*/
+
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
 
         PlayerData data = new PlayerData();
         data.username = username;
@@ -71,20 +74,30 @@ public class GameControl : MonoBehaviour {
         file.Close();
     }
 
-    public void Load()
+    public void createFile()
     {
         if (File.Exists(Application.persistentDataPath + "/playerInfo.dat"))
         {
-            BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
-
-            PlayerData data = (PlayerData)bf.Deserialize(file);
-            file.Close();
-
-            username = data.username;
-            audioSetting = data.audioSetting;
-            qualitySetting = data.qualitySetting;
+            Load();
         }
+        else
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat");
+        }
+    }
+
+    public void Load()
+    { 
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
+
+        PlayerData data = (PlayerData)bf.Deserialize(file);
+        file.Close();
+
+        username = data.username;
+        audioSetting = data.audioSetting;
+        qualitySetting = data.qualitySetting;
     }
 
     //todo: Method Synchronize this with the player in the database
