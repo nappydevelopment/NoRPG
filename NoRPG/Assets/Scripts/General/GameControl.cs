@@ -9,7 +9,7 @@ public class GameControl : MonoBehaviour {
 
     //Player information
     public string username;
-    public bool loggedInStatus;
+    //public bool loggedInStatus;
     public string lastPosition;
 
     //Character
@@ -38,12 +38,12 @@ public class GameControl : MonoBehaviour {
     //save last position
     void OnApplicationQuit()
     {
-        string currentScene = PortalControl.control.currentScene;
+        /*string currentScene = PortalControl.control.currentScene;
 
         if (currentScene == "DesertSpawnPoint" || currentScene == "first_forrestSpawnPoint" || currentScene == "Snow_WorldSpawnPoint" || currentScene == "LavaweltSpawnPoint" || currentScene == "Tropic_WorldSpawnPoint"){
             Debug.Log("Application will be quit!");
             lastPosition = currentScene;
-        }
+        }*/
     }
 
     void SaveLocalDataAtServer()
@@ -100,11 +100,16 @@ class PlayerData
     public bool audioSetting;
     public bool qualitySetting;
 
+    public bool loggedInStatus;
+
     //Games
 
     //Progress
 
     //Truhen
+
+    public int characterShader;
+    public string characterGender;
 
     //lastLocation
     public string lastOpenScene;
