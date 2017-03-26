@@ -84,6 +84,15 @@ public class GameControl : MonoBehaviour {
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat");
+            Debug.Log(Application.persistentDataPath); 
+
+            PlayerData data = new PlayerData();
+            data.username = "";
+            data.audioSetting = true;
+            data.qualitySetting = true;
+
+            bf.Serialize(file, data);
+            file.Close();
         }
     }
 
