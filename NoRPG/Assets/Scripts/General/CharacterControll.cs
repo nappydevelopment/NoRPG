@@ -14,7 +14,7 @@ public class CharacterControll : MonoBehaviour {
     [SerializeField]
     private ThirdPersonCamera gamecam;
     [SerializeField]
-    private float directionSpeed = 3.0f;
+    private float directionSpeed = 1.0f;
     [SerializeField]
     private float rotationDegreePerSecound = 120f;
 
