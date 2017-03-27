@@ -11,6 +11,7 @@ public class NPCCommunication : MonoBehaviour {
     public Image npcImage; //mehrere Bilder von allen 32 Personen - Gegner (Drache, ...) 5, Truhe + Nappy --> 39 Bilder
     public Text npcName;
     public Text npcText;
+    public Button acceptButton;
 
     [SerializeField]
     private float distance = 3.0f;
@@ -19,27 +20,35 @@ public class NPCCommunication : MonoBehaviour {
 
     public void StartCommunication()
     {
+        // If interactable Object is near to the player then start the interaction, else do nothing
         if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) < distance)
         {
-            Debug.Log("Distance less then 6");
-            //if(NPC is in front of the character){ start this } else { do nothing }
             commObjekt.SetActive(true);
 
-            //choose correct image of NPC
-
-            //choose correct Name of NPC
-
-            //choose correct Text of NPC
             string username = GameControl.control.username;
-            npcText.text = "Hello " + username + "! My name is Nappy. I am a guardian of NoRPG! Enjoy the game.";
+            string interactableObjectName = trader.closest.name;
+            
+            switch (interactableObjectName)
+            {
+                case "Nappy":
+                    npcName.text = "Nappy";
+                    npcText.text = "Hello " + username + "! My name is Nappy. I am a guardian of NoRPG! Enjoy the game.";
+                    break;
+                case "Ali":
+                    npcName.text = interactableObjectName;
+                    npcText.text = "Hello this is a new Text";
+                    break;
+                case "Tom":
+                    npcName.text = interactableObjectName;
+                    npcText.text = "Hello this is a new Text TExt Text";
+                    break;
+                case "0_Math_AO":
+                    npcName.text = "Hans";
+                    npcText.text = "I have games for the first class math object analysis!";
 
-            //if Spielehändler --> open gamelist
-            //gamelistObject.SetActive(true);
-
-            //fill gameList with Buttons ... which will open google play store
-        }
-        else {
-            //Eventually feedback on UI
+                    acceptButton.onClick.AddListener(delegate () { OpenGameList(); });
+                    break;
+            }
         }
     }
 
@@ -48,5 +57,18 @@ public class NPCCommunication : MonoBehaviour {
         //if there is no more text then 
 
         commObjekt.SetActive(false);
+    }
+
+    public void OpenGameList()
+    {
+        gamelistObject.SetActive(true);
+    }
+
+    public void FixedUpdate()
+    {
+        if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) > distance)
+        {
+            CancelCommunication();
+        }
     }
 }
