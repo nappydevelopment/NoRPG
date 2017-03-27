@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SpecifyStartScreen : MonoBehaviour {
 
-	void Awake()
+	void Start()
     {
         GameControl.control.createFile();
 
