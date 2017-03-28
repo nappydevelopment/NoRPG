@@ -9,7 +9,7 @@ public class NPCCommunication : MonoBehaviour {
     public GameObject player;
 
     public GameObject commObjekt;
-    public Image npcImage;
+    public Image npcImage;s
     public Text npcName;
     public Text npcText;
     public Button acceptButton;
@@ -53,7 +53,7 @@ public class NPCCommunication : MonoBehaviour {
                     npcName.text = "Sevakor";
                     npcText.text = "";
                     gamelistTitle = "First class, Math, Operations & Algebraic Thinking";
-                    acceptButton.onClick.AddListener(delegate () { OpenGameList("0_Math_AO", gamelistTitle); });
+                    acceptButton.onClick.AddListener(delegate () { OpenGameList("0_Math_OA", gamelistTitle); });
                     break;
                 case "0_Math_NBT":
                     games = GetGameList.GetGames(interactableObjectName);
