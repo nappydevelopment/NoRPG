@@ -9,7 +9,7 @@ public class NPCCommunication : MonoBehaviour {
     public GameObject player;
 
     public GameObject commObjekt;
-    public Image npcImage;s
+    public Image npcImage;
     public Text npcName;
     public Text npcText;
     public Button acceptButton;
