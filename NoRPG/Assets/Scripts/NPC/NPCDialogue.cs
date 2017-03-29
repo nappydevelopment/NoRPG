@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-//using Newtonsoft.Json;
+using Newtonsoft.Json;
 
 public class NPCDialogue : MonoBehaviour {
 
@@ -7,8 +7,8 @@ public class NPCDialogue : MonoBehaviour {
 
     public string GetNpcName(string key)
     {
-        //var data = (JObject)JsonConvert.DeserializeObject(json);
-        //string returnValue = data["Atlantic/Canary"].Value<string>();
+        var data = JsonConvert.DeserializeObject(json);
+        //string returnValue = data["0_Math_OA"].Value<string>();
         return null;
     }
 
