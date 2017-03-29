@@ -3,7 +3,7 @@ using SimpleJSON;
 
 public class NPCDialogue : MonoBehaviour
 {
-    static string json = "{ \"0_Math_OA\" : { \"npcName\" : \"Hans\", \"npcText\" : \"First class, Math, Operations and Algebraic Thinkin\", \"gamelistTitle\" : \"Blablabla\", \"gamelistDescription\" : \"bababababaa\", \"npcType\" : \"Trader\" } }";
+    static string json = "{ \"0_Math_OA\" : { \"npcName\" : \"Hans\", \"npcText\" : \"First class, Math, Operations and Algebraic Thinkin\", \"gamelistTitle\" : \"Blablabla\", \"gamelistDescription\" : \"Representing and solve problems involving addition and subtraction.\\nUnderstand and apply properties of operations and the relationship between addition and subtraction.\\nAdd and subtract within 20.\\nWork with addition and subtraction equations.\", \"npcType\" : \"Trader\" } }";
 
     public static string GetNpcName(string key)
     {

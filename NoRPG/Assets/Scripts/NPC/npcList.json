@@ -1,0 +1,373 @@
+{ 
+	"1_Math_OA" : { 
+		"npcName" : "Alfred", 
+		"npcText" : "Hello. I am Alfred and I offer math games for the first class. ", 
+		"gamelistTitle" : "Math, First class, Operations and Algebraic Thinking", 
+		"gamelistDescription" : "Representing and solve problems involving addition and subtraction.\\nUnderstand and apply properties of operations and the relationship between addition and subtraction.\\nAdd and subtract within 20.\\nWork with addition and subtraction equations.", 
+		"npcType" : "Trader" 
+	},
+	"2_Math_OA" : { 
+		"npcName" : "Douglas", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Second class, Operations and Algebraic Thinking", 
+		"gamelistDescription" : "Represent and solve problems involving addition and subtraction.\\nAdd and subtract within 20.\\nWork with equal groups of objects to gain foundations for multiplication.", 
+		"npcType" : "Trader" 
+	},
+	"3_Math_OA" : { 
+		"npcName" : "Jane", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Third class, Operations and Algebraic Thinking", 
+		"gamelistDescription" : "Represent and solve problems involving multiplication and division.\\nUnderstand properties of multiplication and the relationship between multiplication and division.\\nMultiply and divide within 100.\\nSolve problems involving the four operations, and identify and explain patterns in arithmetic.", 
+		"npcType" : "Trader" 
+	},
+	"4_Math_OA" : { 
+		"npcName" : "Herman", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fourth class, Operations and Algebraic Thinking", 
+		"gamelistDescription" : "Use the four operations with whole numbers to solve problems.\\nGain familiarity with factors and multiples.\\nGenerate and analyze patterns.", 
+		"npcType" : "Trader" 
+	},
+	"5_Math_OA" : { 
+		"npcName" : "Richard", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fifth class, Operations and Algebraic Thinking", 
+		"gamelistDescription" : "Write and interpret numerical expressions.\\nAnalyze patterns and relationships.", 
+		"npcType" : "Trader" 
+	},
+	"1_Math_NBT" : { 
+		"npcName" : "Martha", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, First class, Number and Operations in Base Ten", 
+		"gamelistDescription" : "Extend the counting sequence.\\nUnderstand place value.\\nUse place value understanding and properties of operations to add and subtract.", 
+		"npcType" : "Trader" 
+	},
+	"2_Math_NBT" : { 
+		"npcName" : "Alicia", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Second class, Number and Operations in Base Ten", 
+		"gamelistDescription" : "Understand place value.\\nUse place value understanding and properties of operations to add and subtract.", 
+		"npcType" : "Trader" 
+	},
+	"3_Math_NBT" : { 
+		"npcName" : "Malcolm", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Third class, Number and Operations in Base Ten", 
+		"gamelistDescription" : "Use place value understanding and properties of operations to perform multi-digit arithmetic.", 
+		"npcType" : "Trader" 
+	},
+	"4_Math_NBT" : { 
+		"npcName" : "Kristi", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fourth class, Number and Operations in Base Ten", 
+		"gamelistDescription" : "Generalize place value understanding for multi-digit whole numbers.\\nUse place value understanding and properties of operations to perform multi-digit arithmetic.", 
+		"npcType" : "Trader" 
+	},
+	"5_Math_NBT" : { 
+		"npcName" : "Bryant", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fifth class, Number and Operations in Base Ten", 
+		"gamelistDescription" : "Understand the place value system.\\nPerform operations with multi-digit whole numbers and with decimals to hundredths.", 
+		"npcType" : "Trader" 
+	},
+	"1_Math_MD" : { 
+		"npcName" : "Eleanor", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, First class, Measurement and Data", 
+		"gamelistDescription" : "Measure lengths indirectly and by iterating length units.\\nTell and write time.\\nRepresent and interpret data.", 
+		"npcType" : "Trader" 
+	},
+	"2_Math_MD" : { 
+		"npcName" : "Carrie", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Second class, Measurement and Data", 
+		"gamelistDescription" : "Measure and estimate lengths in standard units.\\nRelate addition and subtraction to length.\\nWork with time and money.\\nRepresent and interpret data.", 
+		"npcType" : "Trader" 
+	},
+	"3_Math_MD" : { 
+		"npcName" : "Joseph", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Third class, Measurement and Data", 
+		"gamelistDescription" : "Solve problems involving measurement and estimation of intervals of time, liquid volumes, and masses of objects.\\nRepresent and interpret data.\\nGeometric measurement: understand concepts of area and relate area to multiplication and to addition.\\nGeometric measurement: recognize perimeter as an attribute of plane figures and distinguish between linear and area measures.", 
+		"npcType" : "Trader" 
+	},
+	"4_Math_MD" : { 
+		"npcName" : "Shawn", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fourth class, Measurement and Data", 
+		"gamelistDescription" : "Solve problems involving measurement and conversion of measurements from a larger unit to a smaller unit.\\nRepresent and interpret data.\\nGeometric measurement: understand concepts of angle and measure angles.", 
+		"npcType" : "Trader" 
+	},
+	"5_Math_MD" : { 
+		"npcName" : "Patrick", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fifth class, Measurement and Data", 
+		"gamelistDescription" : "Convert like measurement units within a given measurement system.\\nRepresent and interpret data.\\nGeometric measurement: understand concepts of volume and relate volume to multiplication and to addition.", 
+		"npcType" : "Trader" 
+	},
+	"1_Math_G" : { 
+		"npcName" : "Eric", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, First class, Geometry", 
+		"gamelistDescription" : "Reason with shapes and their attributes.", 
+		"npcType" : "Trader" 
+	},
+	"2_Math_G" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Second class, Geometry", 
+		"gamelistDescription" : "Reason with shapes and their attributes.", 
+		"npcType" : "Trader" 
+	},
+	"3_Math_G" : { 
+		"npcName" : "Theresa", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Third class, Geometry", 
+		"gamelistDescription" : "Reason with shapes and their attributes.", 
+		"npcType" : "Trader" 
+	},
+	"4_Math_G" : { 
+		"npcName" : "Dwayne", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fourth class, Geometry", 
+		"gamelistDescription" : "Draw and identify lines and angles, and classify shapes by properties of their lines and angles.", 
+		"npcType" : "Trader" 
+	},
+	"5_Math_G" : { 
+		"npcName" : "Lauren", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fifth class, Geometry", 
+		"gamelistDescription" : "Graph points on the coordinate plane to solve real-world and mathematical problems.\\nClassify two-dimensional figures into categories based on their properties.", 
+		"npcType" : "Trader" 
+	},
+	"3_Math_NF" : { 
+		"npcName" : "Donald", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Third class, Number and Operations Fractions", 
+		"gamelistDescription" : "Develop understanding of fractions as numbers.", 
+		"npcType" : "Trader" 
+	},
+	"4_Math_NF" : { 
+		"npcName" : "Susie", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fourth class, Number and Operations Fractions", 
+		"gamelistDescription" : "Extend understanding of fraction equivalence and ordering.\\nBuild fractions from unit fractions by applying and extending previous understandings of operations on whole numbers.\\nUnderstand decimal notation for fractions, and compare decimal fractions.", 
+		"npcType" : "Trader" 
+	},
+	"5_Math_NF" : { 
+		"npcName" : "Benjamin", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "Math, Fifth class, Number and Operations Fractions", 
+		"gamelistDescription" : "Use equivalent fractions as a strategy to add and subtract fractions.\\nApply and extend previous understandings of multiplication and division to multiply and divide fractions.", 
+		"npcType" : "Trader" 
+	},
+	"1_English_RL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, First class, Reading: Literature", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"2_English_RL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Second class, Reading: Literature", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"3_English_RL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Third class, Reading: Literature", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"4_English_RL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fourth class, Reading: Literature", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"5_English_RL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fifth class, Reading: Literature", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"1_English_RI" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, First class, Reading: Informational Text", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"2_English_RI" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Second class, Reading: Informational Text", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"3_English_RI" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Third class, Reading: Informational Text", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"4_English_RI" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fourth class, Reading: Informational Text", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"5_English_RI" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fifth class, Reading: Informational Text", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"1_English_RF" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, First class, Reading: Foundational Skills", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"2_English_RF" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Second class, Reading: Foundational Skills", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"3_English_RF" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Third class, Reading: Foundational Skills", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"4_English_RF" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fourth class, Reading: Foundational Skills", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"5_English_RF" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fifth class, Reading: Foundational Skills", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"1_English_W" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, First class, Writing", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"2_English_W" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Second class, Writing", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"3_English_W" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Third class, Writing", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"4_English_W" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fourth class, Writing", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"5_English_W" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fifth class, Writing", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"1_English_SL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, First class, Speaking and Listening", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"2_English_SL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Second class, Speaking and Listening", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"3_English_SL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Third class, Speaking and Listening", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"4_English_SL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fourth class, Speaking and Listening", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"5_English_SL" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fifth class, Speaking and Listening", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"1_English_L" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, First class, Language", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"2_English_L" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Second class, Language", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"3_English_L" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Third class, Language", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"4_English_L" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fourth class, Language", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	},
+	"5_English_L" : { 
+		"npcName" : "Hans", 
+		"npcText" : "Hey", 
+		"gamelistTitle" : "English, Fifth class, Language", 
+		"gamelistDescription" : "bababababaa", 
+		"npcType" : "Trader" 
+	}
+}
