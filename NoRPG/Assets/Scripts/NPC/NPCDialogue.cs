@@ -1,29 +1,37 @@
 ﻿using UnityEngine;
-using Newtonsoft.Json;
+using SimpleJSON;
 
-public class NPCDialogue : MonoBehaviour {
+public class NPCDialogue : MonoBehaviour
+{
+    static string json = "{ \"0_Math_OA\" : { \"npcName\" : \"Hans\", \"npcText\" : \"First class, Math, Operations and Algebraic Thinkin\", \"gamelistTitle\" : \"Blablabla\", \"gamelistDescription\" : \"bababababaa\", \"npcType\" : \"Trader\" } }";
 
-    static string json = "{ \"0_Math_OA\" : { \"npcName\" : \"Hans\", \"npcText\" : \"First class, Math, Operations and Algebraic Thinkin\", \"gamelistTitle\" : \"Blablabla\", \"gamelistDescription\" : \"bababababaa\" }";
-
-    public string GetNpcName(string key)
+    public static string GetNpcName(string key)
     {
-        var data = JsonConvert.DeserializeObject(json);
-        //string returnValue = data["0_Math_OA"].Value<string>();
-        return null;
+        string npcName = JSON.Parse(json)[key]["npcName"];
+        return npcName;
     }
 
-    public string GetNpcText(string key)
+    public static string GetNpcText(string key)
     {
-        return null;
+        string npcText = JSON.Parse(json)[key]["npcText"];
+        return npcText;
     }
 
-    public string GetGamelistTitle(string key)
+    public static string GetGamelistTitle(string key)
     {
-        return null;
+        string gamelistTitle = JSON.Parse(json)[key]["gamelistTitle"];
+        return gamelistTitle;
     }
 
-    public string GetGamelistDescription(string key)
+    public static string GetGamelistDescription(string key)
     {
-        return null;
+        string gamelistDescription = JSON.Parse(json)[key]["gamelistDescription"];
+        return gamelistDescription;
+    }
+
+    public static string GetNpcType(string key)
+    {
+        string npcType = JSON.Parse(json)[key]["npcType"];
+        return npcType;
     }
 }
