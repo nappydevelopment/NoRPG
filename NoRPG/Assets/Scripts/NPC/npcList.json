@@ -112,7 +112,7 @@
 		"npcType" : "Trader" 
 	},
 	"2_Math_G" : { 
-		"npcName" : "Ali", 
+		"npcName" : "Konstantin", 
 		"npcText" : "I am Ali and I offer math games for the second class. With me you will learn Geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Second class, Geometry", 
 		"gamelistDescription" : "Reason with shapes and their attributes.", 
@@ -161,210 +161,210 @@
 		"npcType" : "Trader" 
 	},
 	"1_English_RL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Maria", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, First class, Reading: Literature", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"2_English_RL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Walter", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Second class, Reading: Literature", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"3_English_RL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Virginia", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Third class, Reading: Literature", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"4_English_RL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Jesse", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fourth class, Reading: Literature", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"5_English_RL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Paul", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fifth class, Reading: Literature", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"1_English_RI" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Lynda", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, First class, Reading: Informational Text", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"2_English_RI" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Wilson", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Second class, Reading: Informational Text", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"3_English_RI" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Harry", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Third class, Reading: Informational Text", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"4_English_RI" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Mathias", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fourth class, Reading: Informational Text", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"5_English_RI" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Selina", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fifth class, Reading: Informational Text", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"1_English_RF" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Daniel", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, First class, Reading: Foundational Skills", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"2_English_RF" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Cansu", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Second class, Reading: Foundational Skills", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"3_English_RF" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Marcel", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Third class, Reading: Foundational Skills", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"4_English_RF" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Karina", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fourth class, Reading: Foundational Skills", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"5_English_RF" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Lea", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fifth class, Reading: Foundational Skills", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"1_English_W" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Tom", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, First class, Writing", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"2_English_W" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Carlos", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Second class, Writing", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"3_English_W" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Will", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Third class, Writing", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"4_English_W" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Jennifer", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fourth class, Writing", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"5_English_W" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Jack", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fifth class, Writing", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"1_English_SL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Alicia", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, First class, Speaking and Listening", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"2_English_SL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Maggie", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Second class, Speaking and Listening", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"3_English_SL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Mario", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Third class, Speaking and Listening", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"4_English_SL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Jérôme", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fourth class, Speaking and Listening", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"5_English_SL" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Lara", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fifth class, Speaking and Listening", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"1_English_L" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Emre", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, First class, Language", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"2_English_L" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Benny", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Second class, Language", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"3_English_L" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Rita", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Third class, Language", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"4_English_L" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Joel", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fourth class, Language", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
 	},
 	"5_English_L" : { 
-		"npcName" : "Hans", 
+		"npcName" : "Todd", 
 		"npcText" : "Hey", 
 		"gamelistTitle" : "English, Fifth class, Language", 
 		"gamelistDescription" : "bababababaa", 
@@ -578,7 +578,7 @@
 		"npcType" : "PortalNpc"
 	},
 	"Portal_Start_to_Tropen" : {
-		"npcName" : "Hans",
+		"npcName" : "Gandalf",
 		"npcText" : "This is the Portal to the Tropen. There are the games for the first class!",
 		"npcTextNotAllowed" : "You shall not pass!",
 		"npcTextAllowed" : "You are worthy. Please go ahead!",

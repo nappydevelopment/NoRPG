@@ -21,6 +21,10 @@ public class NPCCommunication : MonoBehaviour {
     public Button acceptButton;
     public Button cancelButton;
 
+    public Button openMenuButton;
+    public Button openMapButton;
+
+    public GameObject gameListPanel;
     private List<Games> games;
 
     [SerializeField]
@@ -31,39 +35,67 @@ public class NPCCommunication : MonoBehaviour {
         // If interactable Object is near to the player then start the interaction, else do nothing
         if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) < distance)
         {
-            commObjekt.SetActive(true);
-
             string interactableObjectName = trader.closest.name;
-
-            npcName.text = NPCDialogue.GetNpcName(interactableObjectName);
-            npcText.text = NPCDialogue.GetNpcText(interactableObjectName);
             string npcType = NPCDialogue.GetNpcType(interactableObjectName);
 
-            acceptButton.onClick.AddListener(delegate () { if (npcType == "Trader") { OpenGameList(interactableObjectName); } else { CancelCommunication(); }});
-            cancelButton.onClick.AddListener(delegate () { CancelCommunication(); });
+            //disable other UI Buttons
+            openMapButton.interactable = false;
+            openMenuButton.interactable = false;
+
+            //set speech field active
+            commObjekt.SetActive(true);
+
+            //get content for communication
+            npcName.text = NPCDialogue.GetNpcName(interactableObjectName);
+            npcText.text = NPCDialogue.GetNpcText(interactableObjectName);
+            
+            if (npcType == "Trader")
+            {
+                acceptButton.onClick.AddListener(delegate () { OpenGameList(interactableObjectName); });
+                cancelButton.onClick.AddListener(delegate () { NextTextPage(); });
+            } else
+            {
+                acceptButton.onClick.AddListener(delegate () { NextTextPage(); });
+                cancelButton.onClick.AddListener(delegate () { NextTextPage(); });
+            }
         }
     }
 
-    public void OpenGameList(string interactableObjectName)
+    private void OpenGameList(string interactableObjectName)
     {
         commObjekt.SetActive(false);
         gamelistObject.SetActive(true);
+
+        FillPanelWithGames();
 
         gamelistTitle.text = NPCDialogue.GetGamelistTitle(interactableObjectName);
         gamelistDescription.text = NPCDialogue.GetGamelistDescription(interactableObjectName);
 
     }
 
-    public void CancelCommunication()
+    private void NextTextPage()
     {
-        npcText.gameObject.SetActive(true);
-        npcFarewellText.gameObject.SetActive(false);
+        // if npcText1 exists, overwrite the text with the new text
+        // npcText.text = NPCDialogue.GetNpcText2(interactableObjectName);
+        // else
 
-        commObjekt.SetActive(false);
-        gamelistObject.SetActive(false);
+        CancelCommunication();
     }
 
-    public void CloseGameList()
+    private void FillPanelWithGames()
+    {
+        int i = 5; // get i value from GetGameList
+
+        Button[] buttons = new Button[i];
+
+        for (int j = 0; j < i; j++)
+        {
+            //buttons[j].GetComponentInChildren<Text> = 
+            //attach buttons to panel
+        }
+    }
+
+    private void CloseGameList()
     {
         gamelistObject.SetActive(false);
 
@@ -75,6 +107,18 @@ public class NPCCommunication : MonoBehaviour {
 
         acceptButton.onClick.AddListener(delegate () { CancelCommunication(); });
         cancelButton.onClick.AddListener(delegate () { CancelCommunication(); });
+    }
+
+    public void CancelCommunication()
+    {
+        npcText.gameObject.SetActive(true);
+        npcFarewellText.gameObject.SetActive(false);
+
+        commObjekt.SetActive(false);
+        gamelistObject.SetActive(false);
+
+        openMapButton.interactable = true;
+        openMenuButton.interactable = true;
     }
 
     public void FixedUpdate()
