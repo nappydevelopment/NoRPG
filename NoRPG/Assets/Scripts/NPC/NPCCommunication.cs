@@ -19,6 +19,7 @@ public class NPCCommunication : MonoBehaviour {
     public Text gamelistDescription;
 
     public Button acceptButton;
+    public Button cancelButton;
 
     private List<Games> games;
 
@@ -32,16 +33,14 @@ public class NPCCommunication : MonoBehaviour {
         {
             commObjekt.SetActive(true);
 
-            string username = GameControl.control.username;
             string interactableObjectName = trader.closest.name;
-
-            //games = GetGameList.GetGames(interactableObjectName);
 
             npcName.text = NPCDialogue.GetNpcName(interactableObjectName);
             npcText.text = NPCDialogue.GetNpcText(interactableObjectName);
             string npcType = NPCDialogue.GetNpcType(interactableObjectName);
 
             acceptButton.onClick.AddListener(delegate () { if (npcType == "Trader") { OpenGameList(interactableObjectName); } else { CancelCommunication(); }});
+            cancelButton.onClick.AddListener(delegate () { CancelCommunication(); });
         }
     }
 
@@ -57,10 +56,11 @@ public class NPCCommunication : MonoBehaviour {
 
     public void CancelCommunication()
     {
-        commObjekt.SetActive(false);
-        gamelistObject.SetActive(false);
         npcText.gameObject.SetActive(true);
         npcFarewellText.gameObject.SetActive(false);
+
+        commObjekt.SetActive(false);
+        gamelistObject.SetActive(false);
     }
 
     public void CloseGameList()
@@ -72,6 +72,9 @@ public class NPCCommunication : MonoBehaviour {
         npcFarewellText.gameObject.SetActive(true);
 
         commObjekt.SetActive(true);
+
+        acceptButton.onClick.AddListener(delegate () { CancelCommunication(); });
+        cancelButton.onClick.AddListener(delegate () { CancelCommunication(); });
     }
 
     public void FixedUpdate()

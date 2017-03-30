@@ -1,161 +1,161 @@
 { 
 	"1_Math_OA" : { 
 		"npcName" : "Alfred", 
-		"npcText" : "Hello. I am Alfred and I offer math games for the first class. ", 
+		"npcText" : "I am Alfred and I offer math games for the first class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, First class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "Representing and solve problems involving addition and subtraction.\\nUnderstand and apply properties of operations and the relationship between addition and subtraction.\\nAdd and subtract within 20.\\nWork with addition and subtraction equations.", 
 		"npcType" : "Trader" 
 	},
 	"2_Math_OA" : { 
 		"npcName" : "Douglas", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Douglas and I offer math games for the second class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Second class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "Represent and solve problems involving addition and subtraction.\\nAdd and subtract within 20.\\nWork with equal groups of objects to gain foundations for multiplication.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_OA" : { 
 		"npcName" : "Jane", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Jane and I offer math games for the third class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "Represent and solve problems involving multiplication and division.\\nUnderstand properties of multiplication and the relationship between multiplication and division.\\nMultiply and divide within 100.\\nSolve problems involving the four operations, and identify and explain patterns in arithmetic.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_OA" : { 
 		"npcName" : "Herman", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Herman and I offer math games for the fourth class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "Use the four operations with whole numbers to solve problems.\\nGain familiarity with factors and multiples.\\nGenerate and analyze patterns.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_OA" : { 
 		"npcName" : "Richard", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Richard and I offer math games for the fifth class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "Write and interpret numerical expressions.\\nAnalyze patterns and relationships.", 
 		"npcType" : "Trader" 
 	},
 	"1_Math_NBT" : { 
 		"npcName" : "Martha", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Martha and I offer math games for the first class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, First class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "Extend the counting sequence.\\nUnderstand place value.\\nUse place value understanding and properties of operations to add and subtract.", 
 		"npcType" : "Trader" 
 	},
 	"2_Math_NBT" : { 
 		"npcName" : "Alicia", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Alicia and I offer math games for the second class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Second class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "Understand place value.\\nUse place value understanding and properties of operations to add and subtract.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_NBT" : { 
 		"npcName" : "Malcolm", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Malcolm and I offer math games for the third class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "Use place value understanding and properties of operations to perform multi-digit arithmetic.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_NBT" : { 
 		"npcName" : "Kristi", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Kristi and I offer math games for the fourth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "Generalize place value understanding for multi-digit whole numbers.\\nUse place value understanding and properties of operations to perform multi-digit arithmetic.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_NBT" : { 
 		"npcName" : "Bryant", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Bryant and I offer math games for the fifth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "Understand the place value system.\\nPerform operations with multi-digit whole numbers and with decimals to hundredths.", 
 		"npcType" : "Trader" 
 	},
 	"1_Math_MD" : { 
 		"npcName" : "Eleanor", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Eleanor and I offer math games for the first class. With me you will learn Measurement and Data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, First class, Measurement and Data", 
 		"gamelistDescription" : "Measure lengths indirectly and by iterating length units.\\nTell and write time.\\nRepresent and interpret data.", 
 		"npcType" : "Trader" 
 	},
 	"2_Math_MD" : { 
 		"npcName" : "Carrie", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Carrie and I offer math games for the second class. With me you will learn Measurement and Data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Second class, Measurement and Data", 
 		"gamelistDescription" : "Measure and estimate lengths in standard units.\\nRelate addition and subtraction to length.\\nWork with time and money.\\nRepresent and interpret data.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_MD" : { 
 		"npcName" : "Joseph", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Joseph and I offer math games for the third class. With me you will learn Measurement and Data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Measurement and Data", 
 		"gamelistDescription" : "Solve problems involving measurement and estimation of intervals of time, liquid volumes, and masses of objects.\\nRepresent and interpret data.\\nGeometric measurement: understand concepts of area and relate area to multiplication and to addition.\\nGeometric measurement: recognize perimeter as an attribute of plane figures and distinguish between linear and area measures.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_MD" : { 
 		"npcName" : "Shawn", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Shawn and I offer math games for the fourth class. With me you will learn Measurement and Data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Measurement and Data", 
 		"gamelistDescription" : "Solve problems involving measurement and conversion of measurements from a larger unit to a smaller unit.\\nRepresent and interpret data.\\nGeometric measurement: understand concepts of angle and measure angles.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_MD" : { 
 		"npcName" : "Patrick", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Patrick and I offer math games for the fifth class. With me you will learn Measurement and Data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Measurement and Data", 
 		"gamelistDescription" : "Convert like measurement units within a given measurement system.\\nRepresent and interpret data.\\nGeometric measurement: understand concepts of volume and relate volume to multiplication and to addition.", 
 		"npcType" : "Trader" 
 	},
 	"1_Math_G" : { 
 		"npcName" : "Eric", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Eric and I offer math games for the first class. With me you will learn Geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, First class, Geometry", 
 		"gamelistDescription" : "Reason with shapes and their attributes.", 
 		"npcType" : "Trader" 
 	},
 	"2_Math_G" : { 
-		"npcName" : "Hans", 
-		"npcText" : "Hey", 
+		"npcName" : "Ali", 
+		"npcText" : "I am Ali and I offer math games for the second class. With me you will learn Geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Second class, Geometry", 
 		"gamelistDescription" : "Reason with shapes and their attributes.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_G" : { 
 		"npcName" : "Theresa", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Theresa and I offer math games for the third class. With me you will learn Geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Geometry", 
 		"gamelistDescription" : "Reason with shapes and their attributes.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_G" : { 
 		"npcName" : "Dwayne", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Dwayne and I offer math games for the fourth class. With me you will learn Geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Geometry", 
 		"gamelistDescription" : "Draw and identify lines and angles, and classify shapes by properties of their lines and angles.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_G" : { 
 		"npcName" : "Lauren", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Lauren and I offer math games for the fifth class. With me you will learn Geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Geometry", 
 		"gamelistDescription" : "Graph points on the coordinate plane to solve real-world and mathematical problems.\\nClassify two-dimensional figures into categories based on their properties.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_NF" : { 
 		"npcName" : "Donald", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Donald and I offer math games for the third class. With me you will learn Number and Operations Fractions. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Number and Operations Fractions", 
 		"gamelistDescription" : "Develop understanding of fractions as numbers.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_NF" : { 
 		"npcName" : "Susie", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Susie and I offer math games for the fourth class. With me you will learn Number and Operations Fractions. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Number and Operations Fractions", 
 		"gamelistDescription" : "Extend understanding of fraction equivalence and ordering.\\nBuild fractions from unit fractions by applying and extending previous understandings of operations on whole numbers.\\nUnderstand decimal notation for fractions, and compare decimal fractions.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_NF" : { 
 		"npcName" : "Benjamin", 
-		"npcText" : "Hey", 
+		"npcText" : "I am Benjamin and I offer math games for the fifth class. With me you will learn Number and Operations Fractions. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Number and Operations Fractions", 
 		"gamelistDescription" : "Use equivalent fractions as a strategy to add and subtract fractions.\\nApply and extend previous understandings of multiplication and division to multiply and divide fractions.", 
 		"npcType" : "Trader" 
@@ -369,5 +369,240 @@
 		"gamelistTitle" : "English, Fifth class, Language", 
 		"gamelistDescription" : "bababababaa", 
 		"npcType" : "Trader" 
+	},
+	"1_Chest_Forest" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Bryant and I offer math games for the fifth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?",
+		"npcType" : "ChestNpc"
+	},
+	"2_Chest_Forest" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Hans. You see here the oldest tree of the world. Did you know the tallest tree is 380 feet high!",
+		"npcType" : "ChestNpc"
+	},
+	"3_Chest_Forest" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"4_Chest_Forest" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"5_Chest_Forest" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"6_Chest_Forest" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"7_Chest_Forest" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"8_Chest_Forest" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"1_Chest_Tropen" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Bryant and I offer math games for the fifth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?",
+		"npcType" : "ChestNpc"
+	},
+	"2_Chest_Tropen" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Hans. You see here the oldest tree of the world. Did you know the tallest tree is 380 feet high!",
+		"npcType" : "ChestNpc"
+	},
+	"3_Chest_Tropen" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"4_Chest_Tropen" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"5_Chest_Tropen" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"6_Chest_Tropen" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"7_Chest_Tropen" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"8_Chest_Tropen" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"1_Chest_Desert" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Bryant and I offer math games for the fifth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?",
+		"npcType" : "ChestNpc"
+	},
+	"2_Chest_Desert" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Hans. You see here the oldest tree of the world. Did you know the tallest tree is 380 feet high!",
+		"npcType" : "ChestNpc"
+	},
+	"3_Chest_Desert" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"4_Chest_Desert" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"5_Chest_Desert" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"6_Chest_Desert" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"7_Chest_Desert" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"8_Chest_Desert" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"1_Chest_Snow" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Bryant and I offer math games for the fifth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?",
+		"npcType" : "ChestNpc"
+	},
+	"2_Chest_Snow" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Hans. You see here the oldest tree of the world. Did you know the tallest tree is 380 feet high!",
+		"npcType" : "ChestNpc"
+	},
+	"3_Chest_Snow" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"4_Chest_Snow" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"5_Chest_Snow" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"6_Chest_Snow" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"7_Chest_Snow" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"8_Chest_Snow" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"1_Chest_Lava" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Bryant and I offer math games for the fifth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?",
+		"npcType" : "ChestNpc"
+	},
+	"2_Chest_Lava" : {
+		"npcName" : "Hans",
+		"npcText" : "I am Hans. You see here the oldest tree of the world. Did you know the tallest tree is 380 feet high!",
+		"npcType" : "ChestNpc"
+	},
+	"3_Chest_Lava" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"4_Chest_Lava" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"5_Chest_Lava" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"6_Chest_Lava" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"7_Chest_Lava" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"8_Chest_Lava" : {
+		"npcName" : "Hans",
+		"npcText" : "Hey",
+		"npcType" : "ChestNpc"
+	},
+	"Portal_Start_to_Forest" : {
+		"npcName" : "Hans",
+		"npcText" : "This is the Portal to the Forest. There are the games for the first class!",
+		"npcTextNotAllowed" : "You shall not pass!",
+		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcType" : "PortalNpc"
+	},
+	"Portal_Start_to_Tropen" : {
+		"npcName" : "Hans",
+		"npcText" : "This is the Portal to the Tropen. There are the games for the first class!",
+		"npcTextNotAllowed" : "You shall not pass!",
+		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcType" : "PortalNpc"
+	},
+	"Portal_Start_to_Desert" : {
+		"npcName" : "Hans",
+		"npcText" : "This is the Portal to the Desert. There are the games for the first class!",
+		"npcTextNotAllowed" : "You shall not pass!",
+		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcType" : "PortalNpc"
+	},
+	"Portal_Start_to_Snow" : {
+		"npcName" : "Hans",
+		"npcText" : "This is the Portal to the Snowworld. There are the games for the first class!",
+		"npcTextNotAllowed" : "You shall not pass!",
+		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcType" : "PortalNpc"
+	},
+	"Portal_Start_to_Lava" : {
+		"npcName" : "Hans",
+		"npcText" : "This is the Portal to the Lava. There are the games for the first class!",
+		"npcTextNotAllowed" : "You shall not pass!",
+		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcType" : "PortalNpc"
 	}
 }
