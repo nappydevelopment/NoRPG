@@ -23,9 +23,12 @@ public class NPCCommunication : MonoBehaviour {
 
     public Button openMenuButton;
     public Button openMapButton;
-
-    public GameObject gameListPanel;
+    
+    public GameObject descriptionPanel;
+    public GameObject gamelistPanel;
     private List<Games> games;
+
+    NPCDialogue dialogue = new NPCDialogue();
 
     [SerializeField]
     private float distance = 3.0f;
@@ -36,7 +39,7 @@ public class NPCCommunication : MonoBehaviour {
         if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) < distance)
         {
             string interactableObjectName = trader.closest.name;
-            string npcType = NPCDialogue.GetNpcType(interactableObjectName);
+            string npcType = dialogue.GetNpcType(interactableObjectName);
 
             //disable other UI Buttons
             openMapButton.interactable = false;
@@ -46,8 +49,8 @@ public class NPCCommunication : MonoBehaviour {
             commObjekt.SetActive(true);
 
             //get content for communication
-            npcName.text = NPCDialogue.GetNpcName(interactableObjectName);
-            npcText.text = NPCDialogue.GetNpcText(interactableObjectName);
+            npcName.text = dialogue.GetNpcName(interactableObjectName);
+            npcText.text = dialogue.GetNpcText(interactableObjectName);
             
             if (npcType == "Trader")
             {
@@ -68,8 +71,8 @@ public class NPCCommunication : MonoBehaviour {
 
         FillPanelWithGames();
 
-        gamelistTitle.text = NPCDialogue.GetGamelistTitle(interactableObjectName);
-        gamelistDescription.text = NPCDialogue.GetGamelistDescription(interactableObjectName);
+        gamelistTitle.text = dialogue.GetGamelistTitle(interactableObjectName);
+        gamelistDescription.text = dialogue.GetGamelistDescription(interactableObjectName);
 
     }
 
@@ -78,6 +81,8 @@ public class NPCCommunication : MonoBehaviour {
         // if npcText1 exists, overwrite the text with the new text
         // npcText.text = NPCDialogue.GetNpcText2(interactableObjectName);
         // else
+
+        //array of pages
 
         CancelCommunication();
     }
@@ -98,6 +103,8 @@ public class NPCCommunication : MonoBehaviour {
     private void CloseGameList()
     {
         gamelistObject.SetActive(false);
+        descriptionPanel.SetActive(false);
+        gamelistPanel.SetActive(true);
 
         //a message like "Thank you for visiting the shop!"
         npcText.gameObject.SetActive(false);
@@ -119,6 +126,9 @@ public class NPCCommunication : MonoBehaviour {
 
         openMapButton.interactable = true;
         openMenuButton.interactable = true;
+
+        acceptButton.onClick.RemoveAllListeners();
+        cancelButton.onClick.RemoveAllListeners();
     }
 
     public void FixedUpdate()
