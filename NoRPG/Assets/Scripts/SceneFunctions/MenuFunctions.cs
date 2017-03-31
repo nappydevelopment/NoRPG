@@ -14,7 +14,7 @@ public class MenuFunctions : MonoBehaviour {
     public Image musicOff;
     public AudioSource audioSource;
 
-	void Awake () {
+	void Start () {
         GameControl.control.Load();
 
         if (GameControl.control.qualitySetting == true)

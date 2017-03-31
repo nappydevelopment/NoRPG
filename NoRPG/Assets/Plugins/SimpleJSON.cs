@@ -319,7 +319,7 @@ namespace SimpleJSON
                         m_EscapeBuilder.Append("\\\"");
                         break;
                     case '\n':
-                        m_EscapeBuilder.Append("\\n");
+                        m_EscapeBuilder.Append("\n");
                         break;
                     case '\r':
                         m_EscapeBuilder.Append("\\r");

@@ -25,10 +25,12 @@ public class NPCCommunication : MonoBehaviour {
     public Button openMapButton;
     
     public GameObject descriptionPanel;
-    public GameObject gamelistPanel;
+    public Transform gamelistPanel;
+
     private List<Games> games;
 
     NPCDialogue dialogue = new NPCDialogue();
+    GameScrollList scrollList = new GameScrollList();
 
     [SerializeField]
     private float distance = 3.0f;
@@ -89,22 +91,22 @@ public class NPCCommunication : MonoBehaviour {
 
     private void FillPanelWithGames()
     {
-        int i = 5; // get i value from GetGameList
+        int countGames = 5; // get i value from GetGameList
 
-        Button[] buttons = new Button[i];
-
-        for (int j = 0; j < i; j++)
+        for (int i = 0; i < countGames; i++)
         {
-            //buttons[j].GetComponentInChildren<Text> = 
-            //attach buttons to panel
+            //buttons[i].transform.SetParent(gamelistPanel);
+            //buttons[i].onClick.AddListener(() => Debug.Log("Button " + i + " clicked"));
         }
+
+        scrollList.AddButtons();
     }
 
     private void CloseGameList()
     {
         gamelistObject.SetActive(false);
         descriptionPanel.SetActive(false);
-        gamelistPanel.SetActive(true);
+        gamelistPanel.gameObject.SetActive(true);
 
         //a message like "Thank you for visiting the shop!"
         npcText.gameObject.SetActive(false);
