@@ -26,11 +26,13 @@ public class NPCCommunication : MonoBehaviour {
     
     public GameObject descriptionPanel;
     public Transform gamelistPanel;
+    public List<Game> gameList;
+    public GameScrollList scrollList = new GameScrollList();
 
     private List<Games> games;
 
     NPCDialogue dialogue = new NPCDialogue();
-    GameScrollList scrollList = new GameScrollList();
+    //GameScrollList scrollList = new GameScrollList();
 
     [SerializeField]
     private float distance = 3.0f;
@@ -91,15 +93,16 @@ public class NPCCommunication : MonoBehaviour {
 
     private void FillPanelWithGames()
     {
-        int countGames = 5; // get i value from GetGameList
+        //get gamesCount from GetGameList()
+        int gamesCount = 5;
 
-        for (int i = 0; i < countGames; i++)
-        {
-            //buttons[i].transform.SetParent(gamelistPanel);
-            //buttons[i].onClick.AddListener(() => Debug.Log("Button " + i + " clicked"));
-        }
+        Game newGame1 = new Game();
+        //get GameName and Downloadlink from GetGameList()
+        newGame1.gameName = "Nappy The Ingenious";
+        newGame1.downloadLink = "http://www.google.de";
+        gameList.Add(newGame1);
 
-        scrollList.AddButtons();
+        scrollList.AddButtons(gameList);
     }
 
     private void CloseGameList()

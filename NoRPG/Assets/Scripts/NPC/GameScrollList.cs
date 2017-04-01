@@ -6,21 +6,23 @@ using UnityEngine;
 public class Game
 {
     public string gameName;
-    public Sprite downloadIcon;
+    public string downloadLink;
 }
 
-public class GameScrollList : MonoBehaviour {
-    public Transform gamelistPanel;
-    public SimpleObjectPool buttonObjectPool;
+public class GameScrollList : MonoBehaviour
+{
     public List<Game> gameList;
+    public Transform gamelistPanel;
+    public GameScrollList downloadedGamesPanel;
+    public SimpleObjectPool buttonObjectPool;
 
-    public GameScrollList(){}
+    public GameScrollList() { }
 
-    public void AddButtons()
+    public void AddButtons(List<Game> gamesToAdd)
     {
-        int countGames = 5; // get i value from GetGameList
+        gameList = gamesToAdd;
 
-        for (int i = 0; i < countGames; i++)
+        for (int i = 0; i < gameList.Count; i++)
         {
             Game game = gameList[i];
             GameObject newButton = buttonObjectPool.GetObject();
@@ -29,5 +31,16 @@ public class GameScrollList : MonoBehaviour {
             SampleButton sampleButton = newButton.GetComponent<SampleButton>();
             sampleButton.Setup(game, this);
         }
+    }
+
+    public void TransferToDownloadedGameList(Game game)
+    {
+        AddGame(game, downloadedGamesPanel);
+
+    }
+
+    private void AddGame(Game gameToAdd, GameScrollList scrollList)
+    {
+        scrollList.gameList.Add(gameToAdd);
     }
 }

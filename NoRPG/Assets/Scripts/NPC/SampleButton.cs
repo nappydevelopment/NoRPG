@@ -11,12 +11,21 @@ public class SampleButton : MonoBehaviour
     private Game game;
     private GameScrollList scrollList;
 
+    public void Start()
+    {
+        button.onClick.AddListener(HandleClick);
+    }
+
     public void Setup(Game currentGame, GameScrollList currentScrollList)
     {
         game = currentGame;
         nameLabel.text = game.gameName;
-        iconImage.sprite = game.downloadIcon;
 
         scrollList = currentScrollList;
+    }
+
+    public void HandleClick()
+    {
+        Application.OpenURL("market://details?q=pname:com.mycompany.myapp/");
     }
 }
