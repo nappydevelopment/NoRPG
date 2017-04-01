@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class NPCCommunication : MonoBehaviour {
 
@@ -30,6 +31,7 @@ public class NPCCommunication : MonoBehaviour {
     public GameScrollList scrollList = new GameScrollList();
 
     private List<Games> games;
+    private bool nextPageFlag;
 
     NPCDialogue dialogue = new NPCDialogue();
     //GameScrollList scrollList = new GameScrollList();
@@ -42,6 +44,7 @@ public class NPCCommunication : MonoBehaviour {
         // If interactable Object is near to the player then start the interaction, else do nothing
         if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) < distance)
         {
+            nextPageFlag = false;
             string interactableObjectName = trader.closest.name;
             string npcType = dialogue.GetNpcType(interactableObjectName);
 
@@ -54,8 +57,22 @@ public class NPCCommunication : MonoBehaviour {
 
             //get content for communication
             npcName.text = dialogue.GetNpcName(interactableObjectName);
-            npcText.text = dialogue.GetNpcText(interactableObjectName);
-            
+
+            Char delimiter = '%';
+            string npcCompleteText = dialogue.GetNpcText(interactableObjectName);
+            string[] npcTextArray = npcCompleteText.Split(delimiter);
+            Debug.Log(npcTextArray.Length);
+
+            //if there is more then one page for this communication 
+            if (npcTextArray.Length > 1)
+            {
+                foreach (var i in npcTextArray)
+                {
+                    npcText.text = i.ToString();
+                    //yield return new WaitUntil(() => nextPageFlag = true);
+                }
+            }
+
             if (npcType == "Trader")
             {
                 acceptButton.onClick.AddListener(delegate () { OpenGameList(interactableObjectName); });
@@ -142,5 +159,8 @@ public class NPCCommunication : MonoBehaviour {
         {
             CancelCommunication();
         }
+
+        acceptButton.onClick.AddListener(() => nextPageFlag = true);
+        cancelButton.onClick.AddListener(() => nextPageFlag = false);
     }
 }

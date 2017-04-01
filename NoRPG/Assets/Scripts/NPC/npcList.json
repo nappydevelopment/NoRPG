@@ -1,7 +1,7 @@
 { 
 	"1_Math_OA" : { 
 		"npcName" : "Alfred", 
-		"npcText" : "I am Alfred and I offer math games for the first class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
+		"npcText" : "I am Alfred and I offer math games for the first class.%With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, First class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "- Representing and solve problems involving addition and subtraction.\n- Understand and apply properties of operations and the relationship between addition and subtraction.\n- Add and subtract within 20.\n- Work with addition and subtraction equations.", 
 		"npcType" : "Trader" 
