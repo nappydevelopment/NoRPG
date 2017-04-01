@@ -22,7 +22,7 @@ public class FindNearestHandler : MonoBehaviour {
                 closest = h;
             }
         }
-        Debug.Log(Vector3.Distance(player.transform.position, closest.transform.position));
+        //Debug.Log(Vector3.Distance(player.transform.position, closest.transform.position));
         return closest;
     }
 }

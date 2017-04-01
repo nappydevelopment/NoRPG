@@ -32,6 +32,7 @@ public class NPCCommunication : MonoBehaviour {
 
     private List<Games> games;
     private bool nextPageFlag;
+    public ScriptedStartAnimation ssa;
 
     NPCDialogue dialogue = new NPCDialogue();
     //GameScrollList scrollList = new GameScrollList();
@@ -77,12 +78,38 @@ public class NPCCommunication : MonoBehaviour {
             {
                 acceptButton.onClick.AddListener(delegate () { OpenGameList(interactableObjectName); });
                 cancelButton.onClick.AddListener(delegate () { NextTextPage(); });
-            } else
+            }
+            else if( npcType == "ScriptedNPC")
+            {
+                if (interactableObjectName == "Buergermeister")
+                {
+                    acceptButton.onClick.AddListener(delegate () { ShowAttaker(); });
+                    cancelButton.onClick.AddListener(delegate () { ShowAttaker(); });
+                }
+                else if (interactableObjectName == "Buergermeister_1")
+                {
+                    acceptButton.onClick.AddListener(delegate () { DeleteColor(); });
+                    cancelButton.onClick.AddListener(delegate () { DeleteColor(); });
+                }
+            }
+            else
             {
                 acceptButton.onClick.AddListener(delegate () { NextTextPage(); });
                 cancelButton.onClick.AddListener(delegate () { NextTextPage(); });
             }
         }
+    }
+
+    private void DeleteColor()
+    {
+        CancelCommunication();
+        ssa.DeleteColor();
+    }
+
+    private void ShowAttaker()
+    {
+        CancelCommunication();
+        ssa.ShowUFO();
     }
 
     private void OpenGameList(string interactableObjectName)

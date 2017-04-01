@@ -1,4 +1,14 @@
 { 
+	"Buergermeister" : {
+		"npcName" : "Buergermeister",
+		"npcText" : "Wir brauchen deine Hilfe! %Etwas komisches ist passiert.% Die ganze Farbe wird gerade gestohlen!",
+		"npcType" : "ScriptedNPC"
+	},
+		"Buergermeister_1" : {
+		"npcName" : "Buergermeister",
+		"npcText" : "Bitte hilf uns unsere Farben zurück zu bekommen, bitte!",
+		"npcType" : "ScriptedNPC"
+	},
 	"1_Math_OA" : { 
 		"npcName" : "Alfred", 
 		"npcText" : "I am Alfred and I offer math games for the first class.%With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
