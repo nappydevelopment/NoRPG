@@ -34,6 +34,8 @@ public class ScriptedStartAnimation : MonoBehaviour {
 
     void Start()
     {
+        playerCamera.enabled = true;
+        scriptCamera.enabled = false;
         hud.SetActive(false);
         playerdot.SetActive(false);
         player.GetComponent<CharacterControll>().enabled = false;
@@ -50,7 +52,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
 
 
     void Update () {
-        
+        if (!played) { 
         if (nfc.transform.position.x > 342.0f)
         {
             animatorNfc.SetFloat("speed", 1f);
@@ -73,34 +75,39 @@ public class ScriptedStartAnimation : MonoBehaviour {
             animatorPlayer.SetFloat("direction", 0.0f);
         }
 
-        if (!played && animatorPlayer.GetFloat("speed") == 0.0f)
-        {
-            Debug.Log("Start");
-            player.transform.LookAt(nfc.transform);
-            nfc.transform.LookAt(player.transform);
-            scriptCamera.transform.position = playerCamera.transform.position;
-            hud.SetActive(true);
-            npcc.StartCommunication();
-            player.GetComponent<CharacterControll>().enabled = true;
-            played = true;
-
+            if (!played && animatorPlayer.GetFloat("speed") == 0.0f)
+            {
+                Debug.Log("Start");
+                player.transform.LookAt(nfc.transform);
+                nfc.transform.LookAt(player.transform);
+                scriptCamera.transform.position = playerCamera.transform.position;
+                hud.SetActive(true);
+                npcc.StartCommunication();
+                player.GetComponent<CharacterControll>().enabled = true;
+                played = true;
+            }
         }
     }
 
     internal void ShowUFO()
     {
-        animatorAnimie.SetBool("FlyIdle", true);
+        animatorAnimie.SetBool("Fly Idle", true);
 
+        scriptCamera.enabled = true;
         playerCamera.enabled = false;
+
         scriptCamera.transform.LookAt(animie.transform); //smother?
         nfc.name = "Buergermeister_1";
+        npcc.StartCommunication();
 
         //DeleteColor
     }
 
     internal void DeleteColor()
     {
+
+        playerCamera.enabled = true;
+        scriptCamera.enabled = false;
         Debug.Log("Test");
-        npcc.StartCommunication();
     }
 }

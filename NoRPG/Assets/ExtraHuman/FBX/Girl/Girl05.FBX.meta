@@ -1,0 +1,1169 @@
+fileFormatVersion: 2
+guid: 02043c1e94adbe748886b07221d2ecb4
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip008
+    100002: Bip008 Footsteps
+    100004: Bip008 Head
+    100006: Bip008 HeadNub
+    100008: Bip008 L Calf
+    100010: Bip008 L Clavicle
+    100012: Bip008 L Finger0
+    100014: Bip008 L Finger0Nub
+    100016: Bip008 L Finger1
+    100018: Bip008 L Finger1Nub
+    100020: Bip008 L Foot
+    100022: Bip008 L Forearm
+    100024: Bip008 L Hand
+    100026: Bip008 L Thigh
+    100028: Bip008 L Toe0
+    100030: Bip008 L Toe0Nub
+    100032: Bip008 L UpperArm
+    100034: Bip008 Neck
+    100036: Bip008 Pelvis
+    100038: Bip008 R Calf
+    100040: Bip008 R Clavicle
+    100042: Bip008 R Finger0
+    100044: Bip008 R Finger0Nub
+    100046: Bip008 R Finger1
+    100048: Bip008 R Finger1Nub
+    100050: Bip008 R Foot
+    100052: Bip008 R Forearm
+    100054: Bip008 R Hand
+    100056: Bip008 R Thigh
+    100058: Bip008 R Toe0
+    100060: Bip008 R Toe0Nub
+    100062: Bip008 R UpperArm
+    100064: Bip008 Spine
+    100066: Bip008 Spine1
+    100068: SubCh29
+    100070: //RootNode
+    400000: Bip008
+    400002: Bip008 Footsteps
+    400004: Bip008 Head
+    400006: Bip008 HeadNub
+    400008: Bip008 L Calf
+    400010: Bip008 L Clavicle
+    400012: Bip008 L Finger0
+    400014: Bip008 L Finger0Nub
+    400016: Bip008 L Finger1
+    400018: Bip008 L Finger1Nub
+    400020: Bip008 L Foot
+    400022: Bip008 L Forearm
+    400024: Bip008 L Hand
+    400026: Bip008 L Thigh
+    400028: Bip008 L Toe0
+    400030: Bip008 L Toe0Nub
+    400032: Bip008 L UpperArm
+    400034: Bip008 Neck
+    400036: Bip008 Pelvis
+    400038: Bip008 R Calf
+    400040: Bip008 R Clavicle
+    400042: Bip008 R Finger0
+    400044: Bip008 R Finger0Nub
+    400046: Bip008 R Finger1
+    400048: Bip008 R Finger1Nub
+    400050: Bip008 R Foot
+    400052: Bip008 R Forearm
+    400054: Bip008 R Hand
+    400056: Bip008 R Thigh
+    400058: Bip008 R Toe0
+    400060: Bip008 R Toe0Nub
+    400062: Bip008 R UpperArm
+    400064: Bip008 Spine
+    400066: Bip008 Spine1
+    400068: SubCh29
+    400070: //RootNode
+    4300000: SubCh29
+    7400000: Idle
+    7400002: Walk
+    7400004: Cheer
+    7400006: IdleUmbrella
+    7400008: WalkUmbrella
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: SubCh29
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 110
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip008
+        weight: 1
+      - path: Bip008/Bip008 Footsteps
+        weight: 1
+      - path: Bip008/Bip008 Pelvis
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0/Bip008 L Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0/Bip008 R Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head/Bip008
+          HeadNub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0/Bip008
+          L Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1/Bip008
+          L Finger1Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0/Bip008
+          R Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1/Bip008
+          R Finger1Nub
+        weight: 1
+      - path: SubCh29
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 115
+      lastFrame: 155
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip008
+        weight: 1
+      - path: Bip008/Bip008 Footsteps
+        weight: 1
+      - path: Bip008/Bip008 Pelvis
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0/Bip008 L Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0/Bip008 R Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head/Bip008
+          HeadNub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0/Bip008
+          L Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1/Bip008
+          L Finger1Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0/Bip008
+          R Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1/Bip008
+          R Finger1Nub
+        weight: 1
+      - path: SubCh29
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cheer
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 270
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip008
+        weight: 1
+      - path: Bip008/Bip008 Footsteps
+        weight: 1
+      - path: Bip008/Bip008 Pelvis
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0/Bip008 L Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0/Bip008 R Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head/Bip008
+          HeadNub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0/Bip008
+          L Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1/Bip008
+          L Finger1Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0/Bip008
+          R Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1/Bip008
+          R Finger1Nub
+        weight: 1
+      - path: SubCh29
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: IdleUmbrella
+      takeName: Take 001
+      firstFrame: 275
+      lastFrame: 385
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip008
+        weight: 1
+      - path: Bip008/Bip008 Footsteps
+        weight: 1
+      - path: Bip008/Bip008 Pelvis
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0/Bip008 L Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0/Bip008 R Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head/Bip008
+          HeadNub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0/Bip008
+          L Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1/Bip008
+          L Finger1Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0/Bip008
+          R Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1/Bip008
+          R Finger1Nub
+        weight: 1
+      - path: SubCh29
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WalkUmbrella
+      takeName: Take 001
+      firstFrame: 390
+      lastFrame: 430
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip008
+        weight: 1
+      - path: Bip008/Bip008 Footsteps
+        weight: 1
+      - path: Bip008/Bip008 Pelvis
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 L Thigh/Bip008 L Calf/Bip008
+          L Foot/Bip008 L Toe0/Bip008 L Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 R Thigh/Bip008 R Calf/Bip008
+          R Foot/Bip008 R Toe0/Bip008 R Toe0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 Head/Bip008
+          HeadNub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger0/Bip008
+          L Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 L
+          Clavicle/Bip008 L UpperArm/Bip008 L Forearm/Bip008 L Hand/Bip008 L Finger1/Bip008
+          L Finger1Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger0/Bip008
+          R Finger0Nub
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1
+        weight: 1
+      - path: Bip008/Bip008 Pelvis/Bip008 Spine/Bip008 Spine1/Bip008 Neck/Bip008 R
+          Clavicle/Bip008 R UpperArm/Bip008 R Forearm/Bip008 R Hand/Bip008 R Finger1/Bip008
+          R Finger1Nub
+        weight: 1
+      - path: SubCh29
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Bip008 Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip008 R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Girl05(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0.008969698, z: 0, w: 0.99995977}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip008
+      parentName: Girl05(Clone)
+      position: {x: 0.023490826, y: 0.55563617, z: 0.054683674}
+      rotation: {x: -0.49890783, y: 0.50108975, z: 0.49890712, w: 0.5010905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip008 Footsteps
+      parentName: Bip008
+      position: {x: -0, y: -0.00239995, z: -0.54977894}
+      rotation: {x: -0.0015433552, y: -0.001543353, z: -0.70710456, w: 0.70710564}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip008 Pelvis
+      parentName: Bip008
+      position: {x: -0.00050443783, y: 0.028113151, z: -0.00012272416}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Bip008 Spine
+      parentName: Bip008 Pelvis
+      position: {x: -0.056447294, y: -0.00008971691, z: -0.0039046716}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: Bip008 Spine1
+      parentName: Bip008 Spine
+      position: {x: -0.11276832, y: -0.000101265905, z: -0.0000013899803}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Bip008 Neck
+      parentName: Bip008 Spine1
+      position: {x: -0.12792175, y: -0.000051164625, z: -0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bip008 Head
+      parentName: Bip008 Neck
+      position: {x: -0.064258724, y: -0.000000009536743, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 0.9999997, z: 0.9999998}
+    - name: Bip008 HeadNub
+      parentName: Bip008 Head
+      position: {x: -0.5824861, y: 0.0000000047683715, z: 0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip008 L Clavicle
+      parentName: Bip008 Neck
+      position: {x: -0, y: 0.00005106926, z: 0.03239298}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Bip008 L UpperArm
+      parentName: Bip008 L Clavicle
+      position: {x: -0.063960694, y: 0, z: 0.000000076293944}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 0.99999994}
+    - name: Bip008 L Forearm
+      parentName: Bip008 L UpperArm
+      position: {x: -0.17109223, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1.0000005}
+    - name: Bip008 L Hand
+      parentName: Bip008 L Forearm
+      position: {x: -0.10624553, y: 0.000000019073486, z: 0.000000019073486}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 0.9999998, y: 1.0000001, z: 1.0000001}
+    - name: Bip008 L Finger1
+      parentName: Bip008 L Hand
+      position: {x: -0.09013233, y: 0, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000006}
+    - name: Bip008 L Finger1Nub
+      parentName: Bip008 L Finger1
+      position: {x: -0.07130684, y: -0.000000009536743, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip008 L Finger0
+      parentName: Bip008 L Hand
+      position: {x: -0.03166626, y: 0.0010629845, z: -0.054642525}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 0.9999999, y: 1.0000002, z: 0.9999995}
+    - name: Bip008 L Finger0Nub
+      parentName: Bip008 L Finger0
+      position: {x: -0.04867624, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip008 R Clavicle
+      parentName: Bip008 Neck
+      position: {x: -0.000000076293944, y: 0.000051250456, z: -0.032392975}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 1, y: 0.99999976, z: 0.99999994}
+    - name: Bip008 R UpperArm
+      parentName: Bip008 R Clavicle
+      position: {x: -0.063960716, y: 0, z: 0.000000076293944}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999964}
+    - name: Bip008 R Forearm
+      parentName: Bip008 R UpperArm
+      position: {x: -0.17109223, y: 0.000000009536743, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.000001, y: 1.0000007, z: 1.0000007}
+    - name: Bip008 R Hand
+      parentName: Bip008 R Forearm
+      position: {x: -0.106245495, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 0.99999934, y: 1.0000002, z: 0.9999998}
+    - name: Bip008 R Finger1
+      parentName: Bip008 R Hand
+      position: {x: -0.09013229, y: 0, z: -0.0000000023841857}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000015, y: 1.0000014, z: 1.0000001}
+    - name: Bip008 R Finger1Nub
+      parentName: Bip008 R Finger1
+      position: {x: -0.071306914, y: 0, z: 0.0000000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1.0000001, y: -1, z: -1}
+    - name: Bip008 R Finger0
+      parentName: Bip008 R Hand
+      position: {x: -0.03166622, y: 0.0010629654, z: 0.054642495}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 1.0000013, y: 1.0000015, z: 1.0000011}
+    - name: Bip008 R Finger0Nub
+      parentName: Bip008 R Finger0
+      position: {x: -0.04867624, y: 0.000000038146972, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bip008 L Thigh
+      parentName: Bip008 Spine
+      position: {x: 0.06140209, y: 0.0028755092, z: 0.04720154}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1.0000005, y: 1.0000008, z: 1.0000008}
+    - name: Bip008 L Calf
+      parentName: Bip008 L Thigh
+      position: {x: -0.24323781, y: 0, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000005}
+    - name: Bip008 L Foot
+      parentName: Bip008 L Calf
+      position: {x: -0.21461937, y: 0.000000007152557, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000001}
+    - name: Bip008 L Toe0
+      parentName: Bip008 L Foot
+      position: {x: -0.093241766, y: 0.07281669, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000005}
+    - name: Bip008 L Toe0Nub
+      parentName: Bip008 L Toe0
+      position: {x: -0.1317797, y: 0, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1.0000001, y: -1.0000001, z: -1.0000001}
+    - name: Bip008 R Thigh
+      parentName: Bip008 Spine
+      position: {x: 0.0516877, y: -0.00064678193, z: -0.05065544}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000008}
+    - name: Bip008 R Calf
+      parentName: Bip008 R Thigh
+      position: {x: -0.24323778, y: 0.0000000047683715, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
+    - name: Bip008 R Foot
+      parentName: Bip008 R Calf
+      position: {x: -0.2146193, y: 0.0000000047683715, z: 0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+    - name: Bip008 R Toe0
+      parentName: Bip008 R Foot
+      position: {x: -0.093241766, y: 0.07281669, z: -0.000000014305114}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1, y: 0.9999998, z: 1.0000005}
+    - name: Bip008 R Toe0Nub
+      parentName: Bip008 R Toe0
+      position: {x: -0.1317797, y: 0.0000000023841857, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: SubCh29
+      parentName: Girl05(Clone)
+      position: {x: -0, y: 0, z: -0.028480662}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
