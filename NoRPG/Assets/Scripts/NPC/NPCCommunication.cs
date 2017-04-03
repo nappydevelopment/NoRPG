@@ -45,7 +45,6 @@ public class NPCCommunication : MonoBehaviour {
         // If interactable Object is near to the player then start the interaction, else do nothing
         if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) < distance)
         {
-            nextPageFlag = false;
             string interactableObjectName = trader.closest.name;
             string npcType = dialogue.GetNpcType(interactableObjectName);
 
@@ -62,27 +61,27 @@ public class NPCCommunication : MonoBehaviour {
             Char delimiter = '%';
             string npcCompleteText = dialogue.GetNpcText(interactableObjectName);
             string[] npcTextArray = npcCompleteText.Split(delimiter);
-            Debug.Log(npcTextArray.Length);
+            Debug.Log("Arraylength= " + npcTextArray.Length);
 
             //if there is more then one page for this communication 
             if (npcTextArray.Length > 1)
             {
-                foreach (var i in npcTextArray)
-                {
-                    npcText.text = i.ToString();
-                    //yield return new WaitUntil(() => nextPageFlag = true);
-                }
+                Debug.Log("Is in IF, length > 1");
+                //StartCoroutine(GoThroughConversation(npcTextArray));
+                GoThroughConv(npcTextArray);
+                Debug.Log("Verlasse gothroughconversation");
             }
 
             if (npcType == "Trader")
             {
                 acceptButton.onClick.AddListener(delegate () { OpenGameList(interactableObjectName); });
-                cancelButton.onClick.AddListener(delegate () { NextTextPage(); });
+                cancelButton.onClick.AddListener(delegate () { CancelCommunication(); });
             }
             else if( npcType == "ScriptedNPC")
             {
                 if (interactableObjectName == "Buergermeister")
                 {
+                    Debug.Log("Show attacker");
                     acceptButton.onClick.AddListener(delegate () { ShowAttaker(); });
                     cancelButton.onClick.AddListener(delegate () { ShowAttaker(); });
                 }
@@ -94,9 +93,34 @@ public class NPCCommunication : MonoBehaviour {
             }
             else
             {
-                acceptButton.onClick.AddListener(delegate () { NextTextPage(); });
-                cancelButton.onClick.AddListener(delegate () { NextTextPage(); });
+                acceptButton.onClick.AddListener(delegate () { CancelCommunication(); });
+                cancelButton.onClick.AddListener(delegate () { CancelCommunication(); });
             }
+        }
+    }
+
+    private IEnumerator GoThroughConversation(string[] textArray)
+    {
+        Debug.Log("GoThroughConversation");
+        foreach (var i in textArray)
+        {
+            nextPageFlag = false;
+            Debug.Log(i.ToString());
+            npcText.text = i.ToString();
+            acceptButton.onClick.AddListener(() => nextPageFlag = true);
+            yield return new WaitUntil(() => nextPageFlag == true);
+            //yield return null;
+        }
+    }
+
+    private void GoThroughConv(string[] npcTextArray)
+    {
+        foreach (var i in npcTextArray)
+        {
+            nextPageFlag = false;
+            npcText.text = i.ToString();
+            acceptButton.onClick.AddListener(() => nextPageFlag = true);
+
         }
     }
 
@@ -124,22 +148,8 @@ public class NPCCommunication : MonoBehaviour {
 
     }
 
-    private void NextTextPage()
-    {
-        // if npcText1 exists, overwrite the text with the new text
-        // npcText.text = NPCDialogue.GetNpcText2(interactableObjectName);
-        // else
-
-        //array of pages
-
-        CancelCommunication();
-    }
-
     private void FillPanelWithGames()
     {
-        //get gamesCount from GetGameList()
-        int gamesCount = 5;
-
         Game newGame1 = new Game();
         //get GameName and Downloadlink from GetGameList()
         newGame1.gameName = "Nappy The Ingenious";
@@ -186,8 +196,5 @@ public class NPCCommunication : MonoBehaviour {
         {
             CancelCommunication();
         }
-
-        acceptButton.onClick.AddListener(() => nextPageFlag = true);
-        cancelButton.onClick.AddListener(() => nextPageFlag = false);
     }
 }
