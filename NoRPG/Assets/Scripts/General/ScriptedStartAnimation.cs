@@ -53,29 +53,18 @@ public class ScriptedStartAnimation : MonoBehaviour {
 
     void Update () {
         if (!played) { 
-        if (nfc.transform.position.x > 342.0f)
-        {
+        if (nfc.transform.position.z > 275.0f) {
             animatorNfc.SetFloat("speed", 1f);
             animatorNfc.SetFloat("direction", 0.0f);
         }
-        else 
-        {
+        else  {
             animatorNfc.SetFloat("speed", 0.0f);
             animatorNfc.SetFloat("direction", 0.0f);
         }
 
-        if (player.transform.position.x < 339.0f)
-        {
-            animatorPlayer.SetFloat("speed", 1f);
-            animatorPlayer.SetFloat("direction", 0.0f);
-        }
-        else
-        {
-            animatorPlayer.SetFloat("speed", 0.0f);
-            animatorPlayer.SetFloat("direction", 0.0f);
-        }
+        
 
-            if (!played && animatorPlayer.GetFloat("speed") == 0.0f)
+            if (!played && animatorNfc.GetFloat("speed") == 0.0f)
             {
                 Debug.Log("Start");
                 player.transform.LookAt(nfc.transform);
@@ -105,9 +94,13 @@ public class ScriptedStartAnimation : MonoBehaviour {
 
     internal void DeleteColor()
     {
-
+        GetComponent<FadeOut>().BeginFade(1);
         playerCamera.enabled = true;
         scriptCamera.enabled = false;
+        player.transform.position = new Vector3(317.36f, 6.37f, 278.28f);
+        GetComponent<FadeOut>().setFade(false);
+        GetComponent<FadeOut>().BeginFade(-1);
+
         Debug.Log("Test");
     }
 }
