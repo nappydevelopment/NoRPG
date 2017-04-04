@@ -4,7 +4,7 @@
 		"npcText" : "Wir brauchen deine Hilfe! %Etwas komisches ist passiert.% Die ganze Farbe wird gerade gestohlen!",
 		"npcType" : "ScriptedNPC"
 	},
-		"Buergermeister_1" : {
+	"Buergermeister_1" : {
 		"npcName" : "Buergermeister",
 		"npcText" : "Bitte hilf uns unsere Farben zurück zu bekommen, bitte!",
 		"npcType" : "ScriptedNPC"
@@ -381,7 +381,7 @@
 		"npcType" : "Trader" 
 	},
 	"1_Chest_Forest" : {
-		"npcName" : "Hans",
+		"npcName" : "Bryant",
 		"npcText" : "I am Bryant and I offer math games for the fifth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?",
 		"npcType" : "ChestNpc"
 	},
@@ -614,5 +614,37 @@
 		"npcTextNotAllowed" : "You shall not pass!",
 		"npcTextAllowed" : "You are worthy. Please go ahead!",
 		"npcType" : "PortalNpc"
+	},
+	"1_Chest" : {
+		"npcText" : "You found a chest!",
+		"npcType" : "Chest"
+	},
+	"2_Chest" : {
+		"npcText" : "You found a chest!",
+		"npcType" : "Chest"
+	},
+	"3_Chest" : {
+		"npcText" : "You found a chest!",
+		"npcType" : "Chest"
+	},
+	"4_Chest" : {
+		"npcText" : "You found a chest!",
+		"npcType" : "Chest"
+	},
+	"5_Chest" : {
+		"npcText" : "You found a chest!",
+		"npcType" : "Chest"
+	},
+	"6_Chest" : {
+		"npcText" : "You found a chest!",
+		"npcType" : "Chest"
+	},
+	"7_Chest" : {
+		"npcText" : "You found a chest!",
+		"npcType" : "Chest"
+	},
+	"8_Chest" : {
+		"npcText" : "You found a chest!",
+		"npcType" : "Chest"
 	}
 }
