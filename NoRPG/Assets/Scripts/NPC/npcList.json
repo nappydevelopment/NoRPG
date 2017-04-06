@@ -1,12 +1,22 @@
 { 
 	"Buergermeister" : {
-		"npcName" : "Buergermeister",
-		"npcText" : "Wir brauchen deine Hilfe! %Etwas komisches ist passiert.% Die ganze Farbe wird gerade gestohlen!",
+		"npcName" : "Malik",
+		"npcText" : "My name is Malik. I am the mayor of Rutherglen. I'm really glad you are here!",
 		"npcType" : "ScriptedNPC"
 	},
 	"Buergermeister_1" : {
-		"npcName" : "Buergermeister",
-		"npcText" : "Bitte hilf uns unsere Farben zurück zu bekommen, bitte!",
+		"npcName" : "Malik",
+		"npcText" : "Look what is happening right now! Something crazy is going on! All the colors are getting stolen!",
+		"npcType" : "ScriptedNPC"
+	},
+	"Buergermeister_2" : {
+		"npcName" : "Malik",
+		"npcText" : "Please help us and get all the colors back! Please!",
+		"npcType" : "ScriptedNPC"
+	},
+	"Buergermeister_3" : {
+		"npcName" : "Malik",
+		"npcText" : "Thank you for saving our city! Look, all colors are back.",
 		"npcType" : "ScriptedNPC"
 	},
 	"1_Math_OA" : { 

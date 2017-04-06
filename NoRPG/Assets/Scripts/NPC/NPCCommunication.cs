@@ -43,8 +43,6 @@ public class NPCCommunication : MonoBehaviour {
         // If interactable Object is near to the player then start the interaction, else do nothing
         if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) < distance)
         {
-            acceptButton.onClick.RemoveAllListeners();
-            cancelButton.onClick.RemoveAllListeners();
             string interactableObjectName = trader.closest.name;
             string npcType = dialogue.GetNpcType(interactableObjectName);
 
@@ -57,24 +55,8 @@ public class NPCCommunication : MonoBehaviour {
 
             //get content for communication
             npcName.text = dialogue.GetNpcName(interactableObjectName);
+            npcText.text = dialogue.GetNpcText(interactableObjectName);
 
-            Char delimiter = '%';
-            string npcCompleteText = dialogue.GetNpcText(interactableObjectName);
-            string[] npcTextArray = npcCompleteText.Split(delimiter);
-
-            //if there is more then one page for this communication 
-            if (npcTextArray.Length > 1)
-            {
-                Debug.Log("ARRAY LENGTH > 1");
-                StartCoroutine(GoThroughConversation(npcTextArray));
-            }
-            else
-            {
-                Debug.Log("ARRAY LENGTH = 1");
-                npcText.text = dialogue.GetNpcText(interactableObjectName);
-            }
-
-            Debug.Log("GET CORRECT NPC TYPE");
             if (npcType == "Trader")
             {
                 acceptButton.onClick.AddListener(delegate () { OpenGameList(interactableObjectName); });
@@ -85,13 +67,18 @@ public class NPCCommunication : MonoBehaviour {
                 if (interactableObjectName == "Buergermeister")
                 {
                     Debug.Log("Show attacker");
-                    acceptButton.onClick.AddListener(delegate () { ShowAttaker(); });
-                    cancelButton.onClick.AddListener(delegate () { ShowAttaker(); });
+                    acceptButton.onClick.AddListener(delegate () { ssa.ShowAttacker(); });
+                    cancelButton.onClick.AddListener(delegate () { ssa.ShowAttacker(); });
                 }
                 else if (interactableObjectName == "Buergermeister_1")
                 {
-                    acceptButton.onClick.AddListener(delegate () { DeleteColor(); });
-                    cancelButton.onClick.AddListener(delegate () { DeleteColor(); });
+                    acceptButton.onClick.AddListener(delegate () { ssa.ShowMajor(); });
+                    cancelButton.onClick.AddListener(delegate () { ssa.ShowMajor(); });
+                }
+                else if (interactableObjectName == "Buergermeister_2")
+                {
+                    acceptButton.onClick.AddListener(delegate () { ssa.DeleteColor(); });
+                    cancelButton.onClick.AddListener(delegate () { ssa.DeleteColor(); });
                 }
             }
             else
@@ -100,40 +87,6 @@ public class NPCCommunication : MonoBehaviour {
                 cancelButton.onClick.AddListener(delegate () { CancelCommunication(); });
             }
         }
-    }
-
-    private IEnumerator GoThroughConversation(string[] textArray)
-    {
-        for (int i = 0; i < textArray.Length; i++)
-        {
-            nextPageFlag = false;
-
-            Debug.Log(textArray[i]);
-            npcText.text = textArray[i];
-
-            acceptButton.onClick.RemoveAllListeners();
-            cancelButton.onClick.RemoveAllListeners();
-            acceptButton.onClick.AddListener(() => nextPageFlag = true);
-            cancelButton.onClick.AddListener(() => nextPageFlag = true);
-
-            while (nextPageFlag == false)
-            {
-                Debug.Log("Waiting for input!");
-                yield return null;
-            }
-        }
-    }
-
-    private void DeleteColor()
-    {
-        CancelCommunication();
-        ssa.DeleteColor();
-    }
-
-    private void ShowAttaker()
-    {
-        CancelCommunication();
-        ssa.ShowUFO();
     }
 
     private void OpenGameList(string interactableObjectName)

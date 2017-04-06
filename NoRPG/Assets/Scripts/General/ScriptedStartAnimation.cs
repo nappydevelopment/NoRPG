@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class ScriptedStartAnimation : MonoBehaviour {
 
-
     [SerializeField]
     private GameObject hud;
     [SerializeField]
@@ -13,7 +12,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
     [SerializeField]
     private GameObject player;
     [SerializeField]
-    private GameObject nfc;  
+    private GameObject npc;  
     [SerializeField]
     private GameObject playerdot;
     [SerializeField]
@@ -23,7 +22,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
     [SerializeField]
     private Animator animatorPlayer;
     [SerializeField]
-    private Animator animatorNfc;
+    private Animator animatorNpc;
     [SerializeField]
     private Animator animatorAnimie;
     [SerializeField]
@@ -31,6 +30,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
     private bool played = false;
     private Vector3 cameraMovement;
     private Quaternion rotation;
+    private bool showCityColoured = false;
 
     void Start()
     {
@@ -40,35 +40,29 @@ public class ScriptedStartAnimation : MonoBehaviour {
         playerdot.SetActive(false);
         player.GetComponent<CharacterControll>().enabled = false;
         animatorPlayer = player.GetComponent<Animator>();
-        animatorNfc = nfc.GetComponent<Animator>();
+        animatorNpc = npc.GetComponent<Animator>();
         animatorAnimie = animie.GetComponent<Animator>();
-
-
     }
 
     private void startCommunication() {
         Debug.Log("Start Communication");
     }
 
-
     void Update () {
         if (!played) { 
-        if (nfc.transform.position.z > 275.0f) {
-            animatorNfc.SetFloat("speed", 1f);
-            animatorNfc.SetFloat("direction", 0.0f);
+        if (npc.transform.position.z > 275.0f) {
+            animatorNpc.SetFloat("speed", 1f);
+            animatorNpc.SetFloat("direction", 0.0f);
         }
         else  {
-            animatorNfc.SetFloat("speed", 0.0f);
-            animatorNfc.SetFloat("direction", 0.0f);
+            animatorNpc.SetFloat("speed", 0.0f);
+            animatorNpc.SetFloat("direction", 0.0f);
         }
-
-        
-
-            if (!played && animatorNfc.GetFloat("speed") == 0.0f)
+            if (!played && animatorNpc.GetFloat("speed") == 0.0f)
             {
-                Debug.Log("Start");
-                player.transform.LookAt(nfc.transform);
-                nfc.transform.LookAt(player.transform);
+                Debug.Log("ScriptedStartAnimation Update");
+                player.transform.LookAt(npc.transform);
+                npc.transform.LookAt(player.transform);
                 scriptCamera.transform.position = playerCamera.transform.position;
                 hud.SetActive(true);
                 npcc.StartCommunication();
@@ -78,7 +72,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
         }
     }
 
-    internal void ShowUFO()
+    internal void ShowAttacker()
     {
         animatorAnimie.SetBool("Fly Idle", true);
 
@@ -86,10 +80,28 @@ public class ScriptedStartAnimation : MonoBehaviour {
         playerCamera.enabled = false;
 
         scriptCamera.transform.LookAt(animie.transform); //smother?
-        nfc.name = "Buergermeister_1";
+        npc.name = "Buergermeister_1";
         npcc.StartCommunication();
 
-        //DeleteColor
+        //DeleteColor here with fadeout and show city in black/white
+    }
+
+    internal void ShowMajor()
+    {
+        //player normal view, show again major
+        //he ask for help
+
+        if (showCityColoured == false)
+        {
+            //this buergermeister_2 will stay until end
+            npc.name = "Buergermeister_2";
+        }
+        else
+        {
+            npc.name = "Buergermeister_3";
+        }
+
+        npcc.StartCommunication();
     }
 
     internal void DeleteColor()
@@ -101,6 +113,18 @@ public class ScriptedStartAnimation : MonoBehaviour {
         GetComponent<FadeOut>().setFade(false);
         GetComponent<FadeOut>().BeginFade(-1);
 
-        Debug.Log("Test");
+        Debug.Log("Delete Color Log");
+    }
+
+    internal void ShowColouredCity()
+    {
+        //after finishing the game the camera will go up show the city full with color
+        //Major will say: Thanks for saving our city! Look all colors are back.
+
+        //then back to normal player view 
+
+        // --> Just once with city look, after this he will just say the same sentence
+        //set bool showCityColoured = true;
+        showCityColoured = true;
     }
 }
