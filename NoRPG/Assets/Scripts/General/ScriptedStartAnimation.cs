@@ -62,7 +62,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
         }
             if (!played && animatorNpc.GetFloat("speed") == 0.0f)
             {
-                Debug.Log("ScriptedStartAnimation Update");
+                //Debug.Log("ScriptedStartAnimation Update");
                 player.transform.LookAt(npc.transform);
                 npc.transform.LookAt(player.transform);
                 scriptCamera.transform.position = playerCamera.transform.position;
@@ -115,7 +115,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
         //player.transform.position = new Vector3(317.36f, 6.37f, 278.28f);
         GetComponent<FadeOut>().setFade(false);
         GetComponent<FadeOut>().BeginFade(-1);
-        Debug.Log("Delete Color Log");
+        //Debug.Log("Delete Color Log");
         joystick.SetActive(true);
         npcc.CancelCommunication();
     }

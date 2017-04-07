@@ -34,7 +34,6 @@ public class NPCCommunication : MonoBehaviour {
     private List<Games> games;
     private bool nextPageFlag;
     public ScriptedStartAnimation ssa;
-    private string interactableObjectName;
 
     [SerializeField]
     private float distance = 3.0f;
@@ -44,7 +43,7 @@ public class NPCCommunication : MonoBehaviour {
         // If interactable Object is near to the player then start the interaction, else do nothing
         if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) < distance)
         {
-            interactableObjectName = trader.closest.name;
+            string interactableObjectName = trader.closest.name;
             string npcType = dialogue.GetNpcType(interactableObjectName);
 
             //disable other UI Buttons
@@ -67,7 +66,7 @@ public class NPCCommunication : MonoBehaviour {
             {
                 if (interactableObjectName == "Buergermeister")
                 {
-                    Debug.Log("Show attacker");
+                    //Debug.Log("Show attacker");
                     acceptButton.onClick.AddListener(delegate () { ssa.ShowAttacker(); });
                     cancelButton.onClick.AddListener(delegate () { ssa.ShowAttacker(); });
                 }
@@ -95,16 +94,15 @@ public class NPCCommunication : MonoBehaviour {
         textBox.SetActive(false);
         gamelistObject.SetActive(true);
 
-        FillPanelWithGames();
+        FillPanelWithGames(interactableObjectName);
 
         gamelistTitle.text = dialogue.GetGamelistTitle(interactableObjectName);
         gamelistDescription.text = dialogue.GetGamelistDescription(interactableObjectName);
     }
 
-    private void FillPanelWithGames()
+    private void FillPanelWithGames(string interactableObjectName)
     {
-        Games newGame1 = new Games("1_AO_:Nsdhasiud","Nappy The Ingenious", "http://www.google.de");
-        gameList.Add(newGame1);
+        gameList = GetGameList.GetGames(interactableObjectName);
 
         scrollList.AddButtons(gameList);
     }
@@ -147,13 +145,5 @@ public class NPCCommunication : MonoBehaviour {
         {
             CancelCommunication();
         }
-    }
-
-    private List<Games> getGameList(string interactableObjectName)
-    {
-        //interactableObjectName //1_Math_AO
-
-
-        return null;
     }
 }

@@ -25,6 +25,6 @@ public class SetSpeedOfAIObjects : MonoBehaviour {
         else
             animator.SetFloat("speed", nma.speed);
 
-        Debug.Log(this.name + " :" + nma.speed);
+   //     Debug.Log(this.name + " :" + nma.speed);
 	}
 }

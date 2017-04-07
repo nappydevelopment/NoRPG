@@ -59,7 +59,7 @@ public class WebJSONConfigReader: IConfigReader {
                     Games[] g = games.ToArray();
                     string[] v = vor.ToArray();
                     string[] n = nach.ToArray();
-                    standards.Add(new Standards(standard.name, n, v, g));
+                    standards.Add(new Standards(standard.name, v, n, g));
                 }
                 Standards[] s = standards.ToArray();
                 courses.Add(new Courses(course.name, s));
