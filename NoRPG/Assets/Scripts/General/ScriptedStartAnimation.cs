@@ -16,6 +16,10 @@ public class ScriptedStartAnimation : MonoBehaviour {
     [SerializeField]
     private GameObject playerdot;
     [SerializeField]
+    private GameObject miniMap;
+    [SerializeField]
+    private GameObject miniMapPanel;
+    [SerializeField]
     private Camera playerCamera;
     [SerializeField]
     private Camera scriptCamera;
@@ -40,6 +44,8 @@ public class ScriptedStartAnimation : MonoBehaviour {
         scriptCamera.enabled = false;
         hud.SetActive(false);
         playerdot.SetActive(false);
+        miniMap.SetActive(false);
+        miniMapPanel.SetActive(false);
         player.GetComponent<CharacterControll>().enabled = false;
         animatorPlayer = player.GetComponent<Animator>();
         animatorNpc = npc.GetComponent<Animator>();
@@ -117,6 +123,9 @@ public class ScriptedStartAnimation : MonoBehaviour {
         GetComponent<FadeOut>().BeginFade(-1);
         //Debug.Log("Delete Color Log");
         joystick.SetActive(true);
+        playerdot.SetActive(true);
+        miniMap.SetActive(true);
+        miniMapPanel.SetActive(true);
         npcc.CancelCommunication();
     }
 

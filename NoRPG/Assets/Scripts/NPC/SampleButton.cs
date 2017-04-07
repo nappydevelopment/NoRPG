@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
 
 public class SampleButton : MonoBehaviour
@@ -10,6 +9,7 @@ public class SampleButton : MonoBehaviour
 
     private Games game;
     private GameScrollList scrollList;
+    private string marketUrl;
 
     public void Start()
     {
@@ -20,12 +20,18 @@ public class SampleButton : MonoBehaviour
     {
         game = currentGame;
         nameLabel.text = game.name;
+        marketUrl = game.url;
 
         scrollList = currentScrollList;
     }
 
     public void HandleClick()
     {
-        Application.OpenURL("market://details?q=pname:com.mycompany.myapp/");
+        //add clicked game to played game list
+        scrollList.TransferToDownloadedGameList(game);
+        Debug.Log("Start handle click");
+
+        //open google play store
+        //Application.OpenURL(marketUrl);
     }
 }

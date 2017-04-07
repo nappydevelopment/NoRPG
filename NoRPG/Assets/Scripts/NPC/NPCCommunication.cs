@@ -31,7 +31,6 @@ public class NPCCommunication : MonoBehaviour {
     public GameScrollList scrollList = new GameScrollList();
     NPCDialogue dialogue = new NPCDialogue();
 
-    private List<Games> games;
     private bool nextPageFlag;
     public ScriptedStartAnimation ssa;
 
@@ -109,6 +108,8 @@ public class NPCCommunication : MonoBehaviour {
 
     private void CloseGameList()
     {
+        scrollList.RemoveButtons();
+
         gamelistObject.SetActive(false);
         descriptionPanel.SetActive(false);
         gamelistPanel.gameObject.SetActive(true);

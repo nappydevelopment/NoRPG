@@ -1,13 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-
-[System.Serializable]
-public class Game
-{
-    public string gameName;
-    public string downloadLink;
-}
 
 public class GameScrollList : MonoBehaviour
 {
@@ -34,19 +26,29 @@ public class GameScrollList : MonoBehaviour
         }
     }
 
+    public void RemoveButtons()
+    {
+        //removes every child from panel after closing the panel
+        var children = new List<GameObject>();
+
+        foreach (Transform child in gamelistPanel)
+        {
+            children.Add(child.gameObject);
+        }
+
+        children.ForEach(child => Destroy(child));
+    }
+
     public void TransferToDownloadedGameList(Games game)
     {
+        Debug.Log("Transfer to downloaded game list");
         AddGame(game, downloadedGamesPanel);
-
+        //downloadedGamesPanel.AddButtons();
+        Debug.Log("Game attempted");
     }
 
     private void AddGame(Games gameToAdd, GameScrollList scrollList)
     {
         scrollList.gameList.Add(gameToAdd);
-    }
-
-    public void RemoveGames(Games gameToRemove, GameScrollList scrollList)
-    {
-        scrollList.gameList.Remove(gameToRemove);
     }
 }
