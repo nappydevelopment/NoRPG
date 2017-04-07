@@ -26,7 +26,7 @@ public class NPCCommunication : MonoBehaviour {
     
     public GameObject descriptionPanel;
     public Transform gamelistPanel;
-    public List<Game> gameList;
+    public List<Games> gameList = new List<Games>();
 
     public GameScrollList scrollList = new GameScrollList();
     NPCDialogue dialogue = new NPCDialogue();
@@ -34,6 +34,7 @@ public class NPCCommunication : MonoBehaviour {
     private List<Games> games;
     private bool nextPageFlag;
     public ScriptedStartAnimation ssa;
+    private string interactableObjectName;
 
     [SerializeField]
     private float distance = 3.0f;
@@ -43,7 +44,7 @@ public class NPCCommunication : MonoBehaviour {
         // If interactable Object is near to the player then start the interaction, else do nothing
         if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) < distance)
         {
-            string interactableObjectName = trader.closest.name;
+            interactableObjectName = trader.closest.name;
             string npcType = dialogue.GetNpcType(interactableObjectName);
 
             //disable other UI Buttons
@@ -102,9 +103,7 @@ public class NPCCommunication : MonoBehaviour {
 
     private void FillPanelWithGames()
     {
-        Game newGame1 = new Game();
-        newGame1.gameName = "Nappy The Ingenious";
-        newGame1.downloadLink = "http://www.google.de";
+        Games newGame1 = new Games("1_AO_:Nsdhasiud","Nappy The Ingenious", "http://www.google.de");
         gameList.Add(newGame1);
 
         scrollList.AddButtons(gameList);
@@ -148,5 +147,13 @@ public class NPCCommunication : MonoBehaviour {
         {
             CancelCommunication();
         }
+    }
+
+    private List<Games> getGameList(string interactableObjectName)
+    {
+        interactableObjectName //1_Math_AO
+
+
+        return null;
     }
 }

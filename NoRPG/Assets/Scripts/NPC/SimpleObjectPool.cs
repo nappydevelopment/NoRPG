@@ -23,7 +23,7 @@ public class SimpleObjectPool : MonoBehaviour
         }
         else
         {
-            spawnedGameObject = (GameObject)GameObject.Instantiate(prefab);
+            spawnedGameObject = GameObject.Instantiate(prefab);
 
             //add the PooledObject componenten to the prefab so we know it came from this pool
             PooledObject pooledObject = spawnedGameObject.AddComponent<PooledObject>();
@@ -31,7 +31,7 @@ public class SimpleObjectPool : MonoBehaviour
         }
 
         //put the instance in the root of the scene and enable it
-        spawnedGameObject.transform.SetParent(null);
+        //spawnedGameObject.transform.SetParent(GameObject.Find("Content").transform);
         spawnedGameObject.SetActive(true);
 
         //return reference of instance

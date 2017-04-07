@@ -31,6 +31,8 @@ public class ScriptedStartAnimation : MonoBehaviour {
     private Vector3 cameraMovement;
     private Quaternion rotation;
     private bool showCityColoured = false;
+    [SerializeField]
+    private GameObject joystick;
 
     void Start()
     {
@@ -65,6 +67,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
                 npc.transform.LookAt(player.transform);
                 scriptCamera.transform.position = playerCamera.transform.position;
                 hud.SetActive(true);
+                joystick.SetActive(false);
                 npcc.StartCommunication();
                 player.GetComponent<CharacterControll>().enabled = true;
                 played = true;
@@ -109,11 +112,12 @@ public class ScriptedStartAnimation : MonoBehaviour {
         GetComponent<FadeOut>().BeginFade(1);
         playerCamera.enabled = true;
         scriptCamera.enabled = false;
-        player.transform.position = new Vector3(317.36f, 6.37f, 278.28f);
+        //player.transform.position = new Vector3(317.36f, 6.37f, 278.28f);
         GetComponent<FadeOut>().setFade(false);
         GetComponent<FadeOut>().BeginFade(-1);
-
         Debug.Log("Delete Color Log");
+        joystick.SetActive(true);
+        npcc.CancelCommunication();
     }
 
     internal void ShowColouredCity()

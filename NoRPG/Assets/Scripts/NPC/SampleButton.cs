@@ -8,7 +8,7 @@ public class SampleButton : MonoBehaviour
     public Text nameLabel;
     public Image iconImage;
 
-    private Game game;
+    private Games game;
     private GameScrollList scrollList;
 
     public void Start()
@@ -16,10 +16,10 @@ public class SampleButton : MonoBehaviour
         button.onClick.AddListener(HandleClick);
     }
 
-    public void Setup(Game currentGame, GameScrollList currentScrollList)
+    public void Setup(Games currentGame, GameScrollList currentScrollList)
     {
         game = currentGame;
-        nameLabel.text = game.gameName;
+        nameLabel.text = game.name;
 
         scrollList = currentScrollList;
     }

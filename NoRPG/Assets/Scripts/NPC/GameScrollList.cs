@@ -11,35 +11,36 @@ public class Game
 
 public class GameScrollList : MonoBehaviour
 {
-    public List<Game> gameList;
+    public List<Games> gameList;
     public Transform gamelistPanel;
     public GameScrollList downloadedGamesPanel;
     public SimpleObjectPool buttonObjectPool;
 
     public GameScrollList() { }
 
-    public void AddButtons(List<Game> gamesToAdd)
+    public void AddButtons(List<Games> gamesToAdd)
     {
         gameList = gamesToAdd;
 
         for (int i = 0; i < gameList.Count; i++)
         {
-            Game game = gameList[i];
+            Games game = gameList[i];
             GameObject newButton = buttonObjectPool.GetObject();
             newButton.transform.SetParent(gamelistPanel);
+            newButton.transform.localScale = new Vector3(1, 1, 1);
 
             SampleButton sampleButton = newButton.GetComponent<SampleButton>();
             sampleButton.Setup(game, this);
         }
     }
 
-    public void TransferToDownloadedGameList(Game game)
+    public void TransferToDownloadedGameList(Games game)
     {
         AddGame(game, downloadedGamesPanel);
 
     }
 
-    private void AddGame(Game gameToAdd, GameScrollList scrollList)
+    private void AddGame(Games gameToAdd, GameScrollList scrollList)
     {
         scrollList.gameList.Add(gameToAdd);
     }
