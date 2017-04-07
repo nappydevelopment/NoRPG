@@ -44,4 +44,9 @@ public class GameScrollList : MonoBehaviour
     {
         scrollList.gameList.Add(gameToAdd);
     }
+
+    public void RemoveGames(Games gameToRemove, GameScrollList scrollList)
+    {
+        scrollList.gameList.Remove(gameToRemove);
+    }
 }

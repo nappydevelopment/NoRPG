@@ -151,7 +151,7 @@ public class NPCCommunication : MonoBehaviour {
 
     private List<Games> getGameList(string interactableObjectName)
     {
-        interactableObjectName //1_Math_AO
+        //interactableObjectName //1_Math_AO
 
 
         return null;
