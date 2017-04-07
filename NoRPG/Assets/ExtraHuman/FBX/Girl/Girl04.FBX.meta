@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0c6e283f92e99804da2e274a49ff9690
+guid: e9f4ee9fc3f56b749b7b77677e5b2281
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -95,7 +95,10 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\n\t'Bip032 L Clavicle' has translation animation
+      that will be discarded.\n\t'Bip032 L Thigh' has translation animation that will
+      be discarded.\n\t'Bip032 R Thigh' has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
