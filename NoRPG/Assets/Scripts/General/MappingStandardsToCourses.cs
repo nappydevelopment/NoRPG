@@ -39,6 +39,7 @@ public class Standards {
     }
 }
 
+[System.Serializable]
 public class Games {
     public readonly string id;
     public readonly string name;

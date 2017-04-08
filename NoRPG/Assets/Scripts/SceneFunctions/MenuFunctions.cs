@@ -14,7 +14,9 @@ public class MenuFunctions : MonoBehaviour {
     public Image musicOff;
     public AudioSource audioSource;
 
-	void Start () {
+    public GameScrollList scrollList = new GameScrollList();
+
+    void Start () {
         GameControl.control.Load();
 
         if (GameControl.control.qualitySetting == true)
@@ -94,5 +96,12 @@ public class MenuFunctions : MonoBehaviour {
             Debug.Log("audioSetting changed to true, saving successful!");
             audioSource.Play();
         }
+    }
+
+    public void LoadDownloadedGames()
+    {
+        List<Games> downloadedGames = GameControl.control.downloadedGames;
+
+        scrollList.AddButtons(downloadedGames);
     }
 }

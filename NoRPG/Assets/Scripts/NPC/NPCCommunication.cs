@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
 
 public class NPCCommunication : MonoBehaviour {
 
@@ -33,6 +31,7 @@ public class NPCCommunication : MonoBehaviour {
 
     private bool nextPageFlag;
     public ScriptedStartAnimation ssa;
+    public ChestHandle handleChest;
 
     [SerializeField]
     private float distance = 3.0f;
@@ -79,6 +78,12 @@ public class NPCCommunication : MonoBehaviour {
                     acceptButton.onClick.AddListener(delegate () { ssa.DeleteColor(); });
                     cancelButton.onClick.AddListener(delegate () { ssa.DeleteColor(); });
                 }
+            }
+            else if (npcType == "Chest")
+            {
+                Debug.Log("The NPC is a chest, do not try to talk with him");
+                acceptButton.onClick.AddListener(delegate () { handleChest.OpenChest(interactableObjectName); });
+                cancelButton.onClick.AddListener(delegate () { handleChest.OpenChest(interactableObjectName); });
             }
             else
             {

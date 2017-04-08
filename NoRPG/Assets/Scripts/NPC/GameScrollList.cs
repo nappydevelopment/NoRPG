@@ -5,7 +5,6 @@ public class GameScrollList : MonoBehaviour
 {
     public List<Games> gameList;
     public Transform gamelistPanel;
-    public GameScrollList downloadedGamesPanel;
     public SimpleObjectPool buttonObjectPool;
 
     public GameScrollList() { }
@@ -42,13 +41,15 @@ public class GameScrollList : MonoBehaviour
     public void TransferToDownloadedGameList(Games game)
     {
         Debug.Log("Transfer to downloaded game list");
-        AddGame(game, downloadedGamesPanel);
-        //downloadedGamesPanel.AddButtons();
-        Debug.Log("Game attempted");
-    }
+        GameControl.control.CreateFile();
 
-    private void AddGame(Games gameToAdd, GameScrollList scrollList)
-    {
-        scrollList.gameList.Add(gameToAdd);
+        List<Games> downloadedGames = GameControl.control.downloadedGames;
+        
+        if (!downloadedGames.Contains(game))
+        {
+            GameControl.control.downloadedGames.Add(game);
+            GameControl.control.Save();
+            Debug.Log("Game attempted");
+        }        
     }
 }

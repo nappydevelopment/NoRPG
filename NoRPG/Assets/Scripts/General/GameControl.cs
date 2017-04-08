@@ -2,6 +2,7 @@
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System.Collections.Generic;
 
 public class GameControl : MonoBehaviour {
 
@@ -9,8 +10,8 @@ public class GameControl : MonoBehaviour {
 
     //Player information
     public string username;
-    //public bool loggedInStatus;
     public string lastPosition;
+    public List<Games> downloadedGames;
 
     //Character
     public string characterGender;
@@ -21,7 +22,7 @@ public class GameControl : MonoBehaviour {
     public bool qualitySetting;
 
 
-    void Awake ()
+    void Awake()
     {
         //check is there a GameControl Object!
         if (control == null)
@@ -35,15 +36,20 @@ public class GameControl : MonoBehaviour {
         }
     }
 
+    void Start()
+    {
+        CreateFile();
+    }
+
     //save last position
     void OnApplicationQuit()
     {
-        /*string currentScene = PortalControl.control.currentScene;
+        string currentScene = PortalControl.control.currentScene;
 
-        if (currentScene == "DesertSpawnPoint" || currentScene == "first_forrestSpawnPoint" || currentScene == "Snow_WorldSpawnPoint" || currentScene == "LavaweltSpawnPoint" || currentScene == "Tropic_WorldSpawnPoint"){
-            Debug.Log("Application will be quit!");
+        if (currentScene == "Desert" || currentScene == "first_forrest" || currentScene == "Snow_World" || currentScene == "Lavawelt" || currentScene == "Tropic_World" || currentScene == "Startwelt"){
+            Debug.Log("Application will be quit! Last position of the player is " + currentScene);
             lastPosition = currentScene;
-        }*/
+        }
     }
 
     void SaveLocalDataAtServer()
@@ -69,16 +75,21 @@ public class GameControl : MonoBehaviour {
         data.username = username;
         data.audioSetting = audioSetting;
         data.qualitySetting = qualitySetting;
+        data.downloadedGames = downloadedGames;
 
         bf.Serialize(file, data);
         file.Close();
+
+        Debug.Log("Saving GameControl successful");
     }
 
-    public void createFile()
+    public void CreateFile()
     {
         if (File.Exists(Application.persistentDataPath + "/playerInfo.dat"))
         {
+            Debug.Log(Application.persistentDataPath);
             Load();
+            Debug.Log("Loading GameControl successful");
         }
         else
         {
@@ -90,9 +101,12 @@ public class GameControl : MonoBehaviour {
             data.username = "";
             data.audioSetting = true;
             data.qualitySetting = true;
+            data.downloadedGames = null;
 
             bf.Serialize(file, data);
             file.Close();
+
+            Debug.Log("Creating GameControl successful");
         }
     }
 
@@ -107,9 +121,10 @@ public class GameControl : MonoBehaviour {
         username = data.username;
         audioSetting = data.audioSetting;
         qualitySetting = data.qualitySetting;
-    }
+        downloadedGames = data.downloadedGames;
 
-    //todo: Method Synchronize this with the player in the database
+        Debug.Log("Loading GameControl successful");
+    }
 }
 
 [Serializable]
@@ -125,6 +140,7 @@ class PlayerData
     public bool loggedInStatus;
 
     //Games
+    public List<Games> downloadedGames;
 
     //Progress
 

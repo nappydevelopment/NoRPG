@@ -5,7 +5,7 @@ public class SpecifyStartScreen : MonoBehaviour {
 
 	void Start()
     {
-        GameControl.control.createFile();
+        GameControl.control.CreateFile();
 
         if (GameControl.control.username != "")
         {
