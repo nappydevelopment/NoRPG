@@ -22,8 +22,7 @@ public class NPCDialogue : MonoBehaviour
 
     public string GetNpcText(string key)
     {
-        string username = GameControl.control.username;
-        string npcText = "Hey " + username + "!\n" + JSON.Parse(json)[key]["npcText"];
+        string npcText = JSON.Parse(json)[key]["npcText"];
         return npcText;
     }
 
