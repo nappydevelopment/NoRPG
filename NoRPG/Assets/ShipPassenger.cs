@@ -9,17 +9,23 @@ public class ShipPassenger : MonoBehaviour {
     public float speed;
     public float rotationSpeed = 5.0f;
     public string pathName;
+    private Vector3 position = new Vector3(2.25f, 18.07f, -7.07f);
 
-    //Player and Ship
     public GameObject player;
     public GameObject ship;
+    public GameObject follow;
+    public GameObject player_mesh;
+    public GameObject player_text;
+    public GameObject minidot;
+
+
     public GameObject hud;
+    public CharacterControll cc;
 
     private bool playerOnShip = false;
     private string lastButtonClicked = "1";
     private bool hudIsOpen = false;
-    
-
+    private bool playerShipped = false;
 
     Vector3 lastPosition;
     Vector3 currentPosition;
@@ -29,7 +35,6 @@ public class ShipPassenger : MonoBehaviour {
 
     void Start () {
         lastPosition = transform.position;
-
     }
 
     void Update () {
@@ -40,9 +45,11 @@ public class ShipPassenger : MonoBehaviour {
         if (playerOnShip) {
             float distance = Vector3.Distance(path.path_objs[currentWayPointId].position, transform.position);
             transform.position = Vector3.MoveTowards(transform.position, path.path_objs[currentWayPointId].position, Time.deltaTime * speed);
+            player.transform.position = transform.position;
 
             var rotation = Quaternion.LookRotation(path.path_objs[currentWayPointId].position - transform.position);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
+            player.transform.rotation = ship.transform.rotation;
 
             if (distance <= reachDistance) {
                 currentWayPointId++;
@@ -50,7 +57,17 @@ public class ShipPassenger : MonoBehaviour {
 
             if (currentWayPointId >= path.path_objs.Count) {
                 this.transform.position = path.path_objs[path.path_objs.Count-1].position;
+                playerShipped = true;
+                cc.enabled = true;
                 playerOnShip = false;
+                player_mesh.SetActive(true);
+                player_text.SetActive(true);
+                follow.transform.parent = player.transform;
+                follow.transform.position = player.transform.position;
+
+                minidot.SetActive(true);
+                player.transform.position = new Vector3(path.path_objs[path.path_objs.Count - 1].position.x, 6.3f, path.path_objs[path.path_objs.Count - 1].position.z);
+                
                 currentWayPointId = 0;
             }
         }
@@ -59,13 +76,33 @@ public class ShipPassenger : MonoBehaviour {
     void OnCollisionEnter (Collision col) {
         if (col.gameObject.name == player.name) {
             Debug.Log("Player On Ship");
-            playerGetOnShip();
+            if(!playerShipped)
+                playerGetOnShip();
         }
     }
 
+    public void setShippedStatusToFalse () {
+        playerShipped = false;
+    }
+
     public void playerGetOnShip () {
-        if(!playerOnShip)
+        if (!playerOnShip) {
+            cc.enabled = false;
+
+            player.GetComponent<Animator>().SetFloat("speed", 0.0f);
+            player.GetComponent<Animator>().SetFloat("direction", 0.0f);
+            player.transform.position = ship.transform.position;
+
+            player_mesh.SetActive(false);
+            player_text.SetActive(false);
+
+            follow.transform.parent = ship.transform;
+            follow.transform.position = ship.transform.position + position;
+
+            minidot.SetActive(false);
+
             hud.SetActive(true);
+        }
     }
 
     public void selectFirstClass () {
