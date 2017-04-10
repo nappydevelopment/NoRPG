@@ -18,86 +18,93 @@ public class MenuFunctions : MonoBehaviour {
     public GameScrollList scrollList = new GameScrollList();
 
     //Achievements
-    public Image class1_gem1_not;
-    public Image class1_gem1_found;
-    public Image class1_gem2_not;
-    public Image class1_gem2_found;
-    public Image class1_gem3_not;
-    public Image class1_gem3_found;
-    public Image class1_gem4_not;
-    public Image class1_gem4_found;
-    public Image class1_gem5_not;
-    public Image class1_gem5_found;
-    public Image class1_gem6_not;
-    public Image class1_gem6_found;
-    public Image class1_gem7_not;
-    public Image class1_gem7_found;
-    public Image class1_gem8_not;
-    public Image class1_gem8_found;
-    public Image class2_gem1_not;
-    public Image class2_gem1_found;
-    public Image class2_gem2_not;
-    public Image class2_gem2_found;
-    public Image class2_gem3_not;
-    public Image class2_gem3_found;
-    public Image class2_gem4_not;
-    public Image class2_gem4_found;
-    public Image class2_gem5_not;
-    public Image class2_gem5_found;
-    public Image class2_gem6_not;
-    public Image class2_gem6_found;
-    public Image class2_gem7_not;
-    public Image class2_gem7_found;
-    public Image class2_gem8_not;
-    public Image class2_gem8_found;
-    public Image class3_gem1_not;
-    public Image class3_gem1_found;
-    public Image class3_gem2_not;
-    public Image class3_gem2_found;
-    public Image class3_gem3_not;
-    public Image class3_gem3_found;
-    public Image class3_gem4_not;
-    public Image class3_gem4_found;
-    public Image class3_gem5_not;
-    public Image class3_gem5_found;
-    public Image class3_gem6_not;
-    public Image class3_gem6_found;
-    public Image class3_gem7_not;
-    public Image class3_gem7_found;
-    public Image class3_gem8_not;
-    public Image class3_gem8_found;
-    public Image class4_gem1_not;
-    public Image class4_gem1_found;
-    public Image class4_gem2_not;
-    public Image class4_gem2_found;
-    public Image class4_gem3_not;
-    public Image class4_gem3_found;
-    public Image class4_gem4_not;
-    public Image class4_gem4_found;
-    public Image class4_gem5_not;
-    public Image class4_gem5_found;
-    public Image class4_gem6_not;
-    public Image class4_gem6_found;
-    public Image class4_gem7_not;
-    public Image class4_gem7_found;
-    public Image class4_gem8_not;
-    public Image class4_gem8_found;
-    public Image class5_gem1_not;
-    public Image class5_gem1_found;
-    public Image class5_gem2_not;
-    public Image class5_gem2_found;
-    public Image class5_gem3_not;
-    public Image class5_gem3_found;
-    public Image class5_gem4_not;
-    public Image class5_gem4_found;
-    public Image class5_gem5_not;
-    public Image class5_gem5_found;
-    public Image class5_gem6_not;
-    public Image class5_gem6_found;
-    public Image class5_gem7_not;
-    public Image class5_gem7_found;
-    public Image class5_gem8_not;
-    public Image class5_gem8_found;
+    public RawImage class1_gem1_not;
+    public RawImage class1_gem1_found;
+    public RawImage class1_gem2_not;
+    public RawImage class1_gem2_found;
+    public RawImage class1_gem3_not;
+    public RawImage class1_gem3_found;
+    public RawImage class1_gem4_not;
+    public RawImage class1_gem4_found;
+    public RawImage class1_gem5_not;
+    public RawImage class1_gem5_found;
+    public RawImage class1_gem6_not;
+    public RawImage class1_gem6_found;
+    public RawImage class1_gem7_not;
+    public RawImage class1_gem7_found;
+    public RawImage class1_gem8_not;
+    public RawImage class1_gem8_found;
+    public RawImage class2_gem1_not;
+    public RawImage class2_gem1_found;
+    public RawImage class2_gem2_not;
+    public RawImage class2_gem2_found;
+    public RawImage class2_gem3_not;
+    public RawImage class2_gem3_found;
+    public RawImage class2_gem4_not;
+    public RawImage class2_gem4_found;
+    public RawImage class2_gem5_not;
+    public RawImage class2_gem5_found;
+    public RawImage class2_gem6_not;
+    public RawImage class2_gem6_found;
+    public RawImage class2_gem7_not;
+    public RawImage class2_gem7_found;
+    public RawImage class2_gem8_not;
+    public RawImage class2_gem8_found;
+    public RawImage class3_gem1_not;
+    public RawImage class3_gem1_found;
+    public RawImage class3_gem2_not;
+    public RawImage class3_gem2_found;
+    public RawImage class3_gem3_not;
+    public RawImage class3_gem3_found;
+    public RawImage class3_gem4_not;
+    public RawImage class3_gem4_found;
+    public RawImage class3_gem5_not;
+    public RawImage class3_gem5_found;
+    public RawImage class3_gem6_not;
+    public RawImage class3_gem6_found;
+    public RawImage class3_gem7_not;
+    public RawImage class3_gem7_found;
+    public RawImage class3_gem8_not;
+    public RawImage class3_gem8_found;
+    public RawImage class4_gem1_not;
+    public RawImage class4_gem1_found;
+    public RawImage class4_gem2_not;
+    public RawImage class4_gem2_found;
+    public RawImage class4_gem3_not;
+    public RawImage class4_gem3_found;
+    public RawImage class4_gem4_not;
+    public RawImage class4_gem4_found;
+    public RawImage class4_gem5_not;
+    public RawImage class4_gem5_found;
+    public RawImage class4_gem6_not;
+    public RawImage class4_gem6_found;
+    public RawImage class4_gem7_not;
+    public RawImage class4_gem7_found;
+    public RawImage class4_gem8_not;
+    public RawImage class4_gem8_found;
+    public RawImage class5_gem1_not;
+    public RawImage class5_gem1_found;
+    public RawImage class5_gem2_not;
+    public RawImage class5_gem2_found;
+    public RawImage class5_gem3_not;
+    public RawImage class5_gem3_found;
+    public RawImage class5_gem4_not;
+    public RawImage class5_gem4_found;
+    public RawImage class5_gem5_not;
+    public RawImage class5_gem5_found;
+    public RawImage class5_gem6_not;
+    public RawImage class5_gem6_found;
+    public RawImage class5_gem7_not;
+    public RawImage class5_gem7_found;
+    public RawImage class5_gem8_not;
+    public RawImage class5_gem8_found;
+
+    public RawImage rainbow0;
+    public RawImage rainbow1;
+    public RawImage rainbow2;
+    public RawImage rainbow3;
+    public RawImage rainbow4;
+    public RawImage rainbow5;
 
     void Start () {
         GameControl.control.Load();
@@ -190,6 +197,52 @@ public class MenuFunctions : MonoBehaviour {
 
     public void LoadAchievements()
     {
+        if (GameControl.control.chest_1_desert_open == true && GameControl.control.chest_1_forest_open == true && GameControl.control.chest_1_lava_open == true && GameControl.control.chest_1_snow_open == true && GameControl.control.chest_1_tropen_open == true)
+        {
+            rainbow0.gameObject.SetActive(false);
+            rainbow1.gameObject.SetActive(true);
+            rainbow2.gameObject.SetActive(false);
+            rainbow3.gameObject.SetActive(false);
+            rainbow4.gameObject.SetActive(false);
+            rainbow5.gameObject.SetActive(false);
+        }
+        if (GameControl.control.chest_2_desert_open == true && GameControl.control.chest_2_forest_open == true && GameControl.control.chest_2_lava_open == true && GameControl.control.chest_2_snow_open == true && GameControl.control.chest_2_tropen_open == true)
+        {
+            rainbow0.gameObject.SetActive(false);
+            rainbow1.gameObject.SetActive(false);
+            rainbow2.gameObject.SetActive(true);
+            rainbow3.gameObject.SetActive(false);
+            rainbow4.gameObject.SetActive(false);
+            rainbow5.gameObject.SetActive(false);
+        }
+        if (GameControl.control.chest_3_desert_open == true && GameControl.control.chest_3_forest_open == true && GameControl.control.chest_3_lava_open == true && GameControl.control.chest_3_snow_open == true && GameControl.control.chest_3_tropen_open == true)
+        {
+            rainbow0.gameObject.SetActive(false);
+            rainbow1.gameObject.SetActive(false);
+            rainbow2.gameObject.SetActive(false);
+            rainbow3.gameObject.SetActive(true);
+            rainbow4.gameObject.SetActive(false);
+            rainbow5.gameObject.SetActive(false);
+        }
+        if (GameControl.control.chest_4_desert_open == true && GameControl.control.chest_4_forest_open == true && GameControl.control.chest_4_lava_open == true && GameControl.control.chest_4_snow_open == true && GameControl.control.chest_4_tropen_open == true)
+        {
+            rainbow0.gameObject.SetActive(false);
+            rainbow1.gameObject.SetActive(false);
+            rainbow2.gameObject.SetActive(false);
+            rainbow3.gameObject.SetActive(false);
+            rainbow4.gameObject.SetActive(true);
+            rainbow5.gameObject.SetActive(false);
+        }
+        if (GameControl.control.chest_5_desert_open == true && GameControl.control.chest_5_forest_open == true && GameControl.control.chest_5_lava_open == true && GameControl.control.chest_5_snow_open == true && GameControl.control.chest_5_tropen_open == true)
+        {
+            rainbow0.gameObject.SetActive(false);
+            rainbow1.gameObject.SetActive(false);
+            rainbow2.gameObject.SetActive(false);
+            rainbow3.gameObject.SetActive(false);
+            rainbow4.gameObject.SetActive(false);
+            rainbow5.gameObject.SetActive(true);
+        }
+
         GameControl.control.Load();
         //First class gems
         if (GameControl.control.chest_1_forest_open == true) { class1_gem1_found.gameObject.SetActive(true); class1_gem1_not.gameObject.SetActive(false);}
