@@ -96,7 +96,6 @@ public class ChestHandle : MonoBehaviour {
 
         GameControl.control.Save();
     }
-    
 
     private void SetCorrectChest(int gemNumber)
     {
