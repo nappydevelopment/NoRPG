@@ -41,6 +41,8 @@ public class ChestHandle : MonoBehaviour {
         chest_6_Animator = chest_6.GetComponent<Animator>();
         chest_7_Animator = chest_7.GetComponent<Animator>();
         chest_8_Animator = chest_8.GetComponent<Animator>();
+
+        LoadChests();
     }
 
     public void OpenChest(string chestNumber)
@@ -266,6 +268,232 @@ public class ChestHandle : MonoBehaviour {
         }
 
         
+    }
+
+    private void LoadChests()
+    {
+        string currentScene = PortalControl.control.currentScene;
+        GameControl.control.Load();
+
+        if (currentScene == "first_forrest")
+        {
+            if (GameControl.control.chest_1_forest_open == true)
+            {
+                chest_1_Animator.SetTrigger("Open");
+                gem_1.SetActive(false);
+            }
+            if (GameControl.control.chest_2_forest_open == true)
+            {
+                chest_2_Animator.SetTrigger("Open");
+                gem_2.SetActive(false);
+            }
+            if (GameControl.control.chest_3_forest_open == true)
+            {
+                chest_3_Animator.SetTrigger("Open");
+                gem_3.SetActive(false);
+            }
+            if (GameControl.control.chest_4_forest_open == true)
+            {
+                chest_4_Animator.SetTrigger("Open");
+                gem_4.SetActive(false);
+            }
+            if (GameControl.control.chest_5_forest_open == true)
+            {
+                chest_5_Animator.SetTrigger("Open");
+                gem_5.SetActive(false);
+            }
+            if (GameControl.control.chest_6_forest_open == true)
+            {
+                chest_6_Animator.SetTrigger("Open");
+                gem_6.SetActive(false);
+            }
+            if (GameControl.control.chest_7_forest_open == true)
+            {
+                chest_7_Animator.SetTrigger("Open");
+                gem_7.SetActive(false);
+            }
+            if (GameControl.control.chest_8_forest_open == true)
+            {
+                chest_8_Animator.SetTrigger("Open");
+                gem_8.SetActive(false);
+            }
+        }
+
+        if (currentScene == "Tropic_World")
+        {
+            if (GameControl.control.chest_1_tropen_open == true)
+            {
+                chest_1_Animator.SetTrigger("Open");
+                gem_1.SetActive(false);
+            }
+            if (GameControl.control.chest_2_tropen_open == true)
+            {
+                chest_2_Animator.SetTrigger("Open");
+                gem_2.SetActive(false);
+            }
+            if (GameControl.control.chest_3_tropen_open == true)
+            {
+                chest_3_Animator.SetTrigger("Open");
+                gem_3.SetActive(false);
+            }
+            if (GameControl.control.chest_4_tropen_open == true)
+            {
+                chest_4_Animator.SetTrigger("Open");
+                gem_4.SetActive(false);
+            }
+            if (GameControl.control.chest_5_tropen_open == true)
+            {
+                chest_5_Animator.SetTrigger("Open");
+                gem_5.SetActive(false);
+            }
+            if (GameControl.control.chest_6_tropen_open == true)
+            {
+                chest_6_Animator.SetTrigger("Open");
+                gem_6.SetActive(false);
+            }
+            if (GameControl.control.chest_7_tropen_open == true)
+            {
+                chest_7_Animator.SetTrigger("Open");
+                gem_7.SetActive(false);
+            }
+            if (GameControl.control.chest_8_tropen_open == true)
+            {
+                chest_8_Animator.SetTrigger("Open");
+                gem_8.SetActive(false);
+            }
+        }
+
+        if (currentScene == "Desert")
+        {
+            if (GameControl.control.chest_1_desert_open == true)
+            {
+                chest_1_Animator.SetTrigger("Open");
+                gem_1.SetActive(false);
+            }
+            if (GameControl.control.chest_2_desert_open == true)
+            {
+                chest_2_Animator.SetTrigger("Open");
+                gem_2.SetActive(false);
+            }
+            if (GameControl.control.chest_3_desert_open == true)
+            {
+                chest_3_Animator.SetTrigger("Open");
+                gem_3.SetActive(false);
+            }
+            if (GameControl.control.chest_4_desert_open == true)
+            {
+                chest_4_Animator.SetTrigger("Open");
+                gem_4.SetActive(false);
+            }
+            if (GameControl.control.chest_5_desert_open == true)
+            {
+                chest_5_Animator.SetTrigger("Open");
+                gem_5.SetActive(false);
+            }
+            if (GameControl.control.chest_6_desert_open == true)
+            {
+                chest_6_Animator.SetTrigger("Open");
+                gem_6.SetActive(false);
+            }
+            if (GameControl.control.chest_7_desert_open == true)
+            {
+                chest_7_Animator.SetTrigger("Open");
+                gem_7.SetActive(false);
+            }
+            if (GameControl.control.chest_8_desert_open == true)
+            {
+                chest_8_Animator.SetTrigger("Open");
+                gem_8.SetActive(false);
+            }
+        }
+
+        if (currentScene == "Snow_World")
+        {
+            if (GameControl.control.chest_1_snow_open == true)
+            {
+                chest_1_Animator.SetTrigger("Open");
+                gem_1.SetActive(false);
+            }
+            if (GameControl.control.chest_2_snow_open == true)
+            {
+                chest_2_Animator.SetTrigger("Open");
+                gem_2.SetActive(false);
+            }
+            if (GameControl.control.chest_3_snow_open == true)
+            {
+                chest_3_Animator.SetTrigger("Open");
+                gem_3.SetActive(false);
+            }
+            if (GameControl.control.chest_4_snow_open == true)
+            {
+                chest_4_Animator.SetTrigger("Open");
+                gem_4.SetActive(false);
+            }
+            if (GameControl.control.chest_5_snow_open == true)
+            {
+                chest_5_Animator.SetTrigger("Open");
+                gem_5.SetActive(false);
+            }
+            if (GameControl.control.chest_6_snow_open == true)
+            {
+                chest_6_Animator.SetTrigger("Open");
+                gem_6.SetActive(false);
+            }
+            if (GameControl.control.chest_7_snow_open == true)
+            {
+                chest_7_Animator.SetTrigger("Open");
+                gem_7.SetActive(false);
+            }
+            if (GameControl.control.chest_8_snow_open == true)
+            {
+                chest_8_Animator.SetTrigger("Open");
+                gem_8.SetActive(false);
+            }
+        }
+
+        if (currentScene == "Lavawelt")
+        {
+            if (GameControl.control.chest_1_lava_open == true)
+            {
+                chest_1_Animator.SetTrigger("Open");
+                gem_1.SetActive(false);
+            }
+            if (GameControl.control.chest_2_lava_open == true)
+            {
+                chest_2_Animator.SetTrigger("Open");
+                gem_2.SetActive(false);
+            }
+            if (GameControl.control.chest_3_lava_open == true)
+            {
+                chest_3_Animator.SetTrigger("Open");
+                gem_3.SetActive(false);
+            }
+            if (GameControl.control.chest_4_lava_open == true)
+            {
+                chest_4_Animator.SetTrigger("Open");
+                gem_4.SetActive(false);
+            }
+            if (GameControl.control.chest_5_lava_open == true)
+            {
+                chest_5_Animator.SetTrigger("Open");
+                gem_5.SetActive(false);
+            }
+            if (GameControl.control.chest_6_lava_open == true)
+            {
+                chest_6_Animator.SetTrigger("Open");
+                gem_6.SetActive(false);
+            }
+            if (GameControl.control.chest_7_lava_open == true)
+            {
+                chest_7_Animator.SetTrigger("Open");
+                gem_7.SetActive(false);
+            }
+            if (GameControl.control.chest_8_lava_open == true)
+            {
+                chest_8_Animator.SetTrigger("Open");
+                gem_8.SetActive(false);
+            }
+        }
     }
 
 }

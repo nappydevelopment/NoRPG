@@ -106,6 +106,11 @@ public class MenuFunctions : MonoBehaviour {
     public RawImage rainbow4;
     public RawImage rainbow5;
 
+    public GameObject secondClassPanel;
+    public GameObject thirdClassPanel;
+    public GameObject fourthClassPanel;
+    public GameObject fifthClassPanel;
+
     void Start () {
         GameControl.control.Load();
 
@@ -205,6 +210,8 @@ public class MenuFunctions : MonoBehaviour {
             rainbow3.gameObject.SetActive(false);
             rainbow4.gameObject.SetActive(false);
             rainbow5.gameObject.SetActive(false);
+
+            secondClassPanel.SetActive(true);
         }
         if (GameControl.control.chest_2_desert_open == true && GameControl.control.chest_2_forest_open == true && GameControl.control.chest_2_lava_open == true && GameControl.control.chest_2_snow_open == true && GameControl.control.chest_2_tropen_open == true)
         {
@@ -214,6 +221,8 @@ public class MenuFunctions : MonoBehaviour {
             rainbow3.gameObject.SetActive(false);
             rainbow4.gameObject.SetActive(false);
             rainbow5.gameObject.SetActive(false);
+
+            thirdClassPanel.SetActive(true);
         }
         if (GameControl.control.chest_3_desert_open == true && GameControl.control.chest_3_forest_open == true && GameControl.control.chest_3_lava_open == true && GameControl.control.chest_3_snow_open == true && GameControl.control.chest_3_tropen_open == true)
         {
@@ -223,6 +232,8 @@ public class MenuFunctions : MonoBehaviour {
             rainbow3.gameObject.SetActive(true);
             rainbow4.gameObject.SetActive(false);
             rainbow5.gameObject.SetActive(false);
+
+            fourthClassPanel.SetActive(true);
         }
         if (GameControl.control.chest_4_desert_open == true && GameControl.control.chest_4_forest_open == true && GameControl.control.chest_4_lava_open == true && GameControl.control.chest_4_snow_open == true && GameControl.control.chest_4_tropen_open == true)
         {
@@ -232,6 +243,8 @@ public class MenuFunctions : MonoBehaviour {
             rainbow3.gameObject.SetActive(false);
             rainbow4.gameObject.SetActive(true);
             rainbow5.gameObject.SetActive(false);
+
+            fifthClassPanel.SetActive(true);
         }
         if (GameControl.control.chest_5_desert_open == true && GameControl.control.chest_5_forest_open == true && GameControl.control.chest_5_lava_open == true && GameControl.control.chest_5_snow_open == true && GameControl.control.chest_5_tropen_open == true)
         {
