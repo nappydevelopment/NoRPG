@@ -54,6 +54,9 @@ public class GameControl : MonoBehaviour {
     public bool chest_7_lava_open;
     public bool chest_8_lava_open;
 
+    //Intro
+    public bool playedIntro;
+
     //Character
     public string characterGender;
     public int characterShader;
@@ -157,6 +160,7 @@ public class GameControl : MonoBehaviour {
         data.chest_6_tropen_open = chest_6_tropen_open;
         data.chest_7_tropen_open = chest_7_tropen_open;
         data.chest_8_tropen_open = chest_8_tropen_open;
+        data.playedIntro = playedIntro;
 
 
         bf.Serialize(file, data);
@@ -184,6 +188,7 @@ public class GameControl : MonoBehaviour {
             data.audioSetting = true;
             data.qualitySetting = true;
             data.downloadedGames = null;
+            playedIntro = false;
             chest_1_desert_open = false;
             chest_2_desert_open = false;
             chest_3_desert_open = false;
@@ -284,6 +289,7 @@ public class GameControl : MonoBehaviour {
         chest_6_tropen_open = data.chest_6_tropen_open;
         chest_7_tropen_open = data.chest_7_tropen_open;
         chest_8_tropen_open = data.chest_8_tropen_open;
+        playedIntro = data.playedIntro;
 
         Debug.Log("Loading GameControl successful");
     }
@@ -347,6 +353,9 @@ class PlayerData
     public bool chest_6_lava_open;
     public bool chest_7_lava_open;
     public bool chest_8_lava_open;
+
+    //intro
+    public bool playedIntro;
 
     public int characterShader;
     public string characterGender;

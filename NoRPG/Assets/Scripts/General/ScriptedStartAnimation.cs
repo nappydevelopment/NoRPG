@@ -31,7 +31,6 @@ public class ScriptedStartAnimation : MonoBehaviour {
     private Animator animatorAnimie;
     [SerializeField]
     private NPCCommunication npcc;
-    private bool played = false;
     private Vector3 cameraMovement;
     private Quaternion rotation;
     private bool showCityColoured = false;
@@ -40,13 +39,21 @@ public class ScriptedStartAnimation : MonoBehaviour {
 
     void Start()
     {
+        //GameControl.control.Load();
         playerCamera.enabled = true;
         scriptCamera.enabled = false;
-        hud.SetActive(false);
-        playerdot.SetActive(false);
-        miniMap.SetActive(false);
-        miniMapPanel.SetActive(false);
-        player.GetComponent<CharacterControll>().enabled = false;
+        if (!GameControl.control.playedIntro)
+        {
+            hud.SetActive(false);
+            playerdot.SetActive(false);
+            miniMap.SetActive(false);
+            miniMapPanel.SetActive(false);
+            player.GetComponent<CharacterControll>().enabled = false;
+        }
+        else
+        {
+            playerCamera.transform.position = player.transform.position + new Vector3(-3, 3, -3);
+        }
         animatorPlayer = player.GetComponent<Animator>();
         animatorNpc = npc.GetComponent<Animator>();
         animatorAnimie = animie.GetComponent<Animator>();
@@ -57,7 +64,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
     }
 
     void Update () {
-        if (!played) { 
+        if (!GameControl.control.playedIntro) { 
         if (npc.transform.position.z > 275.0f) {
             animatorNpc.SetFloat("speed", 1f);
             animatorNpc.SetFloat("direction", 0.0f);
@@ -66,7 +73,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
             animatorNpc.SetFloat("speed", 0.0f);
             animatorNpc.SetFloat("direction", 0.0f);
         }
-            if (!played && animatorNpc.GetFloat("speed") == 0.0f)
+            if (!GameControl.control.playedIntro && animatorNpc.GetFloat("speed") == 0.0f)
             {
                 //Debug.Log("ScriptedStartAnimation Update");
                 player.transform.LookAt(npc.transform);
@@ -76,7 +83,8 @@ public class ScriptedStartAnimation : MonoBehaviour {
                 joystick.SetActive(false);
                 npcc.StartCommunication();
                 player.GetComponent<CharacterControll>().enabled = true;
-                played = true;
+                GameControl.control.playedIntro = true;
+                GameControl.control.Save();
             }
         }
     }
