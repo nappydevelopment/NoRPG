@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class CharacterControll : MonoBehaviour {
 
-    //   private CharacterController character;
     [SerializeField]
     private Animator animator;
     [SerializeField]
@@ -20,8 +19,8 @@ public class CharacterControll : MonoBehaviour {
 
     private float speed = 0.0f;
     private float direction = 0f;
-    private float h = 0.0f;
-    private float v = 0.0f;
+    private float horizontal = 0.0f;
+    private float vertical = 0.0f;
     private AnimatorStateInfo stateInfo;
 
     private int m_LocomotionID = 0;
@@ -39,9 +38,9 @@ public class CharacterControll : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if(IsInLocomotion() && ((direction>=0 && h>=0) || (direction <0 && h < 0)))
+        if(IsInLocomotion() && ((direction>=0 && horizontal>=0) || (direction <0 && horizontal < 0)))
         {
-            Vector3 rotationAmount = Vector3.Lerp(Vector3.zero, new Vector3(0f, rotationDegreePerSecound * (h < 0f ? -1f : 1f), 0f), Mathf.Abs(h));
+            Vector3 rotationAmount = Vector3.Lerp(Vector3.zero, new Vector3(0f, rotationDegreePerSecound * (horizontal < 0f ? -1f : 1f), 0f), Mathf.Abs(horizontal));
             Quaternion deltaRotation = Quaternion.Euler(rotationAmount * Time.deltaTime);
             this.transform.rotation = (this.transform.rotation * deltaRotation);
         }
@@ -58,8 +57,8 @@ public class CharacterControll : MonoBehaviour {
         {
             stateInfo = animator.GetCurrentAnimatorStateInfo(0);
 
-            h = CnInputManager.GetAxis("Horizontal");
-            v = CnInputManager.GetAxis("Vertical");
+            horizontal = CnInputManager.GetAxis("Horizontal");
+            vertical = CnInputManager.GetAxis("Vertical");
 
             StickToWorldspace(this.transform, gamecam.transform, ref direction, ref speed);
 
@@ -119,7 +118,7 @@ public class CharacterControll : MonoBehaviour {
     {
         Vector3 rootDirection = root.forward;
 
-        Vector3 stickDirection = new Vector3(h, 0, v);
+        Vector3 stickDirection = new Vector3(horizontal, 0, vertical);
 
         speedOut = stickDirection.sqrMagnitude;
 
