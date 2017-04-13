@@ -47,7 +47,6 @@ public class SendDataToServer : MonoBehaviour {
         firstnameText = firstname.text;
         lastnameText = lastname.text;
         birthdayText = yearOfBirth.text + "-" + monthOfBirth.text + "-" + dayOfBirth.text;
-        //Debug.Log(birthdayText);
         genderText = gender.text;
         countryText = country.text;
         native_languageText = native_language.text;
