@@ -112,7 +112,7 @@ public class MenuFunctions : MonoBehaviour {
     public GameObject fifthClassPanel;
 
     void Start () {
-        GameControl.control.Load();
+        GameControl.control.LoadFromFile();
 
         if (GameControl.control.qualitySetting == true)
         {
@@ -256,7 +256,7 @@ public class MenuFunctions : MonoBehaviour {
             rainbow5.gameObject.SetActive(true);
         }
 
-        GameControl.control.Load();
+        GameControl.control.LoadFromFile();
         //First class gems
         if (GameControl.control.chest_1_forest_open == true) { class1_gem1_found.gameObject.SetActive(true); class1_gem1_not.gameObject.SetActive(false);}
         if (GameControl.control.chest_2_forest_open == true) { class1_gem2_found.gameObject.SetActive(true); class1_gem2_not.gameObject.SetActive(false);}

@@ -56,7 +56,7 @@ public class LoggedInScreenFunctions : MonoBehaviour {
 
     public void getSettings()
     {
-        GameControl.control.Load();
+        GameControl.control.LoadFromFile();
 
         if (GameControl.control.qualitySetting == true)
         {

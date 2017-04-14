@@ -2,12 +2,16 @@
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 
 public class GameControl : MonoBehaviour {
 
     public static GameControl control;
-
+    private string secretKey = "norpg";
+    public string saveURL = "http://localhost:8080/unity_test/save.php?";
+    public string loadURL = "http://localhost:8080/unity_test/load.php?";
     //Player information
     public string username;
     public string lastPosition;
@@ -96,16 +100,6 @@ public class GameControl : MonoBehaviour {
         }
     }
 
-    void SaveLocalDataAtServer()
-    {
-
-    }
-
-    void LoadLocalDataFromServer()
-    {
-        
-    }
-
     public void Save()
     {
         /*BinaryFormatter bf = new BinaryFormatter();
@@ -166,16 +160,38 @@ public class GameControl : MonoBehaviour {
         bf.Serialize(file, data);
         file.Close();
 
-        Debug.Log("Saving GameControl successful");
+        Debug.Log("Successfully saved new data in file");
+
+        if (File.Exists(Application.persistentDataPath + "/playerInfo.dat")) {
+            StartCoroutine(SaveDataRoutine(username));
+        }
+    }
+    public IEnumerator SaveDataRoutine (string u) {
+
+        string data = File.ReadAllText(Application.persistentDataPath + "/playerInfo.dat");
+        string hash = MD5Test.Md5Sum(u + data + secretKey);
+
+        WWWForm form = new WWWForm();
+        form.AddField("username", u);
+        form.AddField("data", data);
+        form.AddField("hash", hash);
+        WWW www = new WWW(saveURL, form);
+
+        yield return www;
+
+        if (www.error != null) {
+            Debug.Log("There was an error saving on Cloud: " + www.error);
+        } else {
+            Debug.Log(www.text);
+        }
+
     }
 
     public void CreateFile()
     {
-        Debug.Log(Application.persistentDataPath);
         if (File.Exists(Application.persistentDataPath + "/playerInfo.dat"))
         {
-            Debug.Log(Application.persistentDataPath);
-            Load();
+            LoadFromFile();
             Debug.Log("Loading GameControl successful");
         }
         else
@@ -238,8 +254,31 @@ public class GameControl : MonoBehaviour {
         }
     }
 
-    public void Load()
-    { 
+    public void Load (string username) {
+        if (hasInternetConnection()) {
+            LoadFromCloud(username);
+        } else {
+            LoadFromFile();
+        } 
+    }
+
+    private bool hasInternetConnection () {
+        return false;
+       /* try {
+            WebClient client = new WebClient();
+            Stream stream = client.OpenRead("http://www.google.com");
+            return true;
+        }
+        catch( Exception e) {
+            return false;
+        } 
+        finally {
+
+        }*/
+    }
+
+    public void LoadFromFile()
+    {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
 
@@ -293,6 +332,32 @@ public class GameControl : MonoBehaviour {
         playedIntro = data.playedIntro;
 
         Debug.Log("Loading GameControl successful");
+    }
+
+    public void LoadFromCloud (string username) {
+        StartCoroutine(LoadDataRoutine(username));
+    }
+
+    public IEnumerator LoadDataRoutine (string username) {
+
+        string hash = MD5Test.Md5Sum(username + secretKey);
+
+        WWWForm form = new WWWForm();
+        form.AddField("username", username);
+        form.AddField("hash", hash);
+        WWW www = new WWW(loadURL, form);
+        
+        yield return www;
+
+        if (www.error != null) {
+            Debug.Log("There was an error getting the data from Cloud: " + www.error);
+        } else {
+            if(File.Exists(Application.persistentDataPath + "/playerInfo.dat")) {
+                File.WriteAllText(Application.persistentDataPath + "/playerInfo.dat", www.text);
+                LoadFromFile();
+                Debug.Log("Load successfull from Cloud");
+            }
+        }
     }
 }
 

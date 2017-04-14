@@ -273,7 +273,7 @@ public class ChestHandle : MonoBehaviour {
     private void LoadChests()
     {
         string currentScene = PortalControl.control.currentScene;
-        GameControl.control.Load();
+        GameControl.control.LoadFromFile();
 
         if (currentScene == "first_forrest")
         {
