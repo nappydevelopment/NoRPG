@@ -171,6 +171,7 @@ public class GameControl : MonoBehaviour {
 
     public void CreateFile()
     {
+        Debug.Log(Application.persistentDataPath);
         if (File.Exists(Application.persistentDataPath + "/playerInfo.dat"))
         {
             Debug.Log(Application.persistentDataPath);
@@ -187,7 +188,7 @@ public class GameControl : MonoBehaviour {
             data.username = "";
             data.audioSetting = true;
             data.qualitySetting = true;
-            data.downloadedGames = null;
+            data.downloadedGames = new List<Games>();
             playedIntro = false;
             chest_1_desert_open = false;
             chest_2_desert_open = false;

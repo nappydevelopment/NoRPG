@@ -43,10 +43,12 @@ public class GameScrollList : MonoBehaviour
         Debug.Log("Transfer to downloaded game list");
         GameControl.control.CreateFile();
 
-        List<Games> downloadedGames = GameControl.control.downloadedGames;
+        //GameControl.control.downloadedGames.Clear();
+        //Debug.Log("downloaded games list cleared");
         
-        if (!downloadedGames.Contains(game))
+        if (!GameControl.control.downloadedGames.Exists(x => x.id == game.id))
         {
+            //Debug.Log(!GameControl.control.downloadedGames.Contains(game));
             GameControl.control.downloadedGames.Add(game);
             GameControl.control.Save();
             Debug.Log("Game attempted");
