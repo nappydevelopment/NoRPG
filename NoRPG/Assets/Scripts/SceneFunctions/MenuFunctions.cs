@@ -152,6 +152,8 @@ public class MenuFunctions : MonoBehaviour {
             goodQuality.gameObject.SetActive(false);
             badQuality.gameObject.SetActive(true);
 
+            QualitySettings.SetQualityLevel(0);
+
             GameControl.control.qualitySetting = false;
             GameControl.control.Save();
             Debug.Log("QualitySetting changed to false, saving successful!");
@@ -160,6 +162,8 @@ public class MenuFunctions : MonoBehaviour {
         {
             goodQuality.gameObject.SetActive(true);
             badQuality.gameObject.SetActive(false);
+
+            QualitySettings.SetQualityLevel(1);
 
             GameControl.control.qualitySetting = true;
             GameControl.control.Save();
