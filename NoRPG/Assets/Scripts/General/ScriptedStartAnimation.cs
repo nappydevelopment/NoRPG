@@ -30,6 +30,8 @@ public class ScriptedStartAnimation : MonoBehaviour {
     [SerializeField]
     private Animator animatorAnimie;
     [SerializeField]
+    private GameObject dragon;
+    [SerializeField]
     private NPCCommunication npcc;
     private Vector3 cameraMovement;
     private Quaternion rotation;
@@ -53,6 +55,7 @@ public class ScriptedStartAnimation : MonoBehaviour {
         else
         {
             playerCamera.transform.position = player.transform.position + new Vector3(-3, 3, -3);
+            dragon.SetActive(false);
         }
         animatorPlayer = player.GetComponent<Animator>();
         animatorNpc = npc.GetComponent<Animator>();

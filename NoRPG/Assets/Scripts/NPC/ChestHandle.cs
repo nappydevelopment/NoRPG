@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChestHandle : MonoBehaviour {
 
@@ -21,6 +22,12 @@ public class ChestHandle : MonoBehaviour {
     public GameObject gem_6;
     public GameObject gem_7;
     public GameObject gem_8;
+
+    public Button acceptButton;
+    public Button cancelButton;
+    public Text npcText;
+
+    private NPCCommunication npcc;
 
     private Animator chest_1_Animator;
     private Animator chest_2_Animator;
@@ -47,56 +54,72 @@ public class ChestHandle : MonoBehaviour {
 
     public void OpenChest(string chestNumber)
     {
+        acceptButton.onClick.RemoveAllListeners();
+        cancelButton.onClick.RemoveAllListeners();
         if (chestNumber == "1_Chest")
         {
             chest_1_Animator.SetTrigger("Open");
-            gem_1.SetActive(false);
+            acceptButton.onClick.AddListener(delegate () { CollectGem(gem_1); });
+            cancelButton.onClick.AddListener(delegate () { CollectGem(gem_1); });
             SetCorrectChest(1);
         }
         if (chestNumber == "2_Chest")
         {
             chest_2_Animator.SetTrigger("Open");
-            gem_2.SetActive(false);
+            acceptButton.onClick.AddListener(delegate () { CollectGem(gem_2); });
+            cancelButton.onClick.AddListener(delegate () { CollectGem(gem_2); });
             SetCorrectChest(2);
         }
         if (chestNumber == "3_Chest")
         {
             chest_3_Animator.SetTrigger("Open");
-            gem_3.SetActive(false);
+            acceptButton.onClick.AddListener(delegate () { CollectGem(gem_3); });
+            cancelButton.onClick.AddListener(delegate () { CollectGem(gem_3); });
             SetCorrectChest(3);
         }
         if (chestNumber == "4_Chest")
         {
             chest_4_Animator.SetTrigger("Open");
-            gem_4.SetActive(false);
+            acceptButton.onClick.AddListener(delegate () { CollectGem(gem_4); });
+            cancelButton.onClick.AddListener(delegate () { CollectGem(gem_4); });
             SetCorrectChest(4);
         }
         if (chestNumber == "5_Chest")
         {
             chest_5_Animator.SetTrigger("Open");
-            gem_5.SetActive(false);
+            acceptButton.onClick.AddListener(delegate () { CollectGem(gem_5); });
+            cancelButton.onClick.AddListener(delegate () { CollectGem(gem_5); });
             SetCorrectChest(5);
         }
         if (chestNumber == "6_Chest")
         {
             chest_6_Animator.SetTrigger("Open");
-            gem_6.SetActive(false);
+            acceptButton.onClick.AddListener(delegate () { CollectGem(gem_6); });
+            cancelButton.onClick.AddListener(delegate () { CollectGem(gem_6); });
             SetCorrectChest(6);
         }
         if (chestNumber == "7_Chest")
         {
             chest_7_Animator.SetTrigger("Open");
-            gem_7.SetActive(false);
+            acceptButton.onClick.AddListener(delegate () { CollectGem(gem_7); });
+            cancelButton.onClick.AddListener(delegate () { CollectGem(gem_7); });
             SetCorrectChest(7);
         }
         if (chestNumber == "8_Chest")
         {
             chest_8_Animator.SetTrigger("Open");
-            gem_8.SetActive(false);
+            acceptButton.onClick.AddListener(delegate () { CollectGem(gem_8); });
+            cancelButton.onClick.AddListener(delegate () { CollectGem(gem_8); });
             SetCorrectChest(8);
         }
 
         GameControl.control.Save();
+    }
+
+    private void CollectGem(GameObject gem)
+    {
+        gem.SetActive(false);
+        npcText.text = "You collected the gem! You can look at your collected gems in the achievements.";
     }
 
     private void SetCorrectChest(int gemNumber)
