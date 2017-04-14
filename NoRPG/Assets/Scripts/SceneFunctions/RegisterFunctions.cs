@@ -97,10 +97,51 @@ public class RegisterFunctions : MonoBehaviour
 
     private IEnumerator CheckBirthday()
     {
-        string birthdayText = dayOfBirth.text + "-" + monthOfBirth.text + "-" + yearOfBirth.text;
+        string birthdayText = "";
+
+        switch (monthOfBirth.text)
+        {
+            case "January":
+                birthdayText = dayOfBirth.text + "-" + "1" + "-" + yearOfBirth.text;
+                break;
+            case "February":
+                birthdayText = dayOfBirth.text + "-" + "2" + "-" + yearOfBirth.text;
+                break;
+            case "March":
+                birthdayText = dayOfBirth.text + "-" + "3" + "-" + yearOfBirth.text;
+                break;
+            case "April":
+                birthdayText = dayOfBirth.text + "-" + "4" + "-" + yearOfBirth.text;
+                break;
+            case "May":
+                birthdayText = dayOfBirth.text + "-" + "5" + "-" + yearOfBirth.text;
+                break;
+            case "June":
+                birthdayText = dayOfBirth.text + "-" + "6" + "-" + yearOfBirth.text;
+                break;
+            case "July":
+                birthdayText = dayOfBirth.text + "-" + "7" + "-" + yearOfBirth.text;
+                break;
+            case "August":
+                birthdayText = dayOfBirth.text + "-" + "8" + "-" + yearOfBirth.text;
+                break;
+            case "September":
+                birthdayText = dayOfBirth.text + "-" + "9" + "-" + yearOfBirth.text;
+                break;
+            case "October":
+                birthdayText = dayOfBirth.text + "-" + "10" + "-" + yearOfBirth.text;
+                break;
+            case "November":
+                birthdayText = dayOfBirth.text + "-" + "11" + "-" + yearOfBirth.text;
+                break;
+            case "December":
+                birthdayText = dayOfBirth.text + "-" + "12" + "-" + yearOfBirth.text;
+                break;
+        }
+
         string expresion = "(?:(?:31(\\/|-|\\.)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(\\/|-|\\.)(?:0?[1,3-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(\\/|-|\\.)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(\\/|-|\\.)(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})";
 
-        /*if (Regex.IsMatch(birthdayText, expresion))
+        if (Regex.IsMatch(birthdayText, expresion))
         {
             if (Regex.Replace(birthdayText, expresion, string.Empty).Length == 0)
             {
@@ -114,9 +155,9 @@ public class RegisterFunctions : MonoBehaviour
         else
         {
             validBirthday = false;
-        }*/
+        }
 
-        validBirthday = true;
+        //validBirthday = true;
         yield return null;
     }
 
