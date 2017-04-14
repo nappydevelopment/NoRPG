@@ -10,8 +10,8 @@ public class GameControl : MonoBehaviour {
 
     public static GameControl control;
     private string secretKey = "norpg";
-    public string saveURL = "http://localhost:8080/unity_test/save.php?";
-    public string loadURL = "http://localhost:8080/unity_test/load.php?";
+    public string saveURL = "http://norpg.it.dh-karlsruhe.de/save.php?";
+    public string loadURL = "http://norpg.it.dh-karlsruhe.de/load.php?";
     //Player information
     public string username;
     public string lastPosition;

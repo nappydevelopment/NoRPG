@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class DataBaseFunction : MonoBehaviour
 {
     private string secretKey = "norpg";
-    public string registerURL = "http://localhost:8080/unity_test/register.php?";
-    public string loginURL = "http://localhost:8080/unity_test/login.php?";
+    public string registerURL = "http://norpg.it.dh-karlsruhe.de/register.php?";
+    public string loginURL = "http://norpg.it.dh-karlsruhe.de/login.php?";
     public Text gameobject;
 
     IEnumerator RegisterUser(string user, string email, string password, string firstname, string lastname, string birthday, string gender, string country, string native_language, string selected_character)

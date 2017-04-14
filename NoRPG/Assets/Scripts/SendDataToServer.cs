@@ -8,7 +8,6 @@ public class SendDataToServer : MonoBehaviour {
 
     private static string secretKey = "norpg";
     public static string registerURL = "http://norpg.it.dh-karlsruhe.de/register.php?";
-    public static string loginURL = "http://norpg.it.dh-karlsruhe.de/login.php?";
 
     public InputField firstname;
     public InputField lastname;
