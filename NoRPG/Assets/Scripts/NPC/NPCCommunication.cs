@@ -36,13 +36,22 @@ public class NPCCommunication : MonoBehaviour {
     [SerializeField]
     private float distance = 3.0f;
 
+    private string json;
+
+    void Start()
+    {
+        string fileName = "npcList";
+        TextAsset textAsset = Resources.Load<TextAsset>(fileName);
+        json = textAsset.text;
+    }
+
     public void StartCommunication()
     {
         // If interactable Object is near to the player then start the interaction, else do nothing
         if (Vector3.Distance(player.transform.position, trader.GetClosestObject("InteractionObject", player).transform.position) < distance)
         {
             string interactableObjectName = trader.closest.name;
-            string npcType = dialogue.GetNpcType(interactableObjectName);
+            string npcType = dialogue.GetNpcType(interactableObjectName, json);
 
             //disable other UI Buttons
             openMapButton.interactable = false;
@@ -52,8 +61,8 @@ public class NPCCommunication : MonoBehaviour {
             textBox.SetActive(true);
 
             //get content for communication
-            npcName.text = dialogue.GetNpcName(interactableObjectName);
-            npcText.text = dialogue.GetNpcText(interactableObjectName);
+            npcName.text = dialogue.GetNpcName(interactableObjectName, json);
+            npcText.text = dialogue.GetNpcText(interactableObjectName, json);
 
             if (npcType == "Trader")
             {
@@ -100,8 +109,8 @@ public class NPCCommunication : MonoBehaviour {
 
         FillPanelWithGames(interactableObjectName);
 
-        gamelistTitle.text = dialogue.GetGamelistTitle(interactableObjectName);
-        gamelistDescription.text = dialogue.GetGamelistDescription(interactableObjectName);
+        gamelistTitle.text = dialogue.GetGamelistTitle(interactableObjectName, json);
+        gamelistDescription.text = dialogue.GetGamelistDescription(interactableObjectName, json);
     }
 
     private void FillPanelWithGames(string interactableObjectName)
