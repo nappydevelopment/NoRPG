@@ -590,39 +590,44 @@
 		"npcText" : "Hey",
 		"npcType" : "ChestNpc"
 	},
+	"Portal_Back_to_start" : {
+		"npcName" : "Hans",
+		"npcText" : "This is the portal to go back to Rutherglen.",
+		"npcTextAllowed" : "You are worthy passing. Please go ahead!",
+		"npcType" : "PortalNpc"
+	},
 	"Portal_Start_to_Forest" : {
 		"npcName" : "Hans",
-		"npcText" : "This is the Portal to the Forest. There are the games for the first class!",
-		"npcTextNotAllowed" : "You shall not pass!",
-		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcText" : "This is the portal to the forest Talhan. There are the games for the first class!",
+		"npcTextAllowed" : "You are worthy passing. Please go ahead!",
 		"npcType" : "PortalNpc"
 	},
 	"Portal_Start_to_Tropen" : {
 		"npcName" : "Gandalf",
-		"npcText" : "This is the Portal to the Tropen. There are the games for the first class!",
-		"npcTextNotAllowed" : "You shall not pass!",
-		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcText" : "This is the portal to the tropical islands of Galapagos. There are the games for the second class!",
+		"npcTextNotAllowed" : "You shall not pass! You have to finish at least one standard from the first class.",
+		"npcTextAllowed" : "You are worthy passing. Please go ahead!",
 		"npcType" : "PortalNpc"
 	},
 	"Portal_Start_to_Desert" : {
 		"npcName" : "Hans",
-		"npcText" : "This is the Portal to the Desert. There are the games for the first class!",
-		"npcTextNotAllowed" : "You shall not pass!",
-		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcText" : "This is the portal to the desert Kalahari. There are the games for the third class!",
+		"npcTextNotAllowed" : "You shall not pass! You have to finish at least one standard from the second class.",
+		"npcTextAllowed" : "You are worthy passing. Please go ahead!",
 		"npcType" : "PortalNpc"
 	},
 	"Portal_Start_to_Snow" : {
 		"npcName" : "Hans",
-		"npcText" : "This is the Portal to the Snowworld. There are the games for the first class!",
-		"npcTextNotAllowed" : "You shall not pass!",
-		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcText" : "This is the portal to the snowy mountains Lhotse. There are the games for the fourth class!",
+		"npcTextNotAllowed" : "You shall not pass! You have to finish at least one standard from the third class.",
+		"npcTextAllowed" : "You are worthy passing. Please go ahead!",
 		"npcType" : "PortalNpc"
 	},
 	"Portal_Start_to_Lava" : {
 		"npcName" : "Hans",
-		"npcText" : "This is the Portal to the Lava. There are the games for the first class!",
-		"npcTextNotAllowed" : "You shall not pass!",
-		"npcTextAllowed" : "You are worthy. Please go ahead!",
+		"npcText" : "This is the portal to the vulcan Ätna. There are the games for the fifth class!",
+		"npcTextNotAllowed" : "You shall not pass! You have to finish at least one standard from the fourth class.",
+		"npcTextAllowed" : "You are worthy passing. Please go ahead!",
 		"npcType" : "PortalNpc"
 	},
 	"1_Chest" : {
@@ -656,5 +661,70 @@
 	"8_Chest" : {
 		"npcText" : "You found a chest!",
 		"npcType" : "Chest"
+	},
+
+	"Start_schooldkid_1" : {
+		"npcName" : "Liam",
+		"npcText" : "Hey! Are you new here?\nMy name is Liam, welcome!"
+	},
+	"Start_schooldkid_2" : {
+		"npcName" : "Jonas",
+		"npcText" : "This is my sister Anna and I am Jonas. Nice to meet you."
+	},
+	"Start_schooldkid_3" : {
+		"npcName" : "David",
+		"npcText" : "My favourite subject is Math. I like numbers."
+	},
+	"Start_schooldkid_4" : {
+		"npcName" : "Daniel",
+		"npcText" : "We want to play piggy in the middle. But no one wants go in the middle."
+	},
+	"Start_schooldkid_5" : {
+		"npcName" : "Kevin",
+		"npcText" : "We want to play piggy in the middle. But no one wants go in the middle."
+	},
+	"Start_schooldkid_6" : {
+		"npcName" : "Sebastian",
+		"npcText" : "We want to play piggy in the middle. But no one wants go in the middle."
+	},
+	"Start_schooldkid_7" : {
+		"npcName" : "Link",
+		"npcText" : "Have you seen Ayleen?"
+	},
+	"Start_schooldkid_8" : {
+		"npcName" : "Tobias",
+		"npcText" : "Nothing will happen in my watch! Don't try to rampage. I am watching you!"
+	},
+	"Start_schooldkid_9" : {
+		"npcName" : "Laura",
+		"npcText" : "I'm the class spokesperson. My name is Laura. Welcome to Rutherglen!"
+	},
+	"Start_schooldkid_10" : {
+		"npcName" : "Emilia",
+		"npcText" : "We are twins. But I am older!"
+	},
+	"Start_schooldkid_11" : {
+		"npcName" : "Anna",
+		"npcText" : "This is my brother Jonas and I am Anna. Nice to meet you."
+	},
+	"Start_schooldkid_12" : {
+		"npcName" : "Emily",
+		"npcText" : "We are twins. Emilia is one minute older."
+	},
+	"Start_schooldkid_13" : {
+		"npcName" : "Sarah",
+		"npcText" : "Hey! My name is Sarah. I'm the original Sarah!"
+	},
+	"Start_schooldkid_14" : {
+		"npcName" : "Sarah",
+		"npcText" : "Hey! My name is Sarah. I'm the original Sarah!"
+	},
+	"Start_schooldkid_15" : {
+		"npcName" : "Ayleen",
+		"npcText" : "Psst... I'm hiding! Don't tell them where I'm hiding!"
+	},
+	"Start_schooldkid_16" : {
+		"npcName" : "Nami",
+		"npcText" : "The school is very important!"
 	}
 }
