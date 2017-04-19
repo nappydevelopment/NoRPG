@@ -1,7 +1,7 @@
 { 
 	"Buergermeister" : {
 		"npcName" : "Malik",
-		"npcText" : "My name is Malik. I am the mayor of Rutherglen. I'm really glad you are here!",
+		"npcText" : "Hello! My name is Malik. I am the mayor of Rutherglen. I'm really glad you are here!",
 		"npcType" : "ScriptedNPC"
 	},
 	"Buergermeister_1" : {
@@ -21,388 +21,388 @@
 	},
 	"1_Math_OA" : { 
 		"npcName" : "Alfred", 
-		"npcText" : "I am Alfred and I offer math games for the first class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
+		"npcText" : "Hey I am Alfred and I offer math games for the first class. With me you will learn operations and algebraic thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, First class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "- Representing and solve problems involving addition and subtraction.\n- Understand and apply properties of operations and the relationship between addition and subtraction.\n- Add and subtract within 20.\n- Work with addition and subtraction equations.", 
 		"npcType" : "Trader" 
 	},
 	"2_Math_OA" : { 
 		"npcName" : "Douglas", 
-		"npcText" : "I am Douglas and I offer math games for the second class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
+		"npcText" : "Hey I am Douglas and I offer math games for the second class. With me you will learn operations and algebraic thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Second class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "- Represent and solve problems involving addition and subtraction.\n- Add and subtract within 20.\n- Work with equal groups of objects to gain foundations for multiplication.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_OA" : { 
 		"npcName" : "Jane", 
-		"npcText" : "I am Jane and I offer math games for the third class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
+		"npcText" : "Hey I am Jane and I offer math games for the third class. With me you will learn operations and algebraic thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "- Represent and solve problems involving multiplication and division.\n- Understand properties of multiplication and the relationship between multiplication and division.\n- Multiply and divide within 100.\n- Solve problems involving the four operations, and identify and explain patterns in arithmetic.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_OA" : { 
 		"npcName" : "Herman", 
-		"npcText" : "I am Herman and I offer math games for the fourth class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
+		"npcText" : "Hey I am Herman and I offer math games for the fourth class. With me you will learn operations and algebraic thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "- Use the four operations with whole numbers to solve problems.\n- Gain familiarity with factors and multiples.\n- Generate and analyze patterns.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_OA" : { 
 		"npcName" : "Richard", 
-		"npcText" : "I am Richard and I offer math games for the fifth class. With me you will learn Operations and Algebraic Thinking. Do you want to see my games?", 
+		"npcText" : "Hey I am Richard and I offer math games for the fifth class. With me you will learn operations and algebraic thinking. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Operations and Algebraic Thinking", 
 		"gamelistDescription" : "- Write and interpret numerical expressions.\n- Analyze patterns and relationships.", 
 		"npcType" : "Trader" 
 	},
 	"1_Math_NBT" : { 
 		"npcName" : "Martha", 
-		"npcText" : "I am Martha and I offer math games for the first class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
+		"npcText" : "Hey I am Martha and I offer math games for the first class. With me you will learn numbers and operations in base ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, First class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "- Extend the counting sequence.\n- Understand place value.\n- Use place value understanding and properties of operations to add and subtract.", 
 		"npcType" : "Trader" 
 	},
 	"2_Math_NBT" : { 
 		"npcName" : "Alicia", 
-		"npcText" : "I am Alicia and I offer math games for the second class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
+		"npcText" : "Hey I am Alicia and I offer math games for the second class. With me you will learn numbers and operations in base ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Second class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "- Understand place value.\n- Use place value understanding and properties of operations to add and subtract.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_NBT" : { 
 		"npcName" : "Malcolm", 
-		"npcText" : "I am Malcolm and I offer math games for the third class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
+		"npcText" : "Hey I am Malcolm and I offer math games for the third class. With me you will learn numbers and operations in base ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "- Use place value understanding and properties of operations to perform multi-digit arithmetic.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_NBT" : { 
 		"npcName" : "Kristi", 
-		"npcText" : "I am Kristi and I offer math games for the fourth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
+		"npcText" : "Hey I am Kristi and I offer math games for the fourth class. With me you will learn numbers and operations in base ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "- Generalize place value understanding for multi-digit whole numbers.\n- Use place value understanding and properties of operations to perform multi-digit arithmetic.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_NBT" : { 
 		"npcName" : "Bryant", 
-		"npcText" : "I am Bryant and I offer math games for the fifth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?", 
+		"npcText" : "Hey I am Bryant and I offer math games for the fifth class. With me you will learn numbers and operations in base ten. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Number and Operations in Base Ten", 
 		"gamelistDescription" : "- Understand the place value system.\n- Perform operations with multi-digit whole numbers and with decimals to hundredths.", 
 		"npcType" : "Trader" 
 	},
 	"1_Math_MD" : { 
 		"npcName" : "Eleanor", 
-		"npcText" : "I am Eleanor and I offer math games for the first class. With me you will learn Measurement and Data. Do you want to see my games?", 
+		"npcText" : "Hey I am Eleanor and I offer math games for the first class. With me you will learn measurement and data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, First class, Measurement and Data", 
 		"gamelistDescription" : "- Measure lengths indirectly and by iterating length units.\n- Tell and write time.\n- Represent and interpret data.", 
 		"npcType" : "Trader" 
 	},
 	"2_Math_MD" : { 
 		"npcName" : "Carrie", 
-		"npcText" : "I am Carrie and I offer math games for the second class. With me you will learn Measurement and Data. Do you want to see my games?", 
+		"npcText" : "Hey I am Carrie and I offer math games for the second class. With me you will learn measurement and data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Second class, Measurement and Data", 
 		"gamelistDescription" : "- Measure and estimate lengths in standard units.\n- Relate addition and subtraction to length.\n- Work with time and money.\n- Represent and interpret data.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_MD" : { 
 		"npcName" : "Joseph", 
-		"npcText" : "I am Joseph and I offer math games for the third class. With me you will learn Measurement and Data. Do you want to see my games?", 
+		"npcText" : "Hey I am Joseph and I offer math games for the third class. With me you will learn measurement and data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Measurement and Data", 
 		"gamelistDescription" : "- Solve problems involving measurement and estimation of intervals of time, liquid volumes, and masses of objects.\n- Represent and interpret data.\n- Geometric measurement: understand concepts of area and relate area to multiplication and to addition.\n- Geometric measurement: recognize perimeter as an attribute of plane figures and distinguish between linear and area measures.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_MD" : { 
 		"npcName" : "Shawn", 
-		"npcText" : "I am Shawn and I offer math games for the fourth class. With me you will learn Measurement and Data. Do you want to see my games?", 
+		"npcText" : "Hey I am Shawn and I offer math games for the fourth class. With me you will learn measurement and data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Measurement and Data", 
 		"gamelistDescription" : "- Solve problems involving measurement and conversion of measurements from a larger unit to a smaller unit.\n- Represent and interpret data.\n- Geometric measurement: understand concepts of angle and measure angles.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_MD" : { 
 		"npcName" : "Patrick", 
-		"npcText" : "I am Patrick and I offer math games for the fifth class. With me you will learn Measurement and Data. Do you want to see my games?", 
+		"npcText" : "Hey I am Patrick and I offer math games for the fifth class. With me you will learn measurement and data. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Measurement and Data", 
 		"gamelistDescription" : "- Convert like measurement units within a given measurement system.\n- Represent and interpret data.\n- Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition.", 
 		"npcType" : "Trader" 
 	},
 	"1_Math_G" : { 
 		"npcName" : "Eric", 
-		"npcText" : "I am Eric and I offer math games for the first class. With me you will learn Geometry. Do you want to see my games?", 
+		"npcText" : "Hey I am Eric and I offer math games for the first class. With me you will learn geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, First class, Geometry", 
 		"gamelistDescription" : "- Reason with shapes and their attributes.", 
 		"npcType" : "Trader" 
 	},
 	"2_Math_G" : { 
 		"npcName" : "Ali", 
-		"npcText" : "I am Ali and I offer math games for the second class. With me you will learn Geometry. Do you want to see my games?", 
+		"npcText" : "Hey I am Ali and I offer math games for the second class. With me you will learn geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Second class, Geometry", 
 		"gamelistDescription" : "- Reason with shapes and their attributes.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_G" : { 
 		"npcName" : "Theresa", 
-		"npcText" : "I am Theresa and I offer math games for the third class. With me you will learn Geometry. Do you want to see my games?", 
+		"npcText" : "Hey I am Theresa and I offer math games for the third class. With me you will learn geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Geometry", 
 		"gamelistDescription" : "- Reason with shapes and their attributes.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_G" : { 
 		"npcName" : "Dwayne", 
-		"npcText" : "I am Dwayne and I offer math games for the fourth class. With me you will learn Geometry. Do you want to see my games?", 
+		"npcText" : "Hey I am Dwayne and I offer math games for the fourth class. With me you will learn geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Geometry", 
 		"gamelistDescription" : "- Draw and identify lines and angles, and classify shapes by properties of their lines and angles.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_G" : { 
 		"npcName" : "Lauren", 
-		"npcText" : "I am Lauren and I offer math games for the fifth class. With me you will learn Geometry. Do you want to see my games?", 
+		"npcText" : "Hey I am Lauren and I offer math games for the fifth class. With me you will learn geometry. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Geometry", 
 		"gamelistDescription" : "- Graph points on the coordinate plane to solve real-world and mathematical problems.\n- Classify two-dimensional figures into categories based on their properties.", 
 		"npcType" : "Trader" 
 	},
 	"3_Math_NF" : { 
 		"npcName" : "Donald", 
-		"npcText" : "I am Donald and I offer math games for the third class. With me you will learn Number and Operations Fractions. Do you want to see my games?", 
+		"npcText" : "Hey I am Donald and I offer math games for the third class. With me you will learn numbers and operations fractions. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Third class, Number and Operations Fractions", 
 		"gamelistDescription" : "- Develop understanding of fractions as numbers.", 
 		"npcType" : "Trader" 
 	},
 	"4_Math_NF" : { 
 		"npcName" : "Susie", 
-		"npcText" : "I am Susie and I offer math games for the fourth class. With me you will learn Number and Operations Fractions. Do you want to see my games?", 
+		"npcText" : "Hey I am Susie and I offer math games for the fourth class. With me you will learn numbers and operations fractions. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fourth class, Number and Operations Fractions", 
 		"gamelistDescription" : "- Extend understanding of fraction equivalence and ordering.\n- Build fractions from unit fractions by applying and extending previous understandings of operations on whole numbers.\n- Understand decimal notation for fractions, and compare decimal fractions.", 
 		"npcType" : "Trader" 
 	},
 	"5_Math_NF" : { 
 		"npcName" : "Benjamin", 
-		"npcText" : "I am Benjamin and I offer math games for the fifth class. With me you will learn Number and Operations Fractions. Do you want to see my games?", 
+		"npcText" : "Hey I am Benjamin and I offer math games for the fifth class. With me you will learn numbers and operations fractions. Do you want to see my games?", 
 		"gamelistTitle" : "Math, Fifth class, Number and Operations Fractions", 
 		"gamelistDescription" : "- Use equivalent fractions as a strategy to add and subtract fractions.\n- Apply and extend previous understandings of multiplication and division to multiply and divide fractions.", 
 		"npcType" : "Trader" 
 	},
 	"1_English_RL" : { 
 		"npcName" : "Maria", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Maria and I offer english games for the first class. With me you will learn reading literature. Do you want to see my games?", 
 		"gamelistTitle" : "English, First class, Reading: Literature", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Ask and answer questions about key details in a text.\n- Identify words and phrases in stories or poems that suggest feelings or appeal to the senses.\n- Use illustrations and details in a story to describe its characters, setting, or events.\n- With prompting and support, read prose and poetry of appropriate complexity for grade 1.", 
 		"npcType" : "Trader" 
 	},
 	"2_English_RL" : { 
 		"npcName" : "Walter", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Walter and I offer english games for the second class. With me you will learn reading literature. Do you want to see my games?", 
 		"gamelistTitle" : "English, Second class, Reading: Literature", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Ask and answer such questions as who, what, where, when, why, and how to demonstrate understanding of key details in a text.\n- Describe how words and phrases (e.g., regular beats, alliteration, rhymes, repeated lines) supply rhythm and meaning in a story, poem, or song.\- Use information gained from the illustrations and words in a print or digital text to demonstrate understanding of its characters, setting, or plot.", 
 		"npcType" : "Trader" 
 	},
 	"3_English_RL" : { 
 		"npcName" : "Virginia", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Virginia and I offer english games for the third class. With me you will learn reading literature. Do you want to see my games?", 
 		"gamelistTitle" : "English, Third class, Reading: Literature", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Ask and answer questions to demonstrate understanding of a text, referring explicitly to the text as the basis for the answers.\n- Determine the meaning of words and phrases as they are used in a text, distinguishing literal from nonliteral language.\n- Explain how specific aspects of a text's illustrations contribute to what is conveyed by the words in a story.", 
 		"npcType" : "Trader" 
 	},
 	"4_English_RL" : { 
 		"npcName" : "Jesse", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Jesse and I offer english games for the fourth class. With me you will learn reading literature. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fourth class, Reading: Literature", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Refer to details and examples in a text when explaining what the text says explicitly and when drawing inferences from the text.\n- Determine the meaning of words and phrases as they are used in a text, including those that allude to significant characters found in mythology.\n- Make connections between the text of a story or drama and a visual or oral presentation of the text, identifying where each version reflects specific descriptions and directions in the text.", 
 		"npcType" : "Trader" 
 	},
 	"5_English_RL" : { 
 		"npcName" : "Paul", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Paul and I offer english games for the fifth class. With me you will learn reading literature. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fifth class, Reading: Literature", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Quote accurately from a text when explaining what the text says explicitly and when drawing inferences from the text.\n- Determine the meaning of words and phrases as they are used in a text, including figurative language such as metaphors and similes.\n- Analyze how visual and multimedia elements contribute to the meaning, tone, or beauty of a text.", 
 		"npcType" : "Trader" 
 	},
 	"1_English_RI" : { 
 		"npcName" : "Lynda", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Lynda and I offer english games for the first class. With me you will learn reading informational text. Do you want to see my games?", 
 		"gamelistTitle" : "English, First class, Reading: Informational Text", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Ask and answer questions about key details in a text.\n- Ask and answer questions to help determine or clarify the meaning of words and phrases in a text.\n- Use the illustrations and details in a text to describe its key ideas.\n- With prompting and support, read informational texts appropriately complex for grade 1.", 
 		"npcType" : "Trader" 
 	},
 	"2_English_RI" : { 
 		"npcName" : "Wilson", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Wilson and I offer english games for the second class. With me you will learn reading informational text. Do you want to see my games?", 
 		"gamelistTitle" : "English, Second class, Reading: Informational Text", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Ask and answer such questions as who, what, where, when, why, and how to demonstrate understanding of key details in a text.\n- Determine the meaning of words and phrases in a text relevant to a grade 2 topic or subject area.\n- Explain how specific images contribute to and clarify a text.\n- By the end of year, read and comprehend informational texts, including history/social studies, science, and technical texts, in the grades 2-3 text complexity band proficiently, with scaffolding as needed at the high end of the range.", 
 		"npcType" : "Trader" 
 	},
 	"3_English_RI" : { 
 		"npcName" : "Harry", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Harry and I offer english games for the third class. With me you will learn reading informational text. Do you want to see my games?", 
 		"gamelistTitle" : "English, Third class, Reading: Informational Text", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Ask and answer questions to demonstrate understanding of a text, referring explicitly to the text as the basis for the answers.\n- Determine the meaning of general academic and domain-specific words and phrases in a text relevant to a grade 3 topic or subject area.\n- Determine the meaning of general academic and domain-specific words and phrases in a text relevant to a grade 3 topic or subject area.", 
 		"npcType" : "Trader" 
 	},
 	"4_English_RI" : { 
 		"npcName" : "Mathias", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Mathias and I offer english games for the fourth class. With me you will learn reading informational text. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fourth class, Reading: Informational Text", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Refer to details and examples in a text when explaining what the text says explicitly and when drawing inferences from the text.\n- Determine the meaning of general academic and domain-specific words or phrases in a text relevant to a grade 4 topic or subject area.\n- Interpret information presented visually, orally, or quantitatively (e.g., in charts, graphs, diagrams, time lines, animations, or interactive elements on Web pages) and explain how the information contributes to an understanding of the text in which it appears.", 
 		"npcType" : "Trader" 
 	},
 	"5_English_RI" : { 
 		"npcName" : "Selina", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Selina and I offer english games for the fifth class. With me you will learn reading informational text. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fifth class, Reading: Informational Text", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "-Quote accurately from a text when explaining what the text says explicitly and when drawing inferences from the text.\n- Determine the meaning of general academic and domain-specific words and phrases in a text relevant to a grade 5 topic or subject area.\n- Draw on information from multiple print or digital sources, demonstrating the ability to locate an answer to a question quickly or to solve a problem efficiently.\n- Integrate information from several texts on the same topic in order to write or speak about the subject knowledgeably.", 
 		"npcType" : "Trader" 
 	},
 	"1_English_RF" : { 
 		"npcName" : "Daniel", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Danniel and I offer english games for the first class. With me you will learn foundational skills in reading. Do you want to see my games?", 
 		"gamelistTitle" : "English, First class, Reading: Foundational Skills", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Demonstrate understanding of the organization and basic features of print.\n- Demonstrate understanding of spoken words, syllables, and sounds (phonemes).\n- Know and apply grade-level phonics and word analysis skills in decoding words.\n- Read with sufficient accuracy and fluency to support comprehension.", 
 		"npcType" : "Trader" 
 	},
 	"2_English_RF" : { 
 		"npcName" : "Cansu", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Cansu and I offer english games for the second class. With me you will learn foundational skills in reading. Do you want to see my games?", 
 		"gamelistTitle" : "English, Second class, Reading: Foundational Skills", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Know and apply grade-level phonics and word analysis skills in decoding words.\n- Read with sufficient accuracy and fluency to support comprehension.", 
 		"npcType" : "Trader" 
 	},
 	"3_English_RF" : { 
 		"npcName" : "Marcel", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Marcel and I offer english games for the third class. With me you will learn foundational skills in reading. Do you want to see my games?", 
 		"gamelistTitle" : "English, Third class, Reading: Foundational Skills", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Know and apply grade-level phonics and word analysis skills in decoding words.\n -Read with sufficient accuracy and fluency to support comprehension.", 
 		"npcType" : "Trader" 
 	},
 	"4_English_RF" : { 
 		"npcName" : "Karina", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Karina and I offer english games for the fourth class. With me you will learn foundational skills in reading. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fourth class, Reading: Foundational Skills", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Know and apply grade-level phonics and word analysis skills in decoding words.\n- Read with sufficient accuracy and fluency to support comprehension.", 
 		"npcType" : "Trader" 
 	},
 	"5_English_RF" : { 
 		"npcName" : "Lea", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Lea and I offer english games for the fifth class. With me you will learn foundational skills in reading. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fifth class, Reading: Foundational Skills", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Know and apply grade-level phonics and word analysis skills in decoding words.\n- Read with sufficient accuracy and fluency to support comprehension.", 
 		"npcType" : "Trader" 
 	},
 	"1_English_W" : { 
 		"npcName" : "Tom", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Tom and I offer english games for the first class. With me you will learn writing. Do you want to see my games?", 
 		"gamelistTitle" : "English, First class, Writing", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Write opinion pieces in which they introduce the topic or name the book they are writing about, state an opinion, supply a reason for the opinion, and provide some sense of closure.\n- Participate in shared research and writing projects.", 
 		"npcType" : "Trader" 
 	},
 	"2_English_W" : { 
 		"npcName" : "Carlos", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Carlos and I offer english games for the second class. With me you will learn writing. Do you want to see my games?", 
 		"gamelistTitle" : "English, Second class, Writing", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Write opinion pieces in which they introduce the topic or book they are writing about, state an opinion, supply reasons that support the opinion, use linking words to connect opinion and reasons, and provide a concluding statement or section.\n -Participate in shared research and writing projects.", 
 		"npcType" : "Trader" 
 	},
 	"3_English_W" : { 
 		"npcName" : "Will", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Will and I offer english games for the third class. With me you will learn writing. Do you want to see my games?", 
 		"gamelistTitle" : "English, Third class, Writing", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Write opinion pieces on topics or texts, supporting a point of view with reasons.\n- Write informative/explanatory texts to examine a topic and convey ideas and information clearly.\n- Write narratives to develop real or imagined experiences or events using effective technique, descriptive details, and clear event sequences.\n- Write routinely over extended time frames and shorter time frames for a range of discipline-specific tasks, purposes, and audiences.", 
 		"npcType" : "Trader" 
 	},
 	"4_English_W" : { 
 		"npcName" : "Jennifer", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Jennifer and I offer english games for the fourth class. With me you will learn writing. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fourth class, Writing", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Write opinion pieces on topics or texts, supporting a point of view with reasons and information.\n- Write informative/explanatory texts to examine a topic and convey ideas and information clearly.\n- Write narratives to develop real or imagined experiences or events using effective technique, descriptive details, and clear event sequences.\n- Produce clear and coherent writing in which the development and organization are appropriate to task, purpose, and audience.\n- Conduct short research projects that build knowledge through investigation of different aspects of a topic.", 
 		"npcType" : "Trader" 
 	},
 	"5_English_W" : { 
 		"npcName" : "Jack", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Jack and I offer english games for the fifth class. With me you will learn writing. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fifth class, Writing", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Write opinion pieces on topics or texts, supporting a point of view with reasons and information.\n- Write informative/explanatory texts to examine a topic and convey ideas and information clearly.\n- Write informative/explanatory texts to examine a topic and convey ideas and information clearly.", 
 		"npcType" : "Trader" 
 	},
 	"1_English_SL" : { 
 		"npcName" : "Alicia", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Alicia and I offer english games for the first class. With me you will learn speaking and listening. Do you want to see my games?", 
 		"gamelistTitle" : "English, First class, Speaking and Listening", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Participate in collaborative conversations with diverse partners about grade 1 topics and texts with peers and adults in small and larger groups.\n- Describe people, places, things, and events with relevant details, expressing ideas and feelings clearly.", 
 		"npcType" : "Trader" 
 	},
 	"2_English_SL" : { 
 		"npcName" : "Maggie", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Maggie and I offer english games for the second class. With me you will learn speaking and listening. Do you want to see my games?", 
 		"gamelistTitle" : "English, Second class, Speaking and Listening", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Participate in collaborative conversations with diverse partners about grade 2 topics and texts with peers and adults in small and larger groups.\n- Tell a story or recount an experience with appropriate facts and relevant, descriptive details, speaking audibly in coherent sentences.", 
 		"npcType" : "Trader" 
 	},
 	"3_English_SL" : { 
 		"npcName" : "Mario", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Mario and I offer english games for the third class. With me you will learn speaking and listening. Do you want to see my games?", 
 		"gamelistTitle" : "English, Third class, Speaking and Listening", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Engage effectively in a range of collaborative discussions with diverse partners on grade 3 topics and texts, building on others' ideas and expressing their own clearly.\n- Report on a topic or text, tell a story, or recount an experience with appropriate facts and relevant, descriptive details, speaking clearly at an understandable pace.", 
 		"npcType" : "Trader" 
 	},
 	"4_English_SL" : { 
 		"npcName" : "Jérôme", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Jérôme and I offer english games for the fourth class. With me you will learn speaking and listening. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fourth class, Speaking and Listening", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Engage effectively in a range of collaborative discussions with diverse partners on grade 4 topics and texts, building on others' ideas and expressing their own clearly.\n- Report on a topic or text, tell a story, or recount an experience in an organized manner, using appropriate facts and relevant, descriptive details to support main ideas or themes; speak clearly at an understandable pace.", 
 		"npcType" : "Trader" 
 	},
 	"5_English_SL" : { 
 		"npcName" : "Lara", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Lara and I offer english games for the fifth class. With me you will learn speaking and listening. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fifth class, Speaking and Listening", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Engage effectively in a range of collaborative discussions with diverse partners on grade 5 topics and texts, building on others' ideas and expressing their own clearly.\n- Summarize a written text read aloud or information presented in diverse media and formats, including visually, quantitatively, and orally.\n- Report on a topic or text or present an opinion, sequencing ideas logically and using appropriate facts and relevant, descriptive details to support main ideas or themes; speak clearly at an understandable pace.", 
 		"npcType" : "Trader" 
 	},
 	"1_English_L" : { 
 		"npcName" : "Emre", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Emre and I offer english games for the first class. With me you will learn the english language. Do you want to see my games?", 
 		"gamelistTitle" : "English, First class, Language", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.\n- Determine or clarify the meaning of unknown and multiple-meaning words and phrases based on grade 1 reading and content, choosing flexibly from an array of strategies.\n- Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.", 
 		"npcType" : "Trader" 
 	},
 	"2_English_L" : { 
 		"npcName" : "Benny", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Benny and I offer english games for the second class. With me you will learn the english language. Do you want to see my games?", 
 		"gamelistTitle" : "English, Second class, Language", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.\n- Use knowledge of language and its conventions when writing, speaking, reading, or listening.\n- Determine or clarify the meaning of unknown and multiple-meaning words and phrases based on grade 2 reading and content, choosing flexibly from an array of strategies.", 
 		"npcType" : "Trader" 
 	},
 	"3_English_L" : { 
 		"npcName" : "Rita", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Rita and I offer english games for the third class. With me you will learn the english language. Do you want to see my games?", 
 		"gamelistTitle" : "English, Third class, Language", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.\n- Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.\n- Use knowledge of language and its conventions when writing, speaking, reading, or listening.\n- Determine or clarify the meaning of unknown and multiple-meaning word and phrases based on grade 3 reading and content, choosing flexibly from a range of strategies.", 
 		"npcType" : "Trader" 
 	},
 	"4_English_L" : { 
 		"npcName" : "Joel", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Joel and I offer english games for the fourth class. With me you will learn the english language. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fourth class, Language", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.\n- Use knowledge of language and its conventions when writing, speaking, reading, or listening.\n- Determine or clarify the meaning of unknown and multiple-meaning words and phrases based on grade 4 reading and content, choosing flexibly from a range of strategies.", 
 		"npcType" : "Trader" 
 	},
 	"5_English_L" : { 
 		"npcName" : "Todd", 
-		"npcText" : "Hey", 
+		"npcText" : "Hey I am Todd and I offer english games for the fifth class. With me you will learn the english language. Do you want to see my games?", 
 		"gamelistTitle" : "English, Fifth class, Language", 
-		"gamelistDescription" : "bababababaa", 
+		"gamelistDescription" : "- Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.\n- Use knowledge of language and its conventions when writing, speaking, reading, or listening.\n- Determine or clarify the meaning of unknown and multiple-meaning words and phrases based on grade 5 reading and content, choosing flexibly from a range of strategies.", 
 		"npcType" : "Trader" 
 	},
 	"1_Chest_Forest" : {
 		"npcName" : "Bryant",
-		"npcText" : "I am Bryant and I offer math games for the fifth class. With me you will learn Number and Operations in Base Ten. Do you want to see my games?",
+		"npcText" : "Hello! You found the very first chest! Congratulations. In each world are exactly 8 chests. If you find every chest in each world the colors will be return to Rutherglen.",
 		"npcType" : "ChestNpc"
 	},
 	"2_Chest_Forest" : {
 		"npcName" : "Hans",
-		"npcText" : "I am Hans. You see here the oldest tree of the world. Did you know the tallest tree is 380 feet high!",
+		"npcText" : "Hello player. You have to go into this labyrinth to find the next chest. Don't get lost!",
 		"npcType" : "ChestNpc"
 	},
 	"3_Chest_Forest" : {
 		"npcName" : "Hans",
-		"npcText" : "Hey",
+		"npcText" : "Congratulations you found another chest. You are standing right to the oldest and tallest tree of Talhan. The tallest tree in the world is 380 ft. (115.8m) high!",
 		"npcType" : "ChestNpc"
 	},
 	"4_Chest_Forest" : {
