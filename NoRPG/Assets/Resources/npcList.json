@@ -390,6 +390,16 @@
 		"gamelistDescription" : "- Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.\n- Use knowledge of language and its conventions when writing, speaking, reading, or listening.\n- Determine or clarify the meaning of unknown and multiple-meaning words and phrases based on grade 5 reading and content, choosing flexibly from a range of strategies.", 
 		"npcType" : "Trader" 
 	},
+	"Forest_Sign_1" : {
+		"npcName" : "",
+		"npcText" : "Left way: To the ruin\nMiddle way: To the spruce forest\nRight way: To the waterfall",
+		"npcType" : "Sign"
+	},
+	"Forest_Sign_2" : {
+		"npcName" : "",
+		"npcText" : "Left way: To the ruin\nMiddle way: To the labyrinth\nRight way: To the waterfall",
+		"npcType" : "Sign"
+	},
 	"1_Chest_Forest" : {
 		"npcName" : "Bryant",
 		"npcText" : "Hello! You found the very first chest! Congratulations. In each world are exactly 8 chests. If you find every chest in each world the colors will be return to Rutherglen.",
@@ -662,7 +672,6 @@
 		"npcText" : "You found a chest!",
 		"npcType" : "Chest"
 	},
-
 	"Start_schooldkid_1" : {
 		"npcName" : "Liam",
 		"npcText" : "Hey! Are you new here?\nMy name is Liam, welcome!"
@@ -726,5 +735,81 @@
 	"Start_schooldkid_16" : {
 		"npcName" : "Nami",
 		"npcText" : "The school is very important!"
+	},
+	"Start_park_01" : {
+		"npcName" : "Leona",
+		"npcText" : "Aren't these flowers beautiful? I really like flowers."
+	},
+	"Start_park_02" : {
+		"npcName" : "Kevin",
+		"npcText" : "My dad and me are visiting the park every day."
+	},
+	"Start_park_03" : {
+		"npcName" : "Marcos",
+		"npcText" : "I'm using my free time to go outside with my son."
+	},
+	"Start_park_04" : {
+		"npcName" : "Yannik",
+		"npcText" : "Sorry I don't have time to talk now!"
+	},
+	"Start_beach_01" : {
+		"npcName" : "Gustav",
+		"npcText" : "I AM THE KING OF THE WORLD!"
+	},
+	"Start_beach_02" : {
+		"npcName" : "Rose",
+		"npcText" : "Jack hold me! I'm flying, Jack!"
+	},
+	"Start_beach_03" : {
+		"npcName" : "Jack",
+		"npcText" : "We are not on a boat Rose ..."
+	},
+	"Start_beach_04" : {
+		"npcName" : "Fabian",
+		"npcText" : "Do you see the lake? There wasn't always a lake. This lake was created artificially. The same goes for the sand."
+	},
+	"Start_beach_05" : {
+		"npcName" : "Margaery",
+		"npcText" : "It is forbidden to swim in the lake! Once a little boy drowned."
+	},
+	"Start_beach_06" : {
+		"npcName" : "Cersei",
+		"npcText" : "The weather today is perfect to sit at the lake with your friends."
+	},
+	"Start_beach_07" : {
+		"npcName" : "Daenerys",
+		"npcText" : "They say in a lake of Scottland there is a monster in it - It's called Loch Ness Monster!"
+	},
+	"Start_castle_01" : {
+		"npcName" : "James",
+		"npcText" : "Hello my name is James. In this castle lives the family van der Velde. They are the aristocratic family from Rutherglen."
+	,
+	"Start_castle_02" : {
+		"npcName" : "Johannes XIII van der Velde",
+		"npcText" : "Welcome to our castle. Just look around, enjoy."
+	},
+	"Start_castle_03" : {
+		"npcName" : "Isabella van der Velde",
+		"npcText" : "My husband is the thirteen successors of his family."
+	},
+	"Start_castle_04" : {
+		"npcName" : "Daenerys",
+		"npcText" : "Isn't this castle huge? Sometimes I get lost."
+	},
+	"Start_miene_01" : {
+		"npcName" : "Matthew",
+		"npcText" : "The cristallmine is not a playground. Be careful if you go around! Parents are responsible for their children."
+	},
+	"Start_miene_02" : {
+		"npcName" : "Leonardo",
+		"npcText" : "I am exhausted. I can't talk now sorry!"
+	},
+	"Start_miene_03" : {
+		"npcName" : "Mike",
+		"npcText" : "Damn the rails are broken. This is bad!"
+	},
+	"Start_miene_04" : {
+		"npcName" : "Ilker",
+		"npcText" : "I should not tell you but there is a on the other side of this bridge. I saw something going in there!"
 	}
 }
