@@ -17,6 +17,8 @@ public class CharacterControll : MonoBehaviour {
     [SerializeField]
     private float rotationDegreePerSecound = 120f;
 
+    public float fallZone = 0.5f;
+
     private float speed = 0.0f;
     private float direction = 0f;
     private float horizontal = 0.0f;
