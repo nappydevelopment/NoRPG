@@ -56,18 +56,24 @@ public class SendDataToServer : MonoBehaviour {
         userText = user.text;
         emailText = email.text;
         passwordText = password.text;
-        //Debug.Log(passwordText);
         password_repeatText = password_repeat.text;
     }
 
     public void GetThirdData()
     {
-        selected_characterText = selected_character.text;
         SendRegister();
+    }
+
+    public void SetCharacter(string character)
+    {
+        selected_characterText = character;
     }
 
     private void SendRegister()
     {
+        GameControl.control.correctCharacterModel = selected_characterText;
+        GameControl.control.Save();
+
         StartCoroutine(RegisterUser(userText, emailText, MD5Test.Md5Sum(passwordText), firstnameText, lastnameText, birthdayText, genderText, countryText, native_languageText, selected_characterText));
     }
 

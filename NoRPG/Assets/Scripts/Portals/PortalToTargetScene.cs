@@ -22,6 +22,11 @@ public class PortalToTargetScene : MonoBehaviour
         StartCoroutine(LoadLevelWithRealProgress());
     }
 
+    void OnCollisionEnter(Collision col)
+    {
+        Debug.Log(col.gameObject.name);
+    }
+
     IEnumerator LoadLevelWithRealProgress()
     {
         yield return new WaitForSeconds(1);
@@ -39,7 +44,6 @@ public class PortalToTargetScene : MonoBehaviour
                 ao.allowSceneActivation = true;
             }
 
-            Debug.Log(ao.progress);
             yield return null;
         }
     }

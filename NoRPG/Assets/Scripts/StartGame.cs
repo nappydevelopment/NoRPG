@@ -20,14 +20,23 @@ public class StartGame : MonoBehaviour {
 
 	public void StartGameAtLastPosition() {
         progressCircle.gameObject.SetActive(true);
-        Debug.Log(MD5Test.Md5Sum(password.text));
+
         StartCoroutine(LoginUser(username.text, MD5Test.Md5Sum(password.text)));
+    }
+
+    public void StartGameAtLastPositionLoggedInUser()
+    {
+        progressCircle.gameObject.SetActive(true);
+
+        StartCoroutine(LoadLevelWithRealProgress());
     }
 
     public IEnumerator LoadLevelWithRealProgress() {
         yield return new WaitForSeconds(1);
 
-        ao = SceneManager.LoadSceneAsync("Scenes/Startwelt", LoadSceneMode.Single);
+        string lastPosition = "Scenes/" + GameControl.control.lastPosition;
+
+        ao = SceneManager.LoadSceneAsync(lastPosition, LoadSceneMode.Single);
         ao.allowSceneActivation = false;
 
         while (!ao.isDone) {
@@ -38,32 +47,31 @@ public class StartGame : MonoBehaviour {
                 ao.allowSceneActivation = true;
             }
 
-            Debug.Log(ao.progress);
             yield return null;
         }
     }
 
     public IEnumerator LoginUser(string user, string password) {
-    string hash = MD5Test.Md5Sum(user + password + secretKey);
+        string hash = MD5Test.Md5Sum(user + password + secretKey);
 
+        string get_url = loginURL
+            + "user=" + WWW.EscapeURL(user)
+            + "&password=" + WWW.EscapeURL(password)
+            + "&hash=" + hash;
 
-    string get_url = loginURL
-        + "user=" + WWW.EscapeURL(user)
-        + "&password=" + WWW.EscapeURL(password)
-        + "&hash=" + hash;
+        WWW hs_get = new WWW(get_url);
+        yield return hs_get;
 
-    WWW hs_get = new WWW(get_url);
-    yield return hs_get;
-
-    if (hs_get.error != null) {
-        print("There was an error getting the information: " + hs_get.error);
-    }
-    else {
-        Debug.Log(hs_get.text);
-        if (hs_get.text.Contains("true")) {
-            StartCoroutine(LoadLevelWithRealProgress());
-        }else{
-            Debug.Log("no user / wrong password");
+        if (hs_get.error != null) {
+            print("There was an error getting the information: " + hs_get.error);
+        }
+        else {
+            Debug.Log(hs_get.text);
+            if (hs_get.text.Contains("true")) {
+                GameControl.control.LoadFromCloud(user);
+                StartCoroutine(LoadLevelWithRealProgress());
+            }else{
+                Debug.Log("no user / wrong password");
         }
     }
 }

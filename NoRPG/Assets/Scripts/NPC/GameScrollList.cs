@@ -41,7 +41,6 @@ public class GameScrollList : MonoBehaviour
     public void TransferToDownloadedGameList(Games game)
     {
         Debug.Log("Transfer to downloaded game list");
-        GameControl.control.CreateFile();
 
         //GameControl.control.downloadedGames.Clear();
         //Debug.Log("downloaded games list cleared");
