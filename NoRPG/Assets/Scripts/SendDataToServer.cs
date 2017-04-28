@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SendDataToServer : MonoBehaviour {
 
     private static string secretKey = "norpg";
-    public static string registerURL = "http://norpg.it.dh-karlsruhe.de/register.php?";
+    public static string registerURL = "http://norpg.it.dh-karlsruhe.de/register.php";
 
     public InputField firstname;
     public InputField lastname;
@@ -82,29 +82,27 @@ public class SendDataToServer : MonoBehaviour {
 
         string hash = MD5Test.Md5Sum(user + email + password + firstname + country + selected_character + secretKey);
 
-        string post_url = registerURL
-            + "user=" + WWW.EscapeURL(user)
-            + "&email=" + WWW.EscapeURL(email)
-            + "&password=" + WWW.EscapeURL(password)
-            + "&firstname=" + WWW.EscapeURL(firstname)
-            + "&lastname=" + WWW.EscapeURL(lastname)
-            + "&birthday=" + WWW.EscapeURL(birthday)
-            + "&gender=" + WWW.EscapeURL(gender)
-            + "&country=" + WWW.EscapeURL(country)
-            + "&native_language=" + WWW.EscapeURL(native_language)
-            + "&selected_character=" + WWW.EscapeURL(selected_character)
-            + "&hash=" + hash;
-        WWW hs_post = new WWW(post_url);
-        yield return hs_post;
+        WWWForm form = new WWWForm();
+        form.AddField("user", user);
+        form.AddField("email", email);
+        form.AddField("password", password);
+        form.AddField("firstname", firstname);
+        form.AddField("lastname", country);
+        form.AddField("birthday", birthday);
+        form.AddField("gender", gender);
+        form.AddField("country", country);
+        form.AddField("native_language", native_language);
+        form.AddField("selected_character", selected_character);
+        form.AddField("hash", hash);
+        WWW www = new WWW(registerURL, form);
 
-        if (hs_post.error != null)
-        {
-            print("There was an error posting the high score: " + hs_post.error);
-        }
-        else
-        {
-            status.text = hs_post.text;
-        }
+        yield return www;
 
+        if (www.error != null) {
+            print("There was an error: " + www.error);
+        }
+        else {
+            status.text = www.text;
+        }
     }
 }
