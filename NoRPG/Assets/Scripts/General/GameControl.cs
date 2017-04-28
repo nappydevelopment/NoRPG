@@ -59,6 +59,8 @@ public class GameControl : MonoBehaviour {
     public bool chest_7_lava_open;
     public bool chest_8_lava_open;
 
+    public int gemCount;
+
     //Intro
     public bool playedIntro;
 
@@ -155,7 +157,7 @@ public class GameControl : MonoBehaviour {
         data.correctCharacterModel = correctCharacterModel;
         data.lastOpenScene = lastPosition;
         data.playedIntro = playedIntro;
-
+        data.gemCount = gemCount;
 
         bf.Serialize(file, data);
         file.Close();
@@ -242,7 +244,7 @@ public class GameControl : MonoBehaviour {
             data.chest_7_tropen_open = false;
             data.chest_8_tropen_open = false;
             data.correctCharacterModel = "M1";
-
+            data.gemCount = 0;
             bf.Serialize(file, data);
             file.Close();
 
@@ -320,6 +322,7 @@ public class GameControl : MonoBehaviour {
         correctCharacterModel = data.correctCharacterModel;
         playedIntro = data.playedIntro;
         lastPosition = data.lastOpenScene;
+        gemCount = data.gemCount;
 
         Debug.Log("Loading GameControl successful");
     }
@@ -412,6 +415,8 @@ class PlayerData
     public bool chest_6_lava_open;
     public bool chest_7_lava_open;
     public bool chest_8_lava_open;
+
+    public int gemCount;
 
     //intro
     public bool playedIntro;

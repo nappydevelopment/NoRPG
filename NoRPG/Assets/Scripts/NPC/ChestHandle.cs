@@ -38,6 +38,18 @@ public class ChestHandle : MonoBehaviour {
     private Animator chest_7_Animator;
     private Animator chest_8_Animator;
 
+    public int gemCound = GameControl.control.gemCount;
+
+    public int GemCound {
+        get {
+            return gemCound;
+        }
+
+        set {
+            gemCound = value;
+        }
+    }
+
     void Start()
     {
         chest_1_Animator = chest_1.GetComponent<Animator>();
@@ -61,6 +73,7 @@ public class ChestHandle : MonoBehaviour {
             chest_1_Animator.SetTrigger("Open");
             acceptButton.onClick.AddListener(delegate () { CollectGem(gem_1); });
             cancelButton.onClick.AddListener(delegate () { CollectGem(gem_1); });
+
             SetCorrectChest(1);
         }
         if (chestNumber == "2_Chest")
@@ -119,6 +132,7 @@ public class ChestHandle : MonoBehaviour {
     private void CollectGem(GameObject gem)
     {
         gem.SetActive(false);
+        GemCound++;
         npcText.text = "You collected the gem! You can look at your collected gems in the achievements.";
     }
 

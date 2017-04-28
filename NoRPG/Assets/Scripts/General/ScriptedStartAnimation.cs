@@ -33,6 +33,8 @@ public class ScriptedStartAnimation : MonoBehaviour {
     private GameObject dragon;
     [SerializeField]
     private NPCCommunication npcc;
+    [SerializeField]
+    private BWEffect effect;
     private Vector3 cameraMovement;
     private Quaternion rotation;
     private bool showCityColoured = false;
@@ -103,7 +105,8 @@ public class ScriptedStartAnimation : MonoBehaviour {
         npc.name = "Buergermeister_1";
         npcc.StartCommunication();
 
-        //DeleteColor here with fadeout and show city in black/white
+        scriptCamera.GetComponent<BWEffect>().Intensity = 1.0f;
+        playerCamera.GetComponent<BWEffect>().Intensity = 1.0f;
     }
 
     internal void ShowMajor()
