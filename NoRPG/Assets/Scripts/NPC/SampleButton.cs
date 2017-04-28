@@ -31,6 +31,6 @@ public class SampleButton : MonoBehaviour
         scrollList.TransferToDownloadedGameList(game);
         
         //open google play store
-        //Application.OpenURL(marketUrl);
+        Application.OpenURL(marketUrl);
     }
 }

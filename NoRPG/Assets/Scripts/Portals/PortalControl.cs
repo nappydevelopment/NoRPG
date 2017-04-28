@@ -9,10 +9,7 @@ public class PortalControl : MonoBehaviour {
     public string currentScene;
     public string cameFrom;
 
-    public float fallZone;
-    public GameObject player;
-
-    void Awake ()
+    void Awake()
     {
         //check is there a GameControl Object!
         if (control == null)
@@ -24,14 +21,5 @@ public class PortalControl : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-	}
-
-    void Update()
-    {
-        if (player.transform.position.y < fallZone)
-        {
-            Debug.Log("Character to low");
-            //player.transform.position
-        }
-    }
+	}    
 }

@@ -17,18 +17,20 @@ public class CharacterControll : MonoBehaviour {
     [SerializeField]
     private float rotationDegreePerSecound = 120f;
 
-    public float fallZone = 0.5f;
+    public float fallZone;
 
     private float speed = 0.0f;
     private float direction = 0f;
     private float horizontal = 0.0f;
     private float vertical = 0.0f;
     private AnimatorStateInfo stateInfo;
+    private Vector3 lastPositionInScene;
 
     private int m_LocomotionID = 0;
 
     void Start()
     {
+        InvokeRepeating("SaveLastTransformPosition", 0.0f, 5.0f);
         animator = GetComponent<Animator>();
 
         if(animator.layerCount >= 2)
@@ -53,6 +55,15 @@ public class CharacterControll : MonoBehaviour {
         return stateInfo.nameHash == m_LocomotionID;
     }
 
+    void SaveLastTransformPosition()
+    {
+        if (this.transform.position.y >= fallZone)
+        {
+            Debug.Log("Set las position");
+            lastPositionInScene = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+        }
+    }
+
     void Update()
     {
         if (animator)
@@ -66,6 +77,16 @@ public class CharacterControll : MonoBehaviour {
 
             animator.SetFloat("speed", speed);
             animator.SetFloat("direction", direction, directionDumpTime, Time.deltaTime);
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (this.transform.position.y < fallZone)
+        {
+            Debug.Log("Character to low");
+
+            this.transform.position = lastPositionInScene;
         }
     }
 
