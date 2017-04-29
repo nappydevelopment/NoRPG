@@ -42,6 +42,10 @@ public class RegisterFunctions : MonoBehaviour
     private bool validUsername;
     private bool validEmail;
     private bool validPassword;
+    private bool startCheck = false;
+
+    private static string secretKey = "norpg";
+    public static string loginURL = "http://norpg.it.dh-karlsruhe.de/testUsername.php";
 
     public void Update()
     {
@@ -60,7 +64,7 @@ public class RegisterFunctions : MonoBehaviour
 
         //Validate Part2
         StartCoroutine(CheckPart2());
-        StartCoroutine(CheckUsername());
+        StartCoroutine(CheckUsername(user.text));
         StartCoroutine(CheckEmail());
         StartCoroutine(CheckPassword());
 
@@ -174,12 +178,37 @@ public class RegisterFunctions : MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator CheckUsername()
+    private IEnumerator CheckUsername(string username)
     {
-        //check neccessary
-        validUsername = true;
-        WrongUsernameImage.gameObject.SetActive(false);
-        yield return null;
+        if (!startCheck) {
+            startCheck = true;
+            string hash = MD5Test.Md5Sum(username + secretKey);
+
+            WWWForm form = new WWWForm();
+            form.AddField("username", username);
+            form.AddField("hash", hash);
+            WWW www = new WWW(loginURL, form);
+
+            yield return www;
+
+            if (www.error != null) {
+                print("There was an error: " + www.error);
+            } else {
+                Debug.Log(www.text);
+                if (www.text.Contains("true")) {
+                    validUsername = true;
+                    WrongUsernameImage.gameObject.SetActive(false);
+                } else {
+                    validUsername = false;
+                    WrongUsernameImage.gameObject.SetActive(true);
+                }
+                startCheck = false;
+            }
+        }
+        else {
+            yield return new WaitForSeconds(4);
+        }
+        
     }
 
     private IEnumerator CheckPassword()
