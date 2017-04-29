@@ -34,7 +34,10 @@ public class StartGame : MonoBehaviour {
     public IEnumerator LoadLevelWithRealProgress() {
         yield return new WaitForSeconds(1);
 
+        GameControl.control.LoadFromFile();
+
         string lastPosition = "Scenes/" + GameControl.control.lastPosition;
+        Debug.Log(lastPosition);
 
         ao = SceneManager.LoadSceneAsync(lastPosition, LoadSceneMode.Single);
         ao.allowSceneActivation = false;

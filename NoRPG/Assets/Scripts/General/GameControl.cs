@@ -95,9 +95,8 @@ public class GameControl : MonoBehaviour {
         if (currentScene == "Desert" || currentScene == "first_forrest" || currentScene == "Snow_World" || currentScene == "Lavawelt" || currentScene == "Tropic_World" || currentScene == "Startwelt"){
             Debug.Log("Application will be quit! Last position of the player is " + currentScene);
             lastPosition = currentScene;
+            Save();
         }
-
-        Save();
     }
 
     public void Save()
