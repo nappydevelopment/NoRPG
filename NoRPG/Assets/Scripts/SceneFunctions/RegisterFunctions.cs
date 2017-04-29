@@ -161,7 +161,6 @@ public class RegisterFunctions : MonoBehaviour
             validBirthday = false;
         }
 
-        //validBirthday = true;
         yield return null;
     }
 
