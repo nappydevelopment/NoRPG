@@ -23,8 +23,6 @@ public class SendDataToServer : MonoBehaviour {
     public InputField password;
     public InputField password_repeat;
 
-    public Text selected_character;
-
     public Text status;
 
     public string firstnameText;
@@ -45,7 +43,49 @@ public class SendDataToServer : MonoBehaviour {
     {
         firstnameText = firstname.text;
         lastnameText = lastname.text;
-        birthdayText = yearOfBirth.text + "-" + monthOfBirth.text + "-" + dayOfBirth.text;
+
+        //THIS IS THE RESULT OF THE SWITCH CASE: birthdayText = yearOfBirth.text + "-" + monthOfBirth.text + "-" + dayOfBirth.text;
+        switch (monthOfBirth.text)
+        {
+            case "January":
+                birthdayText = yearOfBirth.text + "-" + "01" + "-" + dayOfBirth.text;
+                break;
+            case "February":
+                birthdayText = yearOfBirth.text + "-" + "02" + "-" + dayOfBirth.text;
+                break;
+            case "March":
+                birthdayText = yearOfBirth.text + "-" + "03" + "-" + dayOfBirth.text;
+                break;
+            case "April":
+                birthdayText = yearOfBirth.text + "-" + "04" + "-" + dayOfBirth.text;
+                break;
+            case "May":
+                birthdayText = yearOfBirth.text + "-" + "05" + "-" + dayOfBirth.text;
+                break;
+            case "June":
+                birthdayText = yearOfBirth.text + "-" + "06" + "-" + dayOfBirth.text;
+                break;
+            case "July":
+                birthdayText = yearOfBirth.text + "-" + "07" + "-" + dayOfBirth.text;
+                break;
+            case "August":
+                birthdayText = yearOfBirth.text + "-" + "08" + "-" + dayOfBirth.text;
+                break;
+            case "September":
+                birthdayText = yearOfBirth.text + "-" + "09" + "-" + dayOfBirth.text;
+                break;
+            case "October":
+                birthdayText = yearOfBirth.text + "-" + "10" + "-" + dayOfBirth.text;
+                break;
+            case "November":
+                birthdayText = yearOfBirth.text + "-" + "11" + "-" + dayOfBirth.text;
+                break;
+            case "December":
+                birthdayText = yearOfBirth.text + "-" + "12" + "-" + dayOfBirth.text;
+                break;
+        }
+        Debug.Log(birthdayText);
+
         genderText = gender.text;
         countryText = country.text;
         native_languageText = native_language.text;

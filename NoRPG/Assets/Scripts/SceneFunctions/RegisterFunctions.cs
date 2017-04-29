@@ -178,20 +178,29 @@ public class RegisterFunctions : MonoBehaviour
     {
         //check neccessary
         validUsername = true;
+        WrongUsernameImage.gameObject.SetActive(false);
         yield return null;
     }
 
     private IEnumerator CheckPassword()
     {
-        if (password.text == password_repeat.text)
+        if (password_repeat.text != "")
         {
-            validPassword = true;
-            WrongPassword.gameObject.SetActive(false);
+            if (password.text == password_repeat.text)
+            {
+                validPassword = true;
+                WrongPassword.gameObject.SetActive(false);
+            }
+            else
+            {
+                validPassword = false;
+                WrongPassword.gameObject.SetActive(true);
+            }
         }
         else
         {
             validPassword = false;
-            WrongPassword.gameObject.SetActive(true);
+            WrongPassword.gameObject.SetActive(false);
         }
         yield return null;
     }
@@ -201,12 +210,19 @@ public class RegisterFunctions : MonoBehaviour
         string emailString = email.text;
         string expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
 
-        if (Regex.IsMatch(emailString, expresion))
-        {
-            if (Regex.Replace(emailString, expresion, string.Empty).Length == 0)
+        if (emailString != "") { 
+            if (Regex.IsMatch(emailString, expresion))
             {
-                validEmail = true;
-                WrongEmailImage.gameObject.SetActive(false);
+                if (Regex.Replace(emailString, expresion, string.Empty).Length == 0)
+                {
+                    validEmail = true;
+                    WrongEmailImage.gameObject.SetActive(false);
+                }
+                else
+                {
+                    validEmail = false;
+                    WrongEmailImage.gameObject.SetActive(true);
+                }
             }
             else
             {
@@ -217,8 +233,9 @@ public class RegisterFunctions : MonoBehaviour
         else
         {
             validEmail = false;
-            WrongEmailImage.gameObject.SetActive(true);
+            WrongEmailImage.gameObject.SetActive(false);
         }
         yield return null;
     }
+
 }
