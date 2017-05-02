@@ -42,6 +42,14 @@ public class ShipPassenger : MonoBehaviour {
 
     void Start () {
         lastPosition = transform.position;
+
+        for (int i = 0; i < player.transform.childCount; i++) {
+            if (player.transform.GetChild(i).gameObject.activeSelf == true) {
+               player_mesh  = player.transform.GetChild(i).gameObject.transform.GetChild(0).gameObject;
+               player_text = player.transform.GetChild(i).gameObject.transform.GetChild(1).gameObject;
+               break;
+            }
+        }
     }
 
     void Update () {

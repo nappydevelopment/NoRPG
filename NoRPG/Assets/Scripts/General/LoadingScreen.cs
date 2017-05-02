@@ -23,12 +23,4 @@ public class LoadingScreen : MonoBehaviour {
         Initialize();
 
     }
-
-    public void Update() {
-        //TODO: show loading  animation
-    }
-
-    public void FixedUpdate() {
-        // TODO: Create loading animation
-    }
 }

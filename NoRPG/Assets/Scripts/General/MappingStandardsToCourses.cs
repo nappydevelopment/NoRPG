@@ -44,11 +44,22 @@ public class Games {
     public readonly string id;
     public readonly string name;
     public readonly string url;
+    private string standard;
 
     public Games(string id, string name, string url) {
         this.name = name;
         this.id = id;
-        this.url = url; 
+        this.url = url;
+        this.standard = "";
+    }
+
+    public string Standard {
+        get {
+            return standard;
+        }
+
+        set {
+            standard = value;
+        }
     }
 }
-

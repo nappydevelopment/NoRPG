@@ -17,26 +17,34 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[0].courses[1].standards) {
                     if (standard.name.Contains("1.OA")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("1.NBT")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("1.MD")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("1.G")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
@@ -45,38 +53,50 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[0].courses[0].standards) {
                     if (standard.name.Contains("RL.1")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RI.1")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RF.1")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("W.1")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("SL.1")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("L.1")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
@@ -88,26 +108,34 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[1].courses[1].standards) {
                     if (standard.name.Contains("2.OA")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("2.NBT")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("2.MD")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("2.G")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
@@ -116,38 +144,50 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[1].courses[0].standards) {
                     if (standard.name.Contains("RL.2")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RI.2")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RF.2")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("W.2")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("SL.2")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("L.2")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
@@ -158,32 +198,42 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[2].courses[1].standards) {
                     if (standard.name.Contains("3.OA")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("3.NBT")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("3.MD")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("3.G")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("3.NF")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
@@ -192,38 +242,50 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[2].courses[0].standards) {
                     if (standard.name.Contains("RL.3")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RI.3")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RF.3")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("W.3")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("SL.3")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("L.3")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
@@ -234,32 +296,42 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[3].courses[1].standards) {
                     if (standard.name.Contains("4.OA")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("4.NBT")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("4.MD")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("4.G")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("4.NF")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
@@ -268,38 +340,50 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[3].courses[0].standards) {
                     if (standard.name.Contains("RL.4")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RI.4")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RF.4")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("W.4")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("SL.4")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("L.4")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
@@ -310,32 +394,42 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[4].courses[1].standards) {
                     if (standard.name.Contains("5.OA")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("5.NBT")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("5.MD")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("5.G")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("5.NF")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
@@ -344,38 +438,50 @@ public class GetGameList : MonoBehaviour {
                 foreach (Standards standard in LoadingScreen.Settings.classes[4].courses[0].standards) {
                     if (standard.name.Contains("RL.5")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RI.5")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("RF.5")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("W.5")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("SL.5")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     } else if (standard.name.Contains("L.5")) {
                         foreach (Games game in standard.games) {
-                            if (checkVorbedingung(standard.vorbedingungen))
+                            if (checkVorbedingung(standard.vorbedingungen)) {
+                                game.Standard = standard.name;
                                 games.Add(game);
+                            }
                         }
                         return games;
                     }
