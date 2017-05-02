@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class GetGameList : MonoBehaviour {
 
-    public static Hashtable playedGames;
-
     public static List<Games> GetGames (string interactionobjectName) {
         string[] dependencies = interactionobjectName.Split('_');
         List<Games> games = new List<Games>();
@@ -497,12 +495,12 @@ public class GetGameList : MonoBehaviour {
         } else if (vorbedingungen.Length == 1 && vorbedingungen[0].Equals("")) {
             return true;
         }
-        if (playedGames.Count == 0) {
+        if (GameControl.control.playedGames.Count == 0) {
             return false;
         } else {
             foreach (string standard in vorbedingungen) {
-                if (playedGames.Contains(standard)) {
-                    if (!(playedGames[standard].ToString().Equals("1")))
+                if (GameControl.control.playedGames.Contains(standard)) {
+                    if (!(GameControl.control.playedGames[standard].ToString().Equals("1")))
                         return false;
                 } else {
                     return false;

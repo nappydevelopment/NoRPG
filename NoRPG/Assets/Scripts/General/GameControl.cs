@@ -17,6 +17,8 @@ public class GameControl : MonoBehaviour {
     public string correctCharacterModel;
     public string lastPosition;
     public List<Games> downloadedGames;
+    public Hashtable playedGames = new Hashtable();
+
     //Truhen
     public bool chest_1_forest_open;
     public bool chest_2_forest_open;
@@ -73,7 +75,8 @@ public class GameControl : MonoBehaviour {
     public bool qualitySetting;
 
 
-    void Awake()
+
+    void Awake ()
     {
         //check is there a GameControl Object!
         if (control == null)
@@ -109,6 +112,7 @@ public class GameControl : MonoBehaviour {
         FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
 
         PlayerData data = new PlayerData();
+        data.playedGames = playedGames;
         data.username = username;
         data.audioSetting = audioSetting;
         data.qualitySetting = qualitySetting;
@@ -196,6 +200,7 @@ public class GameControl : MonoBehaviour {
             Debug.Log(Application.persistentDataPath); 
 
             PlayerData data = new PlayerData();
+            data.playedGames = playedGames;
             data.username = "";
             data.audioSetting = true;
             data.qualitySetting = true;
@@ -273,7 +278,7 @@ public class GameControl : MonoBehaviour {
 
         PlayerData data = (PlayerData)bf.Deserialize(file);
         file.Close();
-
+        playedGames = data.playedGames;
         username = data.username;
         audioSetting = data.audioSetting;
         qualitySetting = data.qualitySetting;
@@ -370,6 +375,7 @@ class PlayerData
 
     //Games
     public List<Games> downloadedGames;
+    public Hashtable playedGames;
 
     //Progress
 
