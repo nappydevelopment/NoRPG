@@ -17,7 +17,7 @@ public class GameControl : MonoBehaviour {
     public string correctCharacterModel;
     public string lastPosition;
     public List<Games> downloadedGames;
-    public Hashtable playedGames = new Hashtable();
+    public List<String> playedGames;
 
     //Truhen
     public bool chest_1_forest_open;
@@ -375,7 +375,7 @@ class PlayerData
 
     //Games
     public List<Games> downloadedGames;
-    public Hashtable playedGames;
+    public List<String> playedGames;
 
     //Progress
 

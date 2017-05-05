@@ -499,10 +499,7 @@ public class GetGameList : MonoBehaviour {
             return false;
         } else {
             foreach (string standard in vorbedingungen) {
-                if (GameControl.control.playedGames.Contains(standard)) {
-                    if (!(GameControl.control.playedGames[standard].ToString().Equals("1")))
-                        return false;
-                } else {
+                if (!(GameControl.control.playedGames.Contains(standard))) {
                     return false;
                 }
             }

@@ -28,6 +28,7 @@ public class SampleButton : MonoBehaviour
     public void HandleClick()
     {
         //add clicked game to played game list
+        GameControl.control.playedGames.Add(game.Standard);
         scrollList.TransferToDownloadedGameList(game);
         
         //open google play store
