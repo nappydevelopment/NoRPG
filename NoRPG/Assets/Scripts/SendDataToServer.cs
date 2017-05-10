@@ -107,6 +107,8 @@ public class SendDataToServer : MonoBehaviour {
     public void SetCharacter(string character)
     {
         selected_characterText = character;
+        GameControl.control.correctCharacterModel = character;
+        GameControl.control.Save();
     }
 
     private void SendRegister()
