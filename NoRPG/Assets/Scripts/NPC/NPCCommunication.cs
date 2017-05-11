@@ -104,10 +104,20 @@ public class NPCCommunication : MonoBehaviour {
 
     private void OpenGameList(string interactableObjectName)
     {
+        gameList = GetGameList.GetGames(interactableObjectName);
+
+        if(gameList.Count == 0)
+        {
+            npcText.text = "Sorry you are not allowed to play this games. Come back later.";
+            return;
+        }
+
         textBox.SetActive(false);
         gamelistObject.SetActive(true);
 
         FillPanelWithGames(interactableObjectName);
+
+        scrollList.AddButtons(gameList);
 
         gamelistTitle.text = dialogue.GetGamelistTitle(interactableObjectName, json);
         gamelistDescription.text = dialogue.GetGamelistDescription(interactableObjectName, json);
@@ -115,9 +125,7 @@ public class NPCCommunication : MonoBehaviour {
 
     private void FillPanelWithGames(string interactableObjectName)
     {
-        gameList = GetGameList.GetGames(interactableObjectName);
 
-        scrollList.AddButtons(gameList);
     }
 
     private void CloseGameList()
