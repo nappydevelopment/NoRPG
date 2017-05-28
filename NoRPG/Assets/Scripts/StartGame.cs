@@ -32,10 +32,8 @@ public class StartGame : MonoBehaviour {
     }
 
     public IEnumerator LoadLevelWithRealProgress() {
+
         yield return new WaitForSeconds(1);
-
-        GameControl.control.LoadFromFile();
-
         string lastPosition = "Scenes/" + GameControl.control.lastPosition;
         Debug.Log(lastPosition);
 
@@ -72,6 +70,7 @@ public class StartGame : MonoBehaviour {
             Debug.Log(hs_get.text);
             if (hs_get.text.Contains("true")) {
                 GameControl.control.LoadFromCloud(user);
+                yield return new WaitForSeconds(1);
                 StartCoroutine(LoadLevelWithRealProgress());
             }else{
                 Debug.Log("no user / wrong password");
