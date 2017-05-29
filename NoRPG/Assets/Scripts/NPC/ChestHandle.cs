@@ -133,6 +133,7 @@ public class ChestHandle : MonoBehaviour {
     {
         gem.SetActive(false);
         GemCound++;
+        GameControl.control.gemCount = GemCound;
         npcText.text = "You collected the gem! You can look at your collected gems in the achievements.";
     }
 
